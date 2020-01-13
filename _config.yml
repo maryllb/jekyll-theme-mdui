@@ -1,9 +1,9 @@
 title: "maryllb"
-SEOTitle: "maryllb"
+SEOTitle: "maryllb blog"
 description: "A Jekyll theme based on MDUI"
 url: 
 baseurl: ""
-author: "maryllb"
+author: "mignon maryllb"
 paginate: 5
 paginate_path: "/blog/page:num/"
 
