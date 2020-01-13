@@ -10,7 +10,7 @@ describe: 玩转git
 published: true
 ---
 
-## git核心
+## git的核心
 
 + 文件(Immuntable)
 + 快照(Immuntable)
@@ -36,7 +36,7 @@ A.txt内容为123，修改一次后还是A.txt内容为456。
 
 分支只要做历史版本控制。分支里没有文件，分支存的是快照的引用，但分支是可变的。
 
-## Git特点
+## Git的特点
 
 ① 提交后东西不会丢，带给大家安心的感觉
 
