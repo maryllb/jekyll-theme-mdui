@@ -1,8 +1,8 @@
-title: "Jekyll-Theme-MDUI"
+title: "maryllb"
 description: "A Jekyll theme based on MDUI"
 url: 
 baseurl: ""
-author: "KeJun"
+author: "maryllb"
 paginate: 5
 paginate_path: "/blog/page:num/"
 
