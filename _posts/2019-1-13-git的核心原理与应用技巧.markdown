@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Git的核心原理与应用技巧"
+date:   2019-01-13 13:38:20 +0800
+categories: technology
+tags: ubuntu apache mysql php phpmyadmin git
+img: https://i.loli.net/2020/01/13/dLq7hMQtEW2jOIS.jpg
+author: test
+describe: 玩转git
+---
+
+## Git
+
+### Git核心理念&原理介绍
+
+#### git核心
+
++ 文件(Immuntable)
+  在git中文件是不可修改的。即，只能新建文件进入内容，不允许修改其内容。一旦允许修改，文件可能就会丢失。如果文件想修改，可能会分叉。
++ 快照(Immuntable)
+  在git文件夹（即快照）也是不可修改的。
+  如果一个A文件夹中有a.txt、b.txt、c.txt，一旦你删除c.txt文件，它会新建一个快照中包含a.txt、b.txt。
++ 分支
+  分支只要做历史版本控制。分支里没有文件，分支存的是快照的引用，但分支是可变的。
+
+文件与快照的关系：
+
+A.txt内容为123，修改一次后还是A.txt内容为456。
+
+快照里不存文件，只存文件的引用。假设快照里有A.txt引用是看指向哪个版本的。
+
+Git特点：
+
+① 提交后东西不会丢，带给大家安心的感觉
+
+② 分支的成本低（支持多任务）
+
+③ 分布式
+
+git做了社交，是行业的标准。
