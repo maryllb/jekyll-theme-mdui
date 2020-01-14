@@ -19,7 +19,7 @@ published: true
 ### 文件(Immuntable)
 
   在git中文件是不可修改的。即，只能新建文件进入内容，不允许修改其内容。一旦允许修改，文件可能就会丢失。如果文件想修改，可能会分叉。
-  ![git-1-1.jpg](https://i.loli.net/2020/01/14/uEkZ5nMdCbTft7x.jpg)
+  ![git-1-1.jpg](https://i.loli.net/2020/01/14/qRNl8dJOvLWbDiw.jpg)
 
 ### 快照(Immuntable)
 
