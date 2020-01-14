@@ -10,11 +10,7 @@ describe: 玩转git
 published: true
 ---
 
-<<<<<<< HEAD
 ## Git的核心
-=======
-## Git的核心
->>>>>>> f549901ddaab6a97c7154d5ab0ccd0629ee6a8ec
 
 + 文件(Immuntable)
 + 快照(Immuntable)
