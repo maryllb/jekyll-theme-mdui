@@ -4,7 +4,7 @@ title: Git核心理念&原理介绍
 date: '2020-01-13 13:38:20 +0800'
 categories: technology
 tags: ubuntu apache mysql php phpmyadmin git
-img: 'https://i.loli.net/2020/01/14/X5qYaCJz3dUlAEp.jpg'
+img: 'https://i.loli.net/2020/01/14/JcxAv4CGaepQyOX.jpg'
 author: test
 describe: 玩转git
 published: true
@@ -26,7 +26,7 @@ published: true
 
   在git文件夹（即快照）也是不可修改的。
   如果一个A文件夹中有a.txt、b.txt、c.txt，一旦你删除c.txt文件，它会新建一个快照中包含a.txt、b.txt。
-
+  
 ### 文件与快照的关系
 
 A.txt内容为123，修改一次后还是A.txt内容为456。
