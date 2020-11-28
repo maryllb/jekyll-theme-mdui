@@ -1,4 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-11-28T10:05:36+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">明清历史中的国家自信与国家自觉</title><link href="https://aaaab3n.moe/literature/2020/10/08/lunwen.html" rel="alternate" type="text/html" title="明清历史中的国家自信与国家自觉" /><published>2020-10-08T02:01:59+00:00</published><updated>2020-10-08T02:01:59+00:00</updated><id>https://aaaab3n.moe/literature/2020/10/08/lunwen</id><content type="html" xml:base="https://aaaab3n.moe/literature/2020/10/08/lunwen.html">&lt;h1 id=&quot;明清历史中的国家自信与国家自觉&quot;&gt;明清历史中的国家自信与国家自觉&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-11-28T12:34:31+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;为什么不自己-host-服务&quot;&gt;为什么不自己 Host 服务&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;正如 苏卡卡 在 [谈谈云服务和 SLA&lt;/td&gt;
+      &lt;td&gt;Sukka’s Blog (skk.moe)](https://blog.skk.moe/post/cloud-and-sla/) 中说的，在线云服务的 SLA 相比自己 Host 一个服务，可用性有很明显的提升。而且 GitHub Pages, GitHub Actions 和 Cloudflare 都是有免费额度的，对于个人用户完全够用。相信很多人之前买了 VPS，之后因为各种原因没有做好备份导致写了很久的博客文章丢失的事情，GitHub 的存储服务也能解决这个问题。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;为什么不用之前的-netlify&quot;&gt;为什么不用之前的 Netlify&lt;/h2&gt;
+
+&lt;p&gt;之前笔者是使用 Netlify 来构建博客的， Netlify 可以 Hook 住某个 GitHub repo， 在有 commit 的时候自动拉下来。它有一个 ubuntu 的虚拟环境，根据写的指令自动构建完后 Host 网页。 Netlify 还有自带的 CDN 和 DNS解析服务，在刚开始搭建博客的时候， Netlify 用的是 Digital Ocean 的 CDN，它的日本节点对于大陆网络的友好程度是要高于 Cloudflare 的。&lt;/p&gt;
+
+&lt;p&gt;但最近 Netlify 推出了更加严格的限制，限制了网页流量和编译所用的时长。我一个月后去看发现欠费了 7 美元。再加上现在 DO 的 CDN 对大陆的友好程度直线下降， Cloudflare 在声誉和基础设施上的投入上也使我非常青睐。一个大一同学的项目  &lt;a href=&quot;https://github.com/Spedoske/CloudflareScanner&quot;&gt;Spedoske/CloudflareScanner (github.com)&lt;/a&gt; 可以扫描出最快的 Cloudflare 节点，有着很多用途。&lt;/p&gt;
+
+&lt;h2 id=&quot;github-actions&quot;&gt;GitHub Actions&lt;/h2&gt;
+
+&lt;p&gt;简单来说，GitHub Actions 可以提供一台无法直接访问的 Azure ，通过 &lt;code class=&quot;highlighter-rouge&quot;&gt;.github/workflows/*.yml&lt;/code&gt; 执行所写的指令。 Azure 可以提供 Ubuntu 、 Windows 等环境。另一位同学的项目 &lt;a href=&quot;https://github.com/KiruyaMomochi/RediveExtract&quot;&gt;KiruyaMomochi/RediveExtract (github.com)&lt;/a&gt; 就是使用 GitHub Actions 抓取公主链接的新版本然后解包剧情推送到 Telegram Bot 上。本文主要介绍了三种框架的 Github Actions&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Jekyll 在官方 [GitHub Actions&lt;/td&gt;
+      &lt;td&gt;Jekyll • Simple, blog-aware, static sites (jekyllrb.com)](https://jekyllrb.com/docs/continuous-integration/github-actions/) 提供了 Github Actions。不过由于我的依赖和官方的 bundler 版本冲突，所以选择自己写。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;该文件见  &lt;a href=&quot;https://github.com/Nyovelt/jekyll-theme-mdui/tree/master/.github/workflows&quot;&gt;jekyll-theme-mdui/.github/workflows at master · Nyovelt/jekyll-theme-mdui&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;GitHub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Pages&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;on:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;push:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;branches:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;master&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;workflow_dispatch:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先的 name 是整个 GitHub Action 的描述&lt;/li&gt;
+  &lt;li&gt;on 代表何时触发 Action
+    &lt;ul&gt;
+      &lt;li&gt;push 代表当某个分支有提交时触发 push&lt;/li&gt;
+      &lt;li&gt;workflow_dispatch 提供了网页手动触发&lt;/li&gt;
+      &lt;li&gt;此外还有每按一次 star 触发 和 schedule 的按时触发&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;jobs:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;github-pages:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;runs-on:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ubuntu-latest&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;steps:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;表示使用 ubuntu-latest 作为构建机的操作系统，用 docker 的同学应该很熟悉&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      # Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: $-gems-$
+          restore-keys: |
+            $-gems-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;由于 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;执行过程时间非常长，所以添加缓存来节省时间和公共资源。该代码块的意思是以每一个 Gemfile.lock 创建一次缓存，这样可以节省安装相应依赖所用的时间&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;run:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;apt-get&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;apt-get&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;gem&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;gem&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;bundler:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.17&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;run:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;bundle&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;bundle&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;这两个就和正常 ubuntu 的运行命令一样了。 其中 &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt;是 GitHub Actions 的环境变量，表示了 repo 所在的目录&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Invoke&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Deployment&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;with:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ACCESS_TOKEN:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;BRANCH:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;gh-pages&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;FOLDER:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;_site&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;uses:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;JamesIves/github-pages-deploy-action@&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;这一段代码块是将特定文件夹 &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt;内容推送到 &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;分支。其中 &lt;code class=&quot;highlighter-rouge&quot;&gt;secrets.ACCESS_TOKEN&lt;/code&gt;可以在 上文 Jekyll 的文档中找到描述，是在 secrets 里创建一个键值对，来记录你的 GitHub Token 。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hugo&quot;&gt;Hugo&lt;/h3&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Hugo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;GitHub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Pages&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;on:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;push:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;branches:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;master&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;workflow_dispatch:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  
+
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;jobs:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;github-pages:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;runs-on:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ubuntu-latest&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;steps:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;uses:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;actions/checkout@v&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;run:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;wget&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;https://github.com/gohugoio/hugo/releases/download/v&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.78&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/hugo_&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.78&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;_Linux&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;-64&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;bit.deb&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;dpkg&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-i&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;hugo*.deb&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;hugo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Hugo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;run:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;hugo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Invoke&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Deployment&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;with:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ACCESS_TOKEN:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;BRANCH:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;gh-pages&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;FOLDER:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;uses:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;JamesIves/github-pages-deploy-action@&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;默认的 Ubuntu 是 bionic 版本，因此它的软件源不是最新的 （比如 apt 的 Hugo 版本是 0.4 因此不能正常编译）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;node&quot;&gt;Node&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/amphineko/atomicneko/blob/master/.github/workflows/deploy-pages.yml&quot;&gt;atomicneko/deploy-pages.yml at master · amphineko/atomicneko (github.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Deploy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;GitHub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Pages&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;on:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;push:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;branches:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;master&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;deploy-action&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;workflow_dispatch:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  
+
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;jobs:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;build:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;runs-on:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ubuntu-latest&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;steps:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;uses:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;actions/checkout@v&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;with:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;persist-credentials:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Invoke&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Webpack&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;run:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;npm&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;npm&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;name:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Invoke&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Deployment&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;with:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ACCESS_TOKEN:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;BRANCH:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;gh-pages&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;FOLDER:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;dist&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;uses:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;JamesIves/github-pages-deploy-action@&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;github-pages--cloudflare&quot;&gt;GitHub Pages + Cloudflare&lt;/h2&gt;
+
+&lt;p&gt;这个部分会介绍的简略一些，因为网上同类文档很多，而且操作很简单。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://sn3301files.storage.live.com/y4mW-R9hfnuB-2UE2bDy4bqoWFMDe08UL1prmOjxt4HU23XIsTj6OMY595LcnBBv7UsmPabV16ys7ZaGxIf7Qm8JUb4FKKwnE3Hy_pCkEe9Cdl24YMt28ecm5BOaMT9NpoK4mDBDKEsxljhCa7Z7uJcHUtB9VUkJ3xMzrXPDJrGgFG7GE6vJLdvmcxOZrC-_pG4?width=1024&amp;amp;height=442&amp;amp;cropmode=none&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;总之， Cloudflare 作为 CDN 提供了对网页 （也就是 GitHub Pages）的缓存，同时提供了很多安全选项，比如强制性的 https 和 TLS 。&lt;/p&gt;
+
+&lt;p&gt;在从 Netlify 切换到了这一套新的架构以后，访问体验有了肉眼可见的提升。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="Cloudflare" /><category term="Blog" /><category term="Website" /><summary type="html">为什么不自己 Host 服务</summary></entry><entry><title type="html">明清历史中的国家自信与国家自觉</title><link href="https://aaaab3n.moe/literature/2020/10/08/lunwen.html" rel="alternate" type="text/html" title="明清历史中的国家自信与国家自觉" /><published>2020-10-08T02:01:59+00:00</published><updated>2020-10-08T02:01:59+00:00</updated><id>https://aaaab3n.moe/literature/2020/10/08/lunwen</id><content type="html" xml:base="https://aaaab3n.moe/literature/2020/10/08/lunwen.html">&lt;h1 id=&quot;明清历史中的国家自信与国家自觉&quot;&gt;明清历史中的国家自信与国家自觉&lt;/h1&gt;
 
 &lt;h2 id=&quot;近代史的分划与明清历史&quot;&gt;近代史的分划与明清历史&lt;/h2&gt;
 
@@ -728,32 +923,4 @@ openssl x509 &lt;span class=&quot;nt&quot;&gt;-req&lt;/span&gt; &lt;span class=&
   &lt;li&gt;读电路图不需要视力&lt;/li&gt;
   &lt;li&gt;能用计算器就不要相信你的手&lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">vizna对《计算机科学与大白日梦》的回复</title><link href="https://aaaab3n.moe/life/2020/04/18/an-reply.html" rel="alternate" type="text/html" title="vizna对《计算机科学与大白日梦》的回复" /><published>2020-04-18T01:00:59+00:00</published><updated>2020-04-18T01:00:59+00:00</updated><id>https://aaaab3n.moe/life/2020/04/18/an-reply</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/04/18/an-reply.html">&lt;h2 id=&quot;关于计算机科学与大白日梦的胡言乱语&quot;&gt;关于《计算机科学与大白日梦》的胡言乱语&lt;/h2&gt;
-
-&lt;p&gt;To Canarypwn：&lt;/p&gt;
-
-&lt;p&gt;“于我，微软意味着高工资，高自由，是一种站着赚钱的地方”&lt;/p&gt;
-
-&lt;p&gt;微软不是。。。微软工资不算高，跟国内大厂比起来，微软苏州竞争力一般，北京还算可以。自由度还可以吧。躺着赚钱还是google。可能因为我去过google，实话说，有一点点看不上微软。但是，须知高工资是要有productivity的，业绩不好你在哪里都混不好，外企能给你高工资高自由度还不是因为它的员工能创造更多价值。资本是逐利的。况且，如果你不甘心做底层员工想往上爬，在哪里都还是一样要outstanding，而且到了一定级别你在什么公司都基本是把生活献给工作了——除非你是效率特别高的人。&lt;/p&gt;
-
-&lt;p&gt;“微软”在你眼里是一个符号，是一种保障，但它其实什么都不是，进微软并不能给你带来任何实质的成就，这只是一份工资比装配工高出不少的装配工合同。资本逐利，主动权也不在你，尤其是如果你把自己的保命招不自觉地交出去。不要把希望寄托在一个企业上，或者几个企业上。要有不给别人打工凭自己手艺单干也能吃饭还能吃好饭的底气。说梦想是进XX公司，其实不过是希望做一个高级社畜。注意，这句话在我这里这没有否定的意思，因为我自己也想做一个高级社畜——但这是因为我知道我追求的东西是什么，我知道我需要什么为什么要做高级社畜，而不是我想混日子养老。我眼里正确的心态是“你们都是我的翅膀”，对我来说我想去的Google之类的只是助益我追求理想的翅膀，如果有一天这些公司都没有了，对我而言虽有遗憾，但路还有无数种走法。基本盘是个人能力和个人追求，你的路“怎么走”可能千变万化，但你的路“是什么”其实不应该随外物而转移。这样的人生才是真正有方向的。但你永远不需要急着找方向，我更建议“你不能停下奔跑，但奔跑时不要忘记思考”。可以有个最初的想法，在你经历的过程中不断修正。p.s. 去实习吧。去科研也好。去做开源也好。经验能让你想法逐渐成熟。&lt;/p&gt;
-
-&lt;p&gt;“\最后一句话”（我从不会有辱斯文，见谅）&lt;/p&gt;
-
-&lt;p&gt;没必要否定“有用”，他们之所以“有用”是因为他们本来就有用，是许多人实践得到的一些最有效的东西。不要因为年轻的心气儿就嫌弃它。你会发现另辟蹊径需要极大的魄力与执行力，还有运气。大部分优秀的人接受并选某些择了“有用”。追求荣誉的过程中忽视了本来的创造力？事实上，它们往往不是完全对立，你要在追逐“直接利益”的过程中不迷失于“追逐利益”，而是从中学到许多东西。这才是最佳的结果。&lt;/p&gt;
-
-&lt;p&gt;此外，我一直相信（或者你说我阿Q精神强行安慰自己也行），所有的选择都只是选择，不是牺牲，也不是无奈。当你主动舍弃什么，不要觉得自己做出了牺牲（从而应当得到尊敬/回报），只把它看作自己的选择，然后对任何结果都不要觉得因此而委屈。当你被迫接受什么，也不要过于留恋过去，面对现实，把它也看作自己的选择。每种选择走向不同分支，没有哪种更好或更坏（别人的比较和评价不过是他们按自身欲望做的判断），都是独一无二只属于你的体验，你都可以收获许多。我享受人生的每一段experience，我追求丰富的体验，追求对世界的认知和对美-或者说对真实的欣赏。我认为这是我临死时回首往事时会觉得最珍贵的东西。&lt;/p&gt;
-
-&lt;p&gt;我读完的整体感受：&lt;/p&gt;
-
-&lt;p&gt;这是很好的思考，在我看来略显稚嫩和天真，但我回想我在你这个年纪，想法也是同样的，甚至更天真。所以我会鼓励你把视角继续放开，还可以更广一点，你对这个世界有什么抱负？你对自己有什么期许？你希望十年后、二十年后、五十年后的自己是什么状态、过什么生活？生而为人，而且有幸生为最幸运的前1%，你是否想要对世界做点什么？——甚至说远一点，你的政治观是什么？你的信仰来自何处？——虽然远，但这是一个人作为独立的人所应当清楚的，即他对万事万物的观点和看法来自怎样的价值观，他到底为了什么而活着。（再多说一句，我以为成功的本科教育最该培养的应该是这个。现代技术时代或许这越来越难，但本科至少要带给人思考意识，但这是一个受教育者毕生都要思考的。）&lt;/p&gt;
-
-&lt;p&gt;我对V2EX和知乎的风向从来不置可否，我已经几年没有混过知乎了，尽管总能有所风闻。轮子哥的风评称不上好，不同人对他的看法也见仁见智。但我想建议你，可以离V2EX和知乎稍稍远一点，不要让那里的风向不自觉地渗入你的思想——这是不自觉的，你甚至会以为那是你的独立见解。我现在很少评论时事，很少看各种言论，因为越长大一点，越发现自己思想的薄弱。我会建议你不要急着吸收、参与和发表观点，甚至未必急着做广泛的思考——是要思考的，但不是在思想没有进展的情况下盲目产生和发表观点。去读书，读经典，了解伟大的思想，了解真实的现实，去沉下心来往深处思考。让自己保持安静和专注在未来会愈发重要（你能连续几个小时专注在一件事不分心哪怕一分钟吗？）当然，这是我的观点。阅历和阅读会让你日臻成熟。什么事情都不要急，按时间线走甚至提前于时间线其实是很好的选择，因为你并不会太忙，你有很多时间来体味和摸索。&lt;/p&gt;
-
-&lt;p&gt;p.s. 你读齐泽克和拉康啊。老母亲的微笑。试着多读一些更多的书籍和观点吧。更早期的应当了解。要尝试跳出在国内长大的固有思维背景，注意是跳到更高处看它，而不是否定它。国文社几个半瓶子晃（误）的学长会很愿意瞎评论几句。&lt;/p&gt;
-
-&lt;p&gt;p.p.s. vizna的首字母是小写的，不过ingress不区分，所以没关系不用改。我看到这个名字还惊讶了一下。&lt;/p&gt;
-
-&lt;p&gt;此致，&lt;/p&gt;
-
-&lt;p&gt;国文社唯一真半瓶子晃还晃的特带劲儿的老学姐&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Life" /><summary type="html">关于《计算机科学与大白日梦》的胡言乱语</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry></feed>

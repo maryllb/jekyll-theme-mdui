@@ -87,10 +87,16 @@ var urlsToCache = [
     
   
     
+      '/blog/page6/',
+    
+  
+    
       '/feed.xml',
     
   
 
+  
+    '/technology/2020/11/28/github-and-cloudflare.html',
   
     '/literature/2020/10/08/lunwen.html',
   

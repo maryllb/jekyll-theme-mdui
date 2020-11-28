@@ -3,6 +3,18 @@
 [
   
     {
+      "id"    : "Blog",
+      "post": [
+          
+         {
+            "title": "使用 GitHub Actions 与 Cloudflare 重构博客体验",
+            "excerpt": "为什么不自己 Host 服务",
+            "url": "/technology/2020/11/28/github-and-cloudflare.html"
+         } 
+      ]
+    } ,
+  
+    {
       "id"    : "C",
       "post": [
           
@@ -10,6 +22,18 @@
             "title": "编译时你在做什么？有没有空？可以来拯救吗？",
             "excerpt": "— Willem...— What&#39;s the matter?— It seems that there&#39;s something wrong with Seniorious....— I&#39;ll have a look...",
             "url": "/technology/2019/11/29/c-cpp-black-magic.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "Cloudflare",
+      "post": [
+          
+         {
+            "title": "使用 GitHub Actions 与 Cloudflare 重构博客体验",
+            "excerpt": "为什么不自己 Host 服务",
+            "url": "/technology/2020/11/28/github-and-cloudflare.html"
          } 
       ]
     } ,
@@ -256,6 +280,18 @@
             "title": "PIGEON OJ 配置指南（评卷机）",
             "excerpt": "",
             "url": "/technology/2020/07/07/pigeon-oj-config.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "Website",
+      "post": [
+          
+         {
+            "title": "使用 GitHub Actions 与 Cloudflare 重构博客体验",
+            "excerpt": "为什么不自己 Host 服务",
+            "url": "/technology/2020/11/28/github-and-cloudflare.html"
          } 
       ]
     } ,

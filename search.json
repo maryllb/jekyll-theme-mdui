@@ -1,6 +1,11 @@
 [
   
     {
+      "title"    : "使用 GitHub Actions 与 Cloudflare 重构博客体验",
+      "url"      : "/technology/2020/11/28/github-and-cloudflare.html"
+    } ,
+  
+    {
       "title"    : "明清历史中的国家自信与国家自觉",
       "url"      : "/literature/2020/10/08/lunwen.html"
     } ,
