@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-11-28T12:34:31+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;为什么不自己-host-服务&quot;&gt;为什么不自己 Host 服务&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-11-28T12:38:58+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;为什么不自己-host-服务&quot;&gt;为什么不自己 Host 服务&lt;/h2&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
@@ -17,7 +17,7 @@
 
 &lt;h2 id=&quot;github-actions&quot;&gt;GitHub Actions&lt;/h2&gt;
 
-&lt;p&gt;简单来说，GitHub Actions 可以提供一台无法直接访问的 Azure ，通过 &lt;code class=&quot;highlighter-rouge&quot;&gt;.github/workflows/*.yml&lt;/code&gt; 执行所写的指令。 Azure 可以提供 Ubuntu 、 Windows 等环境。另一位同学的项目 &lt;a href=&quot;https://github.com/KiruyaMomochi/RediveExtract&quot;&gt;KiruyaMomochi/RediveExtract (github.com)&lt;/a&gt; 就是使用 GitHub Actions 抓取公主链接的新版本然后解包剧情推送到 Telegram Bot 上。本文主要介绍了三种框架的 Github Actions&lt;/p&gt;
+&lt;p&gt;简单来说，GitHub Actions 可以提供一台无法直接访问的 Azure ，通过 &lt;code class=&quot;highlighter-rouge&quot;&gt;.github/workflows/*.yml&lt;/code&gt; 执行所写的指令。 Azure 可以提供 Ubuntu 、 Windows 等环境。另一位同学的项目 &lt;a href=&quot;https://github.com/KiruyaMomochi/RediveExtract&quot;&gt;KiruyaMomochi/RediveExtract (github.com)&lt;/a&gt; 就是使用 GitHub Actions 抓取公主链接的新版本然后解包剧情推送到 Telegram Bot 上。甚至有人用 GitHub Actions 来自动构建 OpenWRT （&lt;a href=&quot;https://github.com/Hyy2001X/AutoBuild-Actions&quot;&gt;Hyy2001X/AutoBuild-Actions: 使用 Github Actions 编译 Openwrt&lt;/a&gt;）。本文主要介绍了三种框架的 GitHub Actions 。&lt;/p&gt;
 
 &lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
 
@@ -25,7 +25,7 @@
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;Jekyll 在官方 [GitHub Actions&lt;/td&gt;
-      &lt;td&gt;Jekyll • Simple, blog-aware, static sites (jekyllrb.com)](https://jekyllrb.com/docs/continuous-integration/github-actions/) 提供了 Github Actions。不过由于我的依赖和官方的 bundler 版本冲突，所以选择自己写。&lt;/td&gt;
+      &lt;td&gt;Jekyll • Simple, blog-aware, static sites (jekyllrb.com)](https://jekyllrb.com/docs/continuous-integration/github-actions/) 提供了 GitHub Actions。不过由于我的依赖和官方的 bundler 版本冲突，所以选择自己写。&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
