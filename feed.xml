@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-04T06:15:15+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-04T06:21:11+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -75,6 +75,37 @@
   &lt;li&gt;抢占式： 给应用程序一个资源，如果别的程序需要的话，就移走它&lt;/li&gt;
   &lt;li&gt;中间层： OS用一些数据结构（比如表）来查询权限，OS会在程序访问底层的时候提供权限管理&lt;/li&gt;
   &lt;li&gt;root / user ：特权模式&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;典型的操作系统&quot;&gt;典型的操作系统&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://sn3301files.storage.live.com/y4mn70BkNola6wrRUKxV7Bj5QN44VFXohASIeb2ikpUVlLjnkl2MYqbzeNH1QkULsc7-0FN2GZW2TT-Oh_I_m07KphZPO5d4R17WKwk_9V0BhzN9OVXC6U7Nzd8Mmjjj8I_f9crtPX9Hjw9nzVGDuyfok87qqksz0oOjkUMnf9leuxixYX6-a7y-yqakT412d_V?width=1024&amp;amp;height=568&amp;amp;cropmode=none&quot; alt=&quot;image-20201204141457542&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;程序在 user 层执行，低权限&lt;/li&gt;
+  &lt;li&gt;OS 在 kernal 层执行，高权限&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;系统调用-system-call&quot;&gt;系统调用 (System Call)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://sn3301files.storage.live.com/y4m4DCvJ_GPptwN7oLAeNjf6FkfMmijOfzzjcALtwCHHkO678KEk19-9siDkwGPI_P7b7X81vBMcsO_iknQqbgiFjAQNZp0lv0_CCOVGanpcKwfQR4DyOc4pJnwO_T2Z68FPByMLSVv0y83v1PZXQXwn_BHbOOm5uEAtEBFexQ5Cg7jUAwR4JQ2ixyo88Z-ntja?width=1024&amp;amp;height=601&amp;amp;cropmode=none&quot; alt=&quot;image-20201204141729074&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Applications can invoke kernel through system calls
+    &lt;ul&gt;
+      &lt;li&gt;应用程序可以通过系统调用来调用内核 (用特殊指令)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;应用程序
+    &lt;ul&gt;
+      &lt;li&gt;printf, scanf, fgets etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;系统接口
+    &lt;ul&gt;
+      &lt;li&gt;open, close, read, write etc. ( POSIX/UNIX )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="CS140" /><summary type="html">Intro</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
 
 &lt;p&gt;Due to rendering problem, some characters can’t be displayed correctly by markdown ( &lt;strong&gt;such as $&lt;/strong&gt; ). Read source code instead.&lt;/p&gt;
