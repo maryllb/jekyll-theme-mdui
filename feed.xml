@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-04T06:03:28+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-04T06:15:15+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -12,7 +12,70 @@
 
 &lt;h3 id=&quot;原始操作系统&quot;&gt;原始操作系统&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;C:\Users\Nyove\AppData\Roaming\Typora\typora-user-images\image-20201204135555194.png&quot; alt=&quot;image-20201204135555194&quot; /&gt;&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="CS140" /><summary type="html">Intro</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://sn3301files.storage.live.com/y4mh0qpst6d3FEypH6IoGiDxVjKKCdGpKHMhSC5bZfyyt1yZYYUec9SstWLT4whtooAqjlrgUgLC7tzeaJpD6rN_fIRehWu8pGaErnnqxFjvqFVn_uirLresyku0tC2C2vthbApgnPJjYLtsiKAialJTFBf3Ywex3bk3eJU92oZab021xVAJ7d1sNwzihUUdGQt?width=1024&amp;amp;height=473&amp;amp;cropmode=none&quot; alt=&quot;image-20201204140048431&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;系统一次只能运行一个程序
+    &lt;ul&gt;
+      &lt;li&gt;OS 和 硬件都被 APP 唯一占用&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;多线程&quot;&gt;多线程&lt;/h3&gt;
+
+&lt;p&gt;相比原始操作系统，一次可以运行多个程序&lt;/p&gt;
+
+&lt;p&gt;但原始的多线程有诸多问题&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;无限循环&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;比如&lt;a href=&quot;https://zh.m.wikipedia.org/zh-hans/Fork%E7%82%B8%E5%BC%B9&quot;&gt;叉炸弹&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;可以利用 权限 来解决&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;内存访问无限制，会有安全问题&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;可以用 内存隔离 来解决&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;多用户操作系统&quot;&gt;多用户操作系统&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://sn3301files.storage.live.com/y4m2MKgQtle0L3ijuplaxMdkRUXbeqyalVj5tj_2hXetgcmxsmdC4bLLQCny9EN3PenhA4o5cfkk-slNREGrw2OdUdNTOQOJQ6HoINX6uss5iALIF2uAZEzWPLLq_LJxv_vuqs8NpxaVOikkYhYb8emWcpPYv8RTEpU1Tb129YTuEv-oImS0KiSskSKGQF0Mngq?width=1024&amp;amp;height=641&amp;amp;cropmode=none&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用户需要什么就给什么，但依旧会存在一些问题：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;程序太贪了 (Chrome吃内存)&lt;/li&gt;
+  &lt;li&gt;当每个程序都申请内存的时候，申请内存的总量大于物理内存
+    &lt;ul&gt;
+      &lt;li&gt;解决: 虚拟化 (virtual memory, swap etc.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Super-linear slowdown with increasing demand (thrashing) （原文）
+    &lt;ul&gt;
+      &lt;li&gt;比如开了N个程序，每个程序只能分到 1/N 的资源&lt;/li&gt;
+      &lt;li&gt;随着程序的线性增加，每个程序更处理不完，最终&lt;del&gt;堵马桶&lt;/del&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;操作系统保护&quot;&gt;操作系统保护&lt;/h3&gt;
+
+&lt;p&gt;核心思想：隔离&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;抢占式： 给应用程序一个资源，如果别的程序需要的话，就移走它&lt;/li&gt;
+  &lt;li&gt;中间层： OS用一些数据结构（比如表）来查询权限，OS会在程序访问底层的时候提供权限管理&lt;/li&gt;
+  &lt;li&gt;root / user ：特权模式&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="CS140" /><summary type="html">Intro</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
 
 &lt;p&gt;Due to rendering problem, some characters can’t be displayed correctly by markdown ( &lt;strong&gt;such as $&lt;/strong&gt; ). Read source code instead.&lt;/p&gt;
 
