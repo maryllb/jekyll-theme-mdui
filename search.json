@@ -1,6 +1,11 @@
 [
   
     {
+      "title"    : "[ CS140 1-Introduction] Slides 笔记",
+      "url"      : "/technology/2020/12/04/CS140-L1.html"
+    } ,
+  
+    {
       "title"    : "使用 GitHub Actions 与 Cloudflare 重构博客体验",
       "url"      : "/technology/2020/11/28/github-and-cloudflare.html"
     } ,

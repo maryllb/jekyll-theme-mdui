@@ -27,6 +27,18 @@
     } ,
   
     {
+      "id"    : "CS140",
+      "post": [
+          
+         {
+            "title": "[ CS140 1-Introduction] Slides 笔记",
+            "excerpt": "Intro",
+            "url": "/technology/2020/12/04/CS140-L1.html"
+         } 
+      ]
+    } ,
+  
+    {
       "id"    : "Cloudflare",
       "post": [
           

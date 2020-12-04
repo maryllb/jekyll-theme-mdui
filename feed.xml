@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-11-30T13:27:42+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-04T06:03:28+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Homeworks and Slides can be found at &lt;a href=&quot;http://www.scs.stanford.edu/20wi-cs140/notes/&quot;&gt;CS140 Lecture notes (stanford.edu)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Backup on my &lt;a href=&quot;&quot;&gt;Onedrive&lt;/a&gt; https://1drv.ms/u/s!Au3reWMu7K2ChIp_v_ywDUA3QhkIAA?e=btMkiE)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;操作系统概论&quot;&gt;操作系统概论&lt;/h2&gt;
+
+&lt;h3 id=&quot;原始操作系统&quot;&gt;原始操作系统&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;C:\Users\Nyove\AppData\Roaming\Typora\typora-user-images\image-20201204135555194.png&quot; alt=&quot;image-20201204135555194&quot; /&gt;&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="CS140" /><summary type="html">Intro</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
 
 &lt;p&gt;Due to rendering problem, some characters can’t be displayed correctly by markdown ( &lt;strong&gt;such as $&lt;/strong&gt; ). Read source code instead.&lt;/p&gt;
 
@@ -759,158 +773,4 @@ openssl x509 &lt;span class=&quot;nt&quot;&gt;-req&lt;/span&gt; &lt;span class=&
 
 &lt;p&gt;今年的世界也很奇特，世界的两边都发生了一些过于奇幻与疯狂的事情，这些事情或许还会影响到四年以后的去处，以至于我不禁自问，这还是我认识的世界吗。&lt;/p&gt;
 
-&lt;p&gt;有人说生活才是最大的敌人，作为一个自称的理想主义者，大概我的自由和真实不会被生活所磨灭吧。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Living" /><summary type="html"></summary></entry><entry><title type="html">电路基础期中概念梳理</title><link href="https://aaaab3n.moe/education/2020/05/09/curcuit-midterm.html" rel="alternate" type="text/html" title="电路基础期中概念梳理" /><published>2020-05-09T01:00:59+00:00</published><updated>2020-05-09T01:00:59+00:00</updated><id>https://aaaab3n.moe/education/2020/05/09/curcuit-midterm</id><content type="html" xml:base="https://aaaab3n.moe/education/2020/05/09/curcuit-midterm.html">&lt;head&gt;
-&lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;h1 id=&quot;电路基础&quot;&gt;电路基础&lt;/h1&gt;
-
-&lt;h2 id=&quot;电路基础基础&quot;&gt;电路基础基础&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$i = \frac{dq}{dt}$&lt;/li&gt;
-  &lt;li&gt;$v=\frac{dE}{dq}$  , E 指电荷移动做功（功有正负之分，取决于电路中电荷移动的方向）&lt;/li&gt;
-  &lt;li&gt;$p = \frac{dE}{dt}$   单位时间内做功的能力&lt;/li&gt;
-  &lt;li&gt;$v = L \frac{di}{dt}$  L为电感，因为当$\frac{di}{dt}$不能为值无穷,所以含有电感的支路$i$不能突变v&lt;/li&gt;
-  &lt;li&gt;$i = C \frac{dv}{dt}$  C为电容，因为当$\frac{dv}{dt}$不能为值无穷,所以含有电感的支路$v$不能突变&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;理想电源&quot;&gt;理想电源&lt;/h3&gt;
-
-&lt;h4 id=&quot;非受控源&quot;&gt;非受控源&lt;/h4&gt;
-
-&lt;p&gt;恒定的输出电压和电流&lt;/p&gt;
-
-&lt;h3 id=&quot;受控源&quot;&gt;受控源&lt;/h3&gt;
-
-&lt;p&gt;根据电源两端的电压或者通过电源的电流，以线性函数的形式，产生响应的电压和电流。&lt;/p&gt;
-
-&lt;h2 id=&quot;基尔霍夫定律&quot;&gt;基尔霍夫定律&lt;/h2&gt;
-
-&lt;p&gt;基尔霍夫定律分为基尔霍夫电流定律和基尔霍夫电压定律。它的本质思想是电荷不会凭空的产生和消失（电荷守恒公理），所以电流——单位时间内电荷的数量，以及电压——能使电荷移动的能力。这两者是守恒的。对于每一个形状闭合的电路，都可以有:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;电势涨落守恒&lt;/li&gt;
-  &lt;li&gt;电流的数量和为0 (电流为有向标量)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;于是我们有方程&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;\(\sum{v_i} = 0\), $v_i$为每个电路元件所吸收/输出的电压&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;\(\sum{i_j} = 0\), $i_j$为电路上选定的任意一个点，它的每个方向上的电流&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;分析方法&quot;&gt;分析方法&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;mesh analyse&lt;/li&gt;
-  &lt;li&gt;node analyse&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;superposition&quot;&gt;Superposition&lt;/h2&gt;
-
-&lt;p&gt;因为电荷的正方向移动和负方向移动可以抵消，所以电路是线性的，可叠加的。因此产生了电路分析方法——Superposition。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;让电压源短路，让电流源断路&lt;/li&gt;
-  &lt;li&gt;分别计算每一个电源在某位置产生的电流/电压&lt;/li&gt;
-  &lt;li&gt;对这些电流/电压做代数和&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;即，每个电源单独作用的和&lt;/p&gt;
-
-&lt;h2 id=&quot;戴维南定理&quot;&gt;戴维南定理&lt;/h2&gt;
-
-&lt;p&gt;如同黑箱一般将任何线性电路等效成一个电压源 + 一个电阻&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;观察法求等效电阻&lt;/li&gt;
-  &lt;li&gt;求开路电压和短路电流&lt;/li&gt;
-  &lt;li&gt;外加电源激励
-    &lt;ul&gt;
-      &lt;li&gt;适用于受控源&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;诺顿定理同理&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;用处&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;求最大功率输出&lt;/li&gt;
-  &lt;li&gt;简化电路&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;运算放大器&quot;&gt;运算放大器&lt;/h2&gt;
-
-\[v_{output} = A(v_1-v_2)\]
-
-&lt;ul&gt;
-  &lt;li&gt;负反馈&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;理想运放&quot;&gt;理想运放&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$v_1=v_2$&lt;/li&gt;
-  &lt;li&gt;$i_1 = i_2 = 0$&lt;/li&gt;
-  &lt;li&gt;useful in circuit analyze&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;类型&quot;&gt;类型&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;以下所有都可根据基尔霍夫定律轻易得到&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;反向比例放大器&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;同向比例放大器&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;电压跟随器&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;加法器&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;减法器&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;共模抑制&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;串联&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;一阶电路&quot;&gt;一阶电路&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;电阻，电感，以及它们的公式和储能和串联和并联&lt;/li&gt;
-  &lt;li&gt;依旧由基尔霍夫定律推导&lt;/li&gt;
-  &lt;li&gt;阶跃响应与自然相应&lt;/li&gt;
-  &lt;li&gt;三要素法&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;二阶电路&quot;&gt;二阶电路&lt;/h2&gt;
-
-&lt;p&gt;和一阶电路类似，更加考验微分方程。（完）&lt;/p&gt;
-
-&lt;h2 id=&quot;易错点&quot;&gt;易错点&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;电流由高电势向低电势流&lt;/li&gt;
-  &lt;li&gt;在KVL中，受控电流源可设为v&lt;/li&gt;
-  &lt;li&gt;读电路图不需要视力&lt;/li&gt;
-  &lt;li&gt;能用计算器就不要相信你的手&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;有人说生活才是最大的敌人，作为一个自称的理想主义者，大概我的自由和真实不会被生活所磨灭吧。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Living" /><summary type="html"></summary></entry></feed>

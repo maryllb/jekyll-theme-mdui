@@ -96,6 +96,8 @@ var urlsToCache = [
   
 
   
+    '/technology/2020/12/04/CS140-L1.html',
+  
     '/technology/2020/11/28/github-and-cloudflare.html',
   
     '/literature/2020/10/08/lunwen.html',
