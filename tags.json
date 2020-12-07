@@ -123,6 +123,18 @@
     } ,
   
     {
+      "id"    : "Essay",
+      "post": [
+          
+         {
+            "title": "近代史纲要期末论文",
+            "excerpt": "封建帝国末期：救亡图存",
+            "url": "/education/2020/12/04/modern.html"
+         } 
+      ]
+    } ,
+  
+    {
       "id"    : "GFW",
       "post": [
           

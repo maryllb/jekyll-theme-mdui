@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-04T06:49:44+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-07T16:31:21+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
@@ -196,7 +196,29 @@
       &lt;li&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="CS140" /><summary type="html">Intro</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="CS140" /><summary type="html">Intro</summary></entry><entry><title type="html">近代史纲要期末论文</title><link href="https://aaaab3n.moe/education/2020/12/04/modern.html" rel="alternate" type="text/html" title="近代史纲要期末论文" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2020/12/04/modern</id><content type="html" xml:base="https://aaaab3n.moe/education/2020/12/04/modern.html">&lt;h1 id=&quot;封建帝国末期救亡图存&quot;&gt;封建帝国末期：救亡图存&lt;/h1&gt;
+
+&lt;p&gt;摘要： 第一次鸦片战争揭示了近代史的开端，作为集前朝之大成的清王朝在面对内有外患时尽可能的延续自身。种种改变最终因各种原因而失败。本文主要探讨了清王朝采用了哪些救亡图存的方法，这些方法为什么而失败，这些失败的教训如何促进下一次变革，这些变革的教训又如何促成了中国最后走向现代。&lt;/p&gt;
+
+&lt;h2 id=&quot;旧式农民起义太平天国&quot;&gt;旧式农民起义：太平天国&lt;/h2&gt;
+
+&lt;h3 id=&quot;太平天国的起因第一次鸦片战争&quot;&gt;太平天国的起因：第一次鸦片战争&lt;/h3&gt;
+
+&lt;p&gt;在第一次鸦片战争后，由清王朝向列强赔款2800万元。这造成了巨大的亏空和逆差。据统计，道光二十七年至二十八年平均每年流出白银1000万元。这些钱最终被摊牌成了税收上的增加。当时的清王朝以农业为主，过重的税收最终造成了一般农民的破产和地主阶级对农民的土地兼并。手工业者阶级也因为鸦片战争所签订的南京条约，被更加廉价精良的外国工业品击败，最终破产。失去了土地和生活来源的农民和手工业者聚集在一起，为了生存而选择了起义。鸦片战争后十年间，各族人民自发的反清起义达100多次。&lt;/p&gt;
+
+&lt;p&gt;在这一背景下，洪秀全借拜上帝教的名义，绘制了人人平等的远景，在传教过程中不断吸引教民，最终起义。与以往不同的是洪秀全结合了很多西方的宗教元素。这样一种接近西方的表象一方面为太平天国争取到了前期的来自西方的支持，另一方面让因为西方关系而破产或剥削的人民因此而感到自己拥有了特权。&lt;/p&gt;
+
+&lt;h3 id=&quot;太平天国的批判&quot;&gt;太平天国的批判&lt;/h3&gt;
+
+&lt;p&gt;但是这种假借西方宗教与人民利益，实际依旧以封建传统统治为本的政治方式仍旧没有比以往的农民起义展现出更多的先进性。太平天国的消亡也和历次的农民战争展现出了一样的特征。在定都天京以后太平天国不再以惊人的速度扩展，英国人F. A. Lindley在1866年英文版《太平天国》第一卷中指出：“南京的占领完全改变了天王的战术，他不再继续进行由前进的恐怖来制衡满洲的、迅速和凯旋的进军，却把他的党徒集合在南京及郊区周围，在同一时期从事组织有朝廷和法院的正规政府。”与此同时，在政治上，洪秀全在天京被架空，东王和翼王开始争夺权力。在经济上，太平天国执行圣库制度。太平天国圣库的物资来源，约有以下五方面；一是造反初期持上帝全会众交给圣库的银粮衣物；二是打败清军或攻克城镇所获的战利品；三是各处城乡的员献及对富户派大捐、打先锋所得的财物；四是“科派”、田赋与工商税的收入；五是百工衙的生产品（如同今日的国营事业所得）等。天京城中设立的百式衙与诸匠营，是圣库物资的重要来源之一。这种表面上的经济平等无法继续迭代，经济计划最终必将破产。这样的政权，经济和武装是无法长久对抗清王朝和对太平天国敌视的西方列强。在上海，西方租界组建了洋枪队，利用先进火器阻挡了太平军的进攻。清王朝的洋务派们组建的精锐部队最终结束了太平天国。&lt;/p&gt;
+
+&lt;p&gt;自古以来，中国大地上一次次政权更替的同时展现出了封建王朝自我更新迭代的生命力。太平天国虽然在制度上有所创新，但其本质还是封建思想和农民起义的旧产物。而清王朝相比之下通过学习西方，加上西方因为更好的维护自己在中国的利益而给与的援助，度过了一个封建王朝的晚期危机。这反而表明了封建主义自我迭代手段的失效以及资本主义与帝国主义所能给国家带来的强大生命力。在之后的时间里，洋务派因此占据了清王朝政治的主流，开启了一个封建王朝的自强运动。&lt;/p&gt;
+
+&lt;h2 id=&quot;地主阶级洋务派洋务运动&quot;&gt;地主阶级洋务派：洋务运动&lt;/h2&gt;
+
+&lt;h3 id=&quot;师夷长技&quot;&gt;师夷长技&lt;/h3&gt;
+
+&lt;p&gt;在清军和太平军两大敌对阵营的战争中，双方几乎是不约而同地同步实行“师夷长技”。两军对阵，指挥官和士兵对于敌方武器锐利程度感触最为敏锐，追求新式而有效战胜敌人的武器，最没有保守观点。太平军为了制胜清王朝而“师夷长技”，清军为了制胜太平军而“师夷长技”，这是历史的必然。1856年曾国藩攻陷安福县时，“夺获洋枪炮械藤牌四百余件”；1859年，曾国藩说太平右军主将韦志俊向湘军投降时所带“器械甚精，洋枪甚多”；同年胡林翼奏称太平军杨辅清攻池州城“施放洋枪子落如雨。” 因此在洋务运动中，各派系都在努力提高火器在军队中的比例。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Essay" /><summary type="html">封建帝国末期：救亡图存</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
 
 &lt;p&gt;Due to rendering problem, some characters can’t be displayed correctly by markdown ( &lt;strong&gt;such as $&lt;/strong&gt; ). Read source code instead.&lt;/p&gt;
 
@@ -946,15 +968,4 @@ openssl x509 &lt;span class=&quot;nt&quot;&gt;-req&lt;/span&gt; &lt;span class=&
   &lt;li&gt;
     &lt;p&gt;感谢 &lt;a href=&quot;https://nyan.kiwi.cat/&quot;&gt;Kiwi&lt;/a&gt; 提供的帮助&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="Linux" /><category term="KVM" /><summary type="html"></summary></entry><entry><title type="html">生日</title><link href="https://aaaab3n.moe/life/2020/05/31/birthday2020.html" rel="alternate" type="text/html" title="生日" /><published>2020-05-31T01:00:59+00:00</published><updated>2020-05-31T01:00:59+00:00</updated><id>https://aaaab3n.moe/life/2020/05/31/birthday2020</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/05/31/birthday2020.html">&lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
-
-&lt;p&gt;今年的生日或许是我过的最不像生日的一个生日了，没有生日蛋糕，没有长寿面。原本请室友们去吃西餐厅的意大利面的想法也因为赶电路作业而延后了。作为考试周结束的后一天，也许什么都不做才是一种短暂的享受（但我没有做到）。说起来我还未曾有一次在考试之前就知道考试结果不会好的，但这次遇到了。&lt;/p&gt;
-
-&lt;p&gt;凌晨我是在ztr寝室度过的，大家都刚考完了最后一门，yzy请了大家每人一瓶RIO，一起看完了刚刚更新的《辉夜》，看到一半zsy也加入了进来，谈笑风生了一个多小时。在这个时候，我才感觉两周来的压力被缓解了一些。&lt;/p&gt;
-
-&lt;p&gt;各科的DDL依旧会来，暑学期和社会实践也是，锅和自己要做的小项目也是。就像之前决定要拍思修课微电影作为期末作业的时候，更多的是希望创作欲能被表达，而分数反而变得不是那么重要。&lt;/p&gt;
-
-&lt;p&gt;今年的世界也很奇特，世界的两边都发生了一些过于奇幻与疯狂的事情，这些事情或许还会影响到四年以后的去处，以至于我不禁自问，这还是我认识的世界吗。&lt;/p&gt;
-
-&lt;p&gt;有人说生活才是最大的敌人，作为一个自称的理想主义者，大概我的自由和真实不会被生活所磨灭吧。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Living" /><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="Linux" /><category term="KVM" /><summary type="html"></summary></entry></feed>
