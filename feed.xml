@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-07T16:31:21+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-07T16:37:07+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
@@ -216,9 +216,22 @@
 
 &lt;h2 id=&quot;地主阶级洋务派洋务运动&quot;&gt;地主阶级洋务派：洋务运动&lt;/h2&gt;
 
-&lt;h3 id=&quot;师夷长技&quot;&gt;师夷长技&lt;/h3&gt;
+&lt;h3 id=&quot;师夷长技旧制度的延续&quot;&gt;师夷长技：旧制度的延续&lt;/h3&gt;
 
-&lt;p&gt;在清军和太平军两大敌对阵营的战争中，双方几乎是不约而同地同步实行“师夷长技”。两军对阵，指挥官和士兵对于敌方武器锐利程度感触最为敏锐，追求新式而有效战胜敌人的武器，最没有保守观点。太平军为了制胜清王朝而“师夷长技”，清军为了制胜太平军而“师夷长技”，这是历史的必然。1856年曾国藩攻陷安福县时，“夺获洋枪炮械藤牌四百余件”；1859年，曾国藩说太平右军主将韦志俊向湘军投降时所带“器械甚精，洋枪甚多”；同年胡林翼奏称太平军杨辅清攻池州城“施放洋枪子落如雨。” 因此在洋务运动中，各派系都在努力提高火器在军队中的比例。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Essay" /><summary type="html">封建帝国末期：救亡图存</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
+&lt;p&gt;在清军和太平军两大敌对阵营的战争中，双方几乎是不约而同地同步实行“师夷长技”。两军对阵，指挥官和士兵对于敌方武器锐利程度感触最为敏锐，追求新式而有效战胜敌人的武器，最没有保守观点。太平军为了制胜清王朝而“师夷长技”，清军为了制胜太平军而“师夷长技”，这是历史的必然。1856年曾国藩攻陷安福县时，“夺获洋枪炮械藤牌四百余件”；1859年，曾国藩说太平右军主将韦志俊向湘军投降时所带“器械甚精，洋枪甚多”；同年胡林翼奏称太平军杨辅清攻池州城“施放洋枪子落如雨。” 因此在洋务运动中，各派系都在努力提高火器在军队中的比例。摇曳的清王朝有着十足的动力来进行军事方面的改革以一定程度上的保全自身，因此慈禧太后也予以推动。武器的西方化进而带动了经济，外交等的西方化。&lt;/p&gt;
+
+&lt;p&gt;其中多项的引进与改革对今后的清王朝产生的深远的影响，在此进行列举说明：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;现代银行体系&lt;/li&gt;
+  &lt;li&gt;新式教育（新学）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;洋务运动的结局注定的失败&quot;&gt;洋务运动的结局：注定的失败&lt;/h3&gt;
+
+&lt;h2 id=&quot;资产阶级改良派百日维新&quot;&gt;资产阶级改良派：百日维新&lt;/h2&gt;
+
+&lt;h2 id=&quot;后来的资产阶级革命派辛亥革命&quot;&gt;后来的资产阶级革命派：辛亥革命&lt;/h2&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Essay" /><summary type="html">封建帝国末期：救亡图存</summary></entry><entry><title type="html">使用 GitHub Actions 与 Cloudflare 重构博客体验</title><link href="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html" rel="alternate" type="text/html" title="使用 GitHub Actions 与 Cloudflare 重构博客体验" /><published>2020-11-28T02:01:59+00:00</published><updated>2020-11-28T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/11/28/github-and-cloudflare.html">&lt;h2 id=&quot;caution&quot;&gt;Caution&lt;/h2&gt;
 
 &lt;p&gt;Due to rendering problem, some characters can’t be displayed correctly by markdown ( &lt;strong&gt;such as $&lt;/strong&gt; ). Read source code instead.&lt;/p&gt;
 
