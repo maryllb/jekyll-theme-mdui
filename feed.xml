@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-07T16:37:07+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-07T16:46:00+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
@@ -227,7 +227,11 @@
   &lt;li&gt;新式教育（新学）&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;不论是现代银行体系还是新式教育，他们一个使旧制度下的王朝受到了更加严重的剥削；一个不断的挖掘着王朝的根基。不断引进新思潮的旧王朝就像是自身的掘墓人，随着洋务运动的推进以及失败，清王朝的新兴知识阶级越发认识到清王朝是丧权辱国，民不聊生的罪魁祸首，并以各种方式谋求来自民间的变革，也就是来自新兴资产阶级的变革。&lt;/p&gt;
+
 &lt;h3 id=&quot;洋务运动的结局注定的失败&quot;&gt;洋务运动的结局：注定的失败&lt;/h3&gt;
+
+&lt;p&gt;洋务运动的失败证明了封建王朝各种自我救赎的失败，表明了旧制度下的王朝难以通过来自自身的变革完成近代化的转变，旧行政制度下的行政效率低下问题无法承载起新思潮所创造的产物。封建王朝自强运动的失败证明了其晚期的到来。&lt;/p&gt;
 
 &lt;h2 id=&quot;资产阶级改良派百日维新&quot;&gt;资产阶级改良派：百日维新&lt;/h2&gt;
 
