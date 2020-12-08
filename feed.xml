@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-07T16:46:00+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-08T09:19:09+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
@@ -223,8 +223,14 @@
 &lt;p&gt;其中多项的引进与改革对今后的清王朝产生的深远的影响，在此进行列举说明：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;现代银行体系&lt;/li&gt;
-  &lt;li&gt;新式教育（新学）&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;现代银行体系&lt;/p&gt;
+
+    &lt;p&gt;清朝通过各种丧权辱国的条约，需要向列强赔付13.2亿白银（如果加上利息，数额则更加惊人），相当于1901年国家财政收入的11倍，这些钱远远超过了清朝的还款能力。在过去清朝的国库还有盈余的年代，天子必须通过游览旅行来消费国库中积蓄的无法流通的财富。而在现代金融制度的引进后，由外国人建立的海关和银行一方面为清王朝增加了收入，另一方面在清政府需要钱时提供贷款。甲午战争的赔款就是向英德法俄银行团借款来付的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;新式教育（新学）&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;不论是现代银行体系还是新式教育，他们一个使旧制度下的王朝受到了更加严重的剥削；一个不断的挖掘着王朝的根基。不断引进新思潮的旧王朝就像是自身的掘墓人，随着洋务运动的推进以及失败，清王朝的新兴知识阶级越发认识到清王朝是丧权辱国，民不聊生的罪魁祸首，并以各种方式谋求来自民间的变革，也就是来自新兴资产阶级的变革。&lt;/p&gt;
