@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-09T14:00:42+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-09T18:09:07+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
@@ -206,7 +206,7 @@
 
 &lt;p&gt;在第一次鸦片战争后，由清王朝向列强赔款2800万元。这造成了巨大的亏空和逆差。据统计，道光二十七年至二十八年平均每年流出白银1000万元。这些钱最终被摊牌成了税收上的增加。当时的清王朝以农业为主，过重的税收最终造成了一般农民的破产和地主阶级对农民的土地兼并。手工业者阶级也因为鸦片战争所签订的南京条约，被更加廉价精良的外国工业品击败，最终破产。失去了土地和生活来源的农民和手工业者聚集在一起，为了生存而选择了起义。鸦片战争后十年间，各族人民自发的反清起义达100多次。&lt;/p&gt;
 
-&lt;p&gt;在这一背景下，洪秀全借拜上帝教的名义，绘制了人人平等的远景，在传教过程中不断吸引教民，最终起义。与以往不同的是洪秀全结合了很多西方的宗教元素。这样一种接近西方的表象一方面为太平天国争取到了前期的来自西方的支持，另一方面让因为西方关系而破产或剥削的人民因此而感到自己拥有了特权。&lt;/p&gt;
+&lt;p&gt;在这一背景下，洪秀全借拜上帝教的名义，绘制了人人平等的远景，在传教过程中不断吸引教民，最终起义。与以往不同的是洪秀全结合了很多西方的宗教元素。这样一种接近西方的表象一方面为太平天国争取到了前期的来自西方的支持，另一方面让因为西方关系而破产或剥削的人民因此而感到自己拥有了特权。这种斯德哥尔摩式的反映表现了当时的人们对于初来乍到的西方话语厌恶但又不得不诚服的处境。&lt;/p&gt;
 
 &lt;h3 id=&quot;太平天国的批判&quot;&gt;太平天国的批判&lt;/h3&gt;
 
@@ -231,17 +231,17 @@
   &lt;li&gt;
     &lt;p&gt;新式教育（新学）&lt;/p&gt;
 
-    &lt;p&gt;洋务派在全国修建了30余所近代新式学校，用来培养科学、军事、翻译人才。&lt;/p&gt;
+    &lt;p&gt;洋务派在全国修建了30余所近代新式学校，用来培养科学、军事、翻译人才。并且用于教育事业的投入在1900年后翻了几番，原因在于列强将庚子赔款的钱用于清王朝的教育设施。但直到清末新政，清朝选拔人才的方式依旧是科举，大量接受了新式教育的年轻人并不能找到能够接纳他们的工作，先进的自由平等思想使得他们对于清朝本身进行反思。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;不论是现代银行体系还是新式教育，他们一个使旧制度下的王朝受到了更加严重的剥削；一个不断的挖掘着王朝的根基。不断引进新思潮的旧王朝就像是自身的掘墓人，随着洋务运动的推进以及失败，清王朝的新兴知识阶级越发认识到清王朝是丧权辱国，民不聊生的罪魁祸首，并以各种方式谋求来自民间的变革，也就是来自新兴资产阶级的变革。&lt;/p&gt;
+&lt;p&gt;不论是现代银行体系还是新式教育，他们一个反而使旧制度下的王朝受到了更加严重的剥削；一个不断的挖掘着王朝的根基。不断引进新思潮的旧王朝就像是自身的掘墓人。在面对列强所要求的巨额赔款时，清王朝选择向西方国家开设的银行贷款，用金融主权换得了一时的平安。英国人帮助清王朝建立了海关体系，海关的税收进而推动着洋务实业的创立。例如上海的轮船招商局的启动资金就来自于上海海关的收入。但随着洋务运动的推进以及失败，清王朝的新兴知识阶级越发认识到清王朝是丧权辱国，民不聊生的罪魁祸首，并以各种方式谋求来自民间的变革，也就是来自新兴资产阶级的变革。&lt;/p&gt;
 
 &lt;h3 id=&quot;洋务运动的结局注定的失败&quot;&gt;洋务运动的结局：注定的失败&lt;/h3&gt;
 
-&lt;p&gt;甲午战争的失败宣告着洋务运动的最终失败，体量更大的清王朝在军事上无法击败后发的过去同为封建王朝的日本国。尤其是在军备上并没有明显代差的情况下。究其原因，有来自过去封建势力的阻挠，皇家挪用经费等。总而言之，封建旧势力阻碍着王朝真正的变革。例如修圆明园时慈禧太后以过生日为名，这实则是由大奇观来展现国家统治的生命力。对于封建王朝，无疑有助于树立统治阶级的权威，但却严重降低了年度预算和行政效率，最终展现在了战舰和军队的缺乏维护上。&lt;/p&gt;
+&lt;p&gt;甲午战争的失败宣告着洋务运动的最终失败，体量更大的清王朝在军事上无法击败后发的过去同为封建王朝的日本国。尤其是在军备上并没有明显代差的情况下。究其原因，有来自过去封建势力的阻挠，皇家挪用经费等。在甲午战争前夕，翁同龢和李鸿章因为相互的争执而克扣了北洋水师的维护经费。总而言之，封建旧势力阻碍着王朝真正的变革。例如修圆明园时慈禧太后以过生日为名，这实则是由大奇观来展现国家统治的生命力。对于封建王朝，无疑有助于树立统治阶级的权威，但却严重降低了年度预算和行政效率，最终展现在了战舰和军队的缺乏维护上。同时，洋务派各派训练的部队更像封建时期私人性质的武装，在甲午海战战败后福建水师向日本所求一艘被缴获的战舰，理由是该船属于福建水师而非北洋，武装私人化可见一般。&lt;/p&gt;
 
-&lt;p&gt;洋务运动的失败证明了封建王朝各种自我救赎的失败，表明了旧制度下的王朝难以通过来自自身的变革完成近代化的转变，旧行政制度下的行政效率低下问题无法承载起新思潮所创造的产物。封建王朝自强运动的失败证明了其晚期的到来。&lt;/p&gt;
+&lt;p&gt;洋务运动的失败证明了封建王朝各种自我救赎的失败，表明了旧制度下的王朝难以通过来自自身的变革完成近代化的转变，旧行政制度下的行政效率低下问题无法承载起新思潮所创造的产物。封建王朝自强运动的失败证明了其晚期危机的到来。&lt;/p&gt;
 
 &lt;h2 id=&quot;资产阶级改良派百日维新&quot;&gt;资产阶级改良派：百日维新&lt;/h2&gt;
 
@@ -254,6 +254,8 @@
 &lt;p&gt;百日维新本质上是新旧体制的正面冲突。新兴知识分子大刀阔斧的想对整个国家进行改革，以一种极端的方式带着整个国家步入近代化。而旧体制下的保守势力一方面不甘心自己政治话语的剥夺，另一方面看出了过激的改革有将整个国家带入灭亡的危险。最终旧体制因为掌握兵权而取得了暂时的优势。&lt;/p&gt;
 
 &lt;p&gt;虽然代表旧体制的朝廷暂时占据了优势，但是原本拥戴朝廷的新兴知识分子们却不愿意再承认清朝的正统性。步入近代后国家主义开始觉醒，封建主义时期树立君主权威的方式在近代启蒙之后就不再适用。部分知识分子们认为，打到清廷才是实现国家强大的捷径，这一思想因而在知识分子中分化成了保皇党和革命党。新旧体制的冲突仍在继续。从百日维新以后，清王朝因为对变革的不信任，并且国力也不允许其体制发生根本上的改变，研究改革的主力落到了新兴知识分子身上。&lt;/p&gt;
+
+&lt;p&gt;总的来说，封建体制维护自身的方式是为统治阶级树立权威。普通民众想要参与到日常的政治中去只有走官方指定的道路。同时封建体制在树立权威的同时造成了无意义的内耗。新兴的知识份子，也可以说是他们背后所代表的资产阶级，因为他们大多都是由新式学堂教育出来的，最终都将成为资产社会中的生产力，他们代表着资本主义的意识形态试图改善封建主义行政效率低下的问题以最大程度的利用生产力。&lt;/p&gt;
 
 &lt;h2 id=&quot;后来的资产阶级革命派辛亥革命&quot;&gt;后来的资产阶级革命派：辛亥革命&lt;/h2&gt;
 
