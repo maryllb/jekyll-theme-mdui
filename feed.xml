@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-17T05:57:11+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-17T16:53:33+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
@@ -61,7 +61,36 @@
   &lt;li&gt;etc&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;同时我们全部开发人员配置了连回社团的 wireguard， 并用 FRP 映射出了多台机器，这些机器z&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Hackathon" /><summary type="html">D-14</summary></entry><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;同时我们全部开发人员配置了连回社团的 wireguard， 并用 FRP 映射出了三台服务器。因为我们有HPC团队的成员和实验室的搬砖工。这些机器包括&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;来自 HPC 的 2*64 核 AMD 处理器 + 8 * NVIDIA V100&lt;/li&gt;
+  &lt;li&gt;2080Ti * n&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;光说这些资源也没什么队伍能打败我们了吧（逃&lt;/p&gt;
+
+&lt;p&gt;乘上了3点的高铁，高铁上的网络信号还是一点都不好，导致我们睡了一路。当晚入住了中关村旁边的如家酒店，黑客松还带酒店的体验是非常好的。当晚吃了旁边的达美乐。出来以后看到酒店门口一群人在玩滑板，想到如果有一段这样的风格化视频也是很好的，于是在他们的同意之下拍了一段他们的视频。&lt;/p&gt;
+
+&lt;p&gt;当晚继续之前的计划，应该是凌晨睡觉的。&lt;/p&gt;
+
+&lt;h1 id=&quot;d&quot;&gt;D&lt;/h1&gt;
+
+&lt;p&gt;早上8点打车来到比赛现场，现场的早饭是星巴克的可颂，TUNA和培根，不限量供应。（所以一个队友一个早上吃了五个，值回成本）&lt;/p&gt;
+
+&lt;p&gt;进了会场内发现周围挺空的，就我们五个人占了一桌，铺了六台电脑显得有点挤。隔壁一个上大的研究生只身前来，还没做什么准备，看到我们的架势被吓了一跳。&lt;/p&gt;
+
+&lt;p&gt;中饭和晚饭都是自助餐，就是有些辣。&lt;/p&gt;
+
+&lt;p&gt;晚上出门的时候还下雪了，照了一张 Google 的雪景。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://snz04pap002files.storage.live.com/y4mqxf5lMBeXrBXOmwqfGFmh8eiFvJe5-OSYyUlW8O-PnIhQh2tdWYRsko1lPj0S5Cxd67FUtHknEh73NtWyuNV00H4I3eQTQlll6RybBauGA7Qn5ySU6kfgdV3b2srX07rIP9wv1PaqVR4OfnwFg66ffEi0eLr9-my9IfhtGGDVsLY5yh73rSlv3_63LIjP6tI?width=1024&amp;amp;height=803&amp;amp;cropmode=none&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当晚回酒店后又是很紧张的调试。 Logan 帮我解决了 Vue 的一些问题，凌晨的时候我把和后端对接的代码大致写完了。负责 pre 的队友和我们商讨 slides 和措辞，并且由同学帮助美化 slides。L 努力的优化 ffmepg 的推流，通过添加 buffer 的方法将直播帧率提高到了 512*512@17fps 。这个帧率是将源视频推流到上科大校内的某台服务器，经过处理塞进神经网络再推流回来的，所以这个成绩非常惊人了。&lt;/p&gt;
+
+&lt;iframe src=&quot;https://onedrive.live.com/embed?cid=82ADEC2E6379EBED&amp;amp;resid=82ADEC2E6379EBED%2167308&amp;amp;authkey=ABKJSWX_2yGpXN0&quot; width=&quot;180&quot; height=&quot;320&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;而 murez 正在努力的进行赛博朋克风格的训练。我凌晨2点左右睡觉的，后来我才知道，murez 坚持到了凌晨 5点。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Hackathon" /><summary type="html">D-14</summary></entry><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
