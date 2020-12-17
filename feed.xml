@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-17T03:43:22+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-17T05:43:06+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
@@ -16,7 +16,31 @@
 
 &lt;p&gt;在 D-7 日的时候，intel 公布了他们的 SDK，是一个将视频中的某个长期存在的对象进行替换，比如将猫片中的猫换一种眼睛的颜色这种。除此之外没有任何其他信息。如果我们要继续做之前的方案的话，这个 SDK 能不能进行直播我们是不知道的。&lt;/p&gt;
 
-&lt;p&gt;于是我们又讨论出了一套方案，主要市场在于特效拍摄。灵感主要来自于影视飓风的&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Hackathon" /><summary type="html">D-14</summary></entry><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;于是我们又讨论出了一套方案，主要市场在于特效拍摄。灵感主要来自于影视飓风的一期视频。主要是人物，风格，场景的改变。&lt;/p&gt;
+
+&lt;p&gt;当晚我们下楼去 DEEMOS 和学长们讨论，&lt;del&gt;被批判了一番&lt;/del&gt;。 UGC 和相关技术的论文在13年就有发布，但是一直找不到合适的落地场景。我们提出的”Fantastic Movie for everyone”明显不显示，否则早就有人做了。而且我们想的 styleGAN + intel SDK 几乎人人都会想到。而剧本杀的市场太小了。同时这项技术没有技术壁垒，快手抖音很方便就可以占领（虽然他们目前的滤镜效果一塌糊涂），学长传授了他的一些人生经验：多读论文，多看新闻，多上知乎。另一位学长提出了是不是可以往电商直播方面想，因为目前直播的互动其实不多。&lt;/p&gt;
+
+&lt;p&gt;于是我们回到了社团，并且开始了&lt;code class=&quot;highlighter-rouge&quot;&gt;多读论文，多看新闻，多上知乎&lt;/code&gt;。发现学长不愧身经百战，因为我们找到了 intel SDK 的 source …&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;居然连代码也不改，放在 ShanghaiTech 就等着收查重邮件吧&lt;/p&gt;
+
+&lt;p&gt;于是我们对代码进行了评估，发现可以做直播，于是又继续讨论。&lt;/p&gt;
+
+&lt;h1 id=&quot;d-4&quot;&gt;D-4&lt;/h1&gt;
+
+&lt;p&gt;我们讨论了几乎所有东西，比如虚拟偶像，电视剧换装，婚恋市场，早教市场，艺术市场等等。发现还是做制作视频时的风格改变比较好。至少有60%的希望成功吧，如果 demo 做的还不错的话。于是开始了分工。一共五个人，一个人准备slides, presentation 和商业计划书； murez 负责神经网络训练; Logan 负责辅助神经网络训练；Leomond 负责后端和直播推流； 我负责&lt;del&gt;打杂&lt;/del&gt;前端和服务器。&lt;/p&gt;
+
+&lt;p&gt;与此同时，我们准备复现一个 demo。&lt;/p&gt;
+
+&lt;p&gt;https://www.bilibili.com/video/BV14a4y1W7ua&lt;/p&gt;
+
+&lt;h1 id=&quot;d-2&quot;&gt;D-2&lt;/h1&gt;
+
+&lt;p&gt;晚上的时候， Leomond 骑平衡车刷运动世界校园的时候由于上海沉降严重路面凹凸不平导致多处皮外伤，他&lt;del&gt;坚持跑完了运动世界&lt;/del&gt;后来社团寻求帮助。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Hackathon" /><summary type="html">D-14</summary></entry><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
