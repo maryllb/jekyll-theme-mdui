@@ -159,6 +159,18 @@
     } ,
   
     {
+      "id"    : "Hackathon",
+      "post": [
+          
+         {
+            "title": "Intel Hackathon 2020 记录",
+            "excerpt": "D-14",
+            "url": "/life/2020/12/17/intel-hackthon.html"
+         } 
+      ]
+    } ,
+  
+    {
       "id"    : "IoT",
       "post": [
           
