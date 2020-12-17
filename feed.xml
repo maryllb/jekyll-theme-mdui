@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-17T05:49:12+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-17T05:57:11+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
@@ -48,7 +48,20 @@
 
 &lt;p&gt;赛博朋克2077 于今日8点解禁。&lt;/p&gt;
 
-&lt;h1 id=&quot;d-1&quot;&gt;D-1&lt;/h1&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Hackathon" /><summary type="html">D-14</summary></entry><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;h1 id=&quot;d-1&quot;&gt;D-1&lt;/h1&gt;
+
+&lt;p&gt;中午打包出发去北京。路上我的 surface 还因为磕了一下导致触屏报废 （开始收集 mbp 预算）&lt;/p&gt;
+
+&lt;p&gt;总结一下，我们这次在去北京前完成了&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;整个计划，包括商业计划&lt;/li&gt;
+  &lt;li&gt;前端模板，还缺和后端对接部分与推流&lt;/li&gt;
+  &lt;li&gt;多个 styleGAN 模型，一些是实验室有的，一些是刚刚训练的，赛博朋克2077的模型也在当天开始训练&lt;/li&gt;
+  &lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;同时我们全部开发人员配置了连回社团的 wireguard， 并用 FRP 映射出了多台机器，这些机器z&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Hackathon" /><summary type="html">D-14</summary></entry><entry><title type="html">[ CS140 1-Introduction] Slides 笔记</title><link href="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html" rel="alternate" type="text/html" title="[ CS140 1-Introduction] Slides 笔记" /><published>2020-12-04T02:01:59+00:00</published><updated>2020-12-04T02:01:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/12/04/CS140-L1</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/12/04/CS140-L1.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;This page is based on &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/cs140-spring20/index.php&quot;&gt;CS 140: Operating Systems (stanford.edu)&lt;/a&gt;&lt;/li&gt;
