@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-20T03:26:01+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2020-12-20T03:31:54+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
@@ -66,11 +66,11 @@
 &lt;p&gt;同时我们全部开发人员配置了连回社团的 wireguard， 并用 FRP 映射出了三台服务器。因为我们有HPC团队的成员和实验室的搬砖工。这些机器包括&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;来自 HPC 的 2*64 核 AMD 处理器 + 8 * NVIDIA V100&lt;/li&gt;
-  &lt;li&gt;2080Ti * n&lt;/li&gt;
+  &lt;li&gt;借用 HPC 的 2*64 核 AMD 处理器 + 8 * NVIDIA V100&lt;/li&gt;
+  &lt;li&gt;实验室的 2080Ti * n&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;光说这些资源也没什么队伍能打败我们了吧（逃&lt;/p&gt;
+&lt;p&gt;光说这些上百万的资源也没什么队伍能打败我们了吧（大嘘&lt;/p&gt;
 
 &lt;p&gt;乘上了3点的高铁，高铁上的网络信号还是一点都不好，导致我们睡了一路。当晚入住了中关村旁边的如家酒店，黑客松还带酒店的体验是非常好的。当晚吃了旁边的达美乐。出来以后看到酒店门口一群人在玩滑板，想到如果有一段这样的风格化视频也是很好的，于是在他们的同意之下拍了一段他们的视频。&lt;/p&gt;
 
