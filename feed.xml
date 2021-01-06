@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T09:11:26+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T09:36:17+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
 
 &lt;h1 id=&quot;lecture-2-什么是样本&quot;&gt;Lecture 2: 什么是样本&lt;/h1&gt;
 
@@ -61,6 +61,22 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/afUGdJ.png&quot; alt=&quot;afUGdJ&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;以及变形&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/oSg3xx.png&quot; alt=&quot;oSg3xx&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;总概率定理：&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/yTnSsU.png&quot; alt=&quot;yTnSsU&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;就是把分散在各个事件上的发生概率加起来&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;贝叶斯定理：&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/ZeypkT.png&quot; alt=&quot;ZeypkT&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;知道A发生后推断$B_j$发生的概率&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;两个独立事件同时发生：两个事件的概率相乘
+    &lt;ul&gt;
+      &lt;li&gt;也就是说要分清是不是独立事件以确定用什么公式解题&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html">Lecture 1: 课程简介</summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
