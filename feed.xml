@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T11:52:15+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T12:16:41+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
 &lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
 &lt;/head&gt;
 
@@ -120,74 +120,111 @@
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;用途：在重复多次的&lt;a href=&quot;https://zh.wikipedia.org/wiki/伯努利試驗&quot;&gt;伯努利试验&lt;/a&gt;中，试验进行到某种结果出现第一次为止，此时的试验总次数服从几何分布，如：射击，首次击中目标时的次数。或者炉石抽卡。&lt;/p&gt;
-
-        &lt;h1 id=&quot;lecture-6&quot;&gt;Lecture 6:&lt;/h1&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;p&gt;随机变量： 把不是数学中的东西用数字表示&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;h4 id=&quot;离散型随机变量编辑&quot;&gt;离散型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=4&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
-
-            &lt;p&gt;即在一定区间内变量取值为有限个，或数值可以一一列举出来。例如某地区某年人口的出生数、死亡数，某药治疗某病病人的有效数、无效数等&lt;/p&gt;
-
-            &lt;h4 id=&quot;连续型随机变量编辑&quot;&gt;连续型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=5&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
-
-            &lt;p&gt;即在一定区间内变量取值有无限个，或数值无法一一列举出来。例如某地区男性健康成人的身长值、体重值，一批传染性肝炎患者的血清转氨酶测定值等。&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;概率质量函数： 发生X的概率&lt;/p&gt;
-
-            &lt;ul&gt;
-              &lt;li&gt;可能是离散的，也可能是离散的，因为y值代表着概率，所以取值在0，1之间&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;「&lt;strong&gt;只有两种可能，试验结果相互独立且对立&lt;/strong&gt;」的随机变量通常称为伯努利随机变量&lt;/p&gt;
-
-            &lt;ul&gt;
-              &lt;li&gt;这样的随机变量可以用伯努利分布解&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;h1 id=&quot;lecture-7-期望和方差&quot;&gt;Lecture 7: 期望和方差&lt;/h1&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;期望 &lt;img src=&quot;https://oss.aaaab3n.moe/uPic/vFexkw.png&quot; alt=&quot;vFexkw&quot; /&gt;
-            &lt;ul&gt;
-              &lt;li&gt;期望不是“expected value” since it doen’t belongs to possible values (可能取值) 期望应该是和概率或者概率分布相关的函数值&lt;/li&gt;
-              &lt;li&gt;有些时候期望和平均值差不多&lt;/li&gt;
-              &lt;li&gt;那么稍有常识的人就会想到是pmf的微元自积的累加
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/lscFgq.png&quot; alt=&quot;lscFgq&quot; /&gt;&lt;/li&gt;
-                  &lt;li&gt;同时，它还是线性的
-                    &lt;ul&gt;
-                      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/0Fs1kg.png&quot; alt=&quot;0Fs1kg&quot; /&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;方差：
-            &lt;ul&gt;
-              &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/SqPJlA.png&quot; alt=&quot;SqPJlA&quot; /&gt;（用线性性质可证明）&lt;/li&gt;
-              &lt;li&gt;记住公示就能解很多题了&lt;/li&gt;
-              &lt;li&gt;运算性质
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/n4FIU7.png&quot; alt=&quot;n4FIU7&quot; /&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-6&quot;&gt;Lecture 6:&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;随机变量： 把不是数学中的东西用数字表示&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;离散型随机变量编辑&quot;&gt;离散型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=4&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;即在一定区间内变量取值为有限个，或数值可以一一列举出来。例如某地区某年人口的出生数、死亡数，某药治疗某病病人的有效数、无效数等&lt;/p&gt;
+
+&lt;h4 id=&quot;连续型随机变量编辑&quot;&gt;连续型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=5&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
+
+&lt;p&gt;即在一定区间内变量取值有无限个，或数值无法一一列举出来。例如某地区男性健康成人的身长值、体重值，一批传染性肝炎患者的血清转氨酶测定值等。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;概率质量函数： 发生X的概率&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;可能是离散的，也可能是离散的，因为y值代表着概率，所以取值在0，1之间&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;「&lt;strong&gt;只有两种可能，试验结果相互独立且对立&lt;/strong&gt;」的随机变量通常称为伯努利随机变量&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;这样的随机变量可以用伯努利分布解&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-7-期望和方差&quot;&gt;Lecture 7: 期望和方差&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;期望 &lt;img src=&quot;https://oss.aaaab3n.moe/uPic/vFexkw.png&quot; alt=&quot;vFexkw&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;期望不是“expected value” since it doen’t belongs to possible values (可能取值) 期望应该是和概率或者概率分布相关的函数值&lt;/li&gt;
+      &lt;li&gt;有些时候期望和平均值差不多&lt;/li&gt;
+      &lt;li&gt;那么稍有常识的人就会想到是pmf的微元自积的累加&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/lscFgq.png&quot; alt=&quot;lscFgq&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;同时，它还是线性的&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/0Fs1kg.png&quot; alt=&quot;0Fs1kg&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;方差：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/SqPJlA.png&quot; alt=&quot;SqPJlA&quot; /&gt;（用线性性质可证明）
+        &lt;ul&gt;
+          &lt;li&gt;记住公示就能解很多题了&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;运算性质&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/n4FIU7.png&quot; alt=&quot;n4FIU7&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-8-条件概率&quot;&gt;Lecture 8: 条件概率&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Conditional Probability Mass Function
+    &lt;ul&gt;
+      &lt;li&gt;分类讨论，随机应变&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;条件期望和条件方差
+    &lt;ul&gt;
+      &lt;li&gt;换一下概率和值&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-9-各种分布&quot;&gt;Lecture 9: 各种分布&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;看cheatsheet&lt;/li&gt;
+  &lt;li&gt;泊松分布
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/kAokJH.png&quot; alt=&quot;kAokJH&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;给一个概率参数，柏松分布告诉你在某个（不连续）时间成功第一次发生这件事的概率&lt;/li&gt;
+      &lt;li&gt;和 $t$ 有关&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一些练习
+    &lt;ul&gt;
+      &lt;li&gt;我们能仅基于pmf确定期望和方差&lt;/li&gt;
+      &lt;li&gt;期望值不一定是RV可以采用的可能值之一&lt;/li&gt;
+      &lt;li&gt;E [X]对应于X的许多观测值中X的平均值。&lt;/li&gt;
+      &lt;li&gt;RV的期望值不等于等于该RV的期望值的函数（RV stands for radom variable ）&lt;/li&gt;
+      &lt;li&gt;E [g（X）]可以从X的pmf计算得出。&lt;/li&gt;
+      &lt;li&gt;Var [X]度量X的值通常与平均值相差多少。&lt;/li&gt;
+      &lt;li&gt;标准偏差与方差不具有相同的单位。&lt;/li&gt;
+      &lt;li&gt;均值和方差是随机变量的矩的示例。&lt;/li&gt;
+      &lt;li&gt;第n个矩不能等于第n个中心矩&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-10-cdf--pdf&quot;&gt;Lecture 10: CDF &amp;amp; PDF&lt;/h1&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
