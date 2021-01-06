@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-01T10:25:54+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T08:15:52+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html"></content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
@@ -800,79 +800,4 @@ jobs:
 
     &lt;p&gt;&lt;img src=&quot;https://5c8kzw.sn.files.1drv.com/y4mD-IcC20PzF5WLdgp4csjEvGNkkXZwWm2UoPjZ8qUd1XhBrudj-XcqQICxEY36sMOqispko5pNiVMk1OFsKYhMdEqXwUZJ1dj6LDGPUTQxHaQkBp9WUuoLD9gw1IzvyiZAhcW7w9TqdSg8-nob7JPgCCv8RHTGvOc__-bY52HHAFlV2k59leP1cn4kdbiBCHtQUpM9LdKC94M-weVJC-7gQ?width=828&amp;amp;height=702&amp;amp;cropmode=none&quot; alt=&quot;评论&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Life" /><summary type="html"></summary></entry><entry><title type="html">PIGEON OJ 配置指南（评卷机）</title><link href="https://aaaab3n.moe/technology/2020/07/07/pigeon-oj-config.html" rel="alternate" type="text/html" title="PIGEON OJ 配置指南（评卷机）" /><published>2020-07-07T02:00:59+00:00</published><updated>2020-07-07T02:00:59+00:00</updated><id>https://aaaab3n.moe/technology/2020/07/07/pigeon-oj-config</id><content type="html" xml:base="https://aaaab3n.moe/technology/2020/07/07/pigeon-oj-config.html">&lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
-
-&lt;h1 id=&quot;pigeon-oj&quot;&gt;Pigeon OJ&lt;/h1&gt;
-
-&lt;p&gt;Pigeon OJ 是由上海科技大学 GeekPie 社团开发的一个基于 Docker 和 Gitlab 的多文件在线评测系统。&lt;/p&gt;
-
-&lt;p&gt;在上学期的 CS100 后，该 OJ 已经尘封了一个学期了。 在下个学期的 SI100B 中，该 OJ 也会给新来的 20 届同学使用。在暑学期中， 该 OJ 还要为 专硕 的项目服务。&lt;/p&gt;
-
-&lt;p&gt;OJ 的评卷系统是通过一个 scheduler 通过 TLS 连接 Docker API 调用 Docker 进行评卷。之前的评卷机在 CS100 课程结束后就被学校收回了。 所以现在我需要为其添加一个新的评卷机 ( &lt;strong&gt;Judger&lt;/strong&gt; )&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://sozp6g.sn.files.1drv.com/y4m0CQRdGXS0RMOHS1FtC6sGvzQujWvZTDq5IT22jkUMLz594GgYa0fFjHPJDtQGppr8rJNFdjir93uz_rFgRGQOtOd8ZGxvfR2nn0s_txH7Jym_OdFBfJSfj7HxOyRy9aQ1h8pRmZuJJflirEwW74yJUjS8lgv4wCQrA5IeL0M5Ivy_Fc55lRfaG3ErtTGFGNPLGFoXCKetdggEmybzw_ipg?width=2736&amp;amp;height=1847&amp;amp;cropmode=none&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;# Docker Remote API TLS 认证&lt;/p&gt;
-
-&lt;p&gt;参考链接: &lt;a href=&quot;https://www.jianshu.com/p/a1bdc96b4163&quot;&gt;https://www.jianshu.com/p/a1bdc96b4163&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这里是我的配置:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl genrsa &lt;span class=&quot;nt&quot;&gt;-aes256&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; ca-key.pem 4096
-openssl req &lt;span class=&quot;nt&quot;&gt;-new&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-x509&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-days&lt;/span&gt; 365 &lt;span class=&quot;nt&quot;&gt;-key&lt;/span&gt; ca-key.pem &lt;span class=&quot;nt&quot;&gt;-sha256&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; ca.pem
-openssl genrsa &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; server-key.pem 4096
-openssl req &lt;span class=&quot;nt&quot;&gt;-subj&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/CN={你的域名}&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-sha256&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-new&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-key&lt;/span&gt; server-key.pem &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; server.csr
-&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;subjectAltName &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; DNS:&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;你的域名&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; extfile.cnf
-openssl x509 &lt;span class=&quot;nt&quot;&gt;-req&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-days&lt;/span&gt; 365 &lt;span class=&quot;nt&quot;&gt;-sha256&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; server.csr &lt;span class=&quot;nt&quot;&gt;-CA&lt;/span&gt; ca.pem &lt;span class=&quot;nt&quot;&gt;-CAkey&lt;/span&gt; ca-key.pem &lt;span class=&quot;nt&quot;&gt;-CAcreateserial&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; server-cert.pem &lt;span class=&quot;nt&quot;&gt;-extfile&lt;/span&gt; extfile.cnf
-openssl genrsa &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; key.pem 4096
-openssl req &lt;span class=&quot;nt&quot;&gt;-subj&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/CN=client'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-new&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-key&lt;/span&gt; key.pem &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; client.csr
-&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;extendedKeyUsage &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; clientAuth &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; extfile.cnf
-openssl x509 &lt;span class=&quot;nt&quot;&gt;-req&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-days&lt;/span&gt; 365 &lt;span class=&quot;nt&quot;&gt;-sha256&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; client.csr &lt;span class=&quot;nt&quot;&gt;-CA&lt;/span&gt; ca.pem &lt;span class=&quot;nt&quot;&gt;-CAkey&lt;/span&gt; ca-key.pem &lt;span class=&quot;nt&quot;&gt;-CAcreateserial&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; cert.pem &lt;span class=&quot;nt&quot;&gt;-extfile&lt;/span&gt; extfile.cnf
-&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; client.csr server.csr
-&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; 0400 ca-key.pem key.pem server-key.pem
-&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; 0444 ca.pem server-cert.pem cert.pem
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;其中， &lt;code class=&quot;highlighter-rouge&quot;&gt;{你的域名}&lt;/code&gt; 替换为你的域名  (e.g. aaaab3n.oj.geekpie.club)，或者直接使用 ip 。&lt;/p&gt;
-
-&lt;p&gt;之后会生成 ca-key.pem key.pem server-key.pem ca.pem server-cert.pem cert.pem&lt;/p&gt;
-
-&lt;p&gt;我创建了  ~/.docker 目录并把 &lt;code class=&quot;highlighter-rouge&quot;&gt;ca.pem&lt;/code&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;server-cert.pem&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;server-key.pem&lt;/code&gt; 放入。&lt;/p&gt;
-
-&lt;p&gt;之后编辑 /lib/systemd/system/docker.service&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;nv&quot;&gt;ExecStart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/bin/dockerd &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; unix:///var/run/docker.sock &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; tcp://0.0.0.0:443 &lt;span class=&quot;nt&quot;&gt;--tlsverify&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--tlscacert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/canary/.docker/ca.pem &lt;span class=&quot;nt&quot;&gt;--tlscert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/canary/.docker/server-cert.pem &lt;span class=&quot;nt&quot;&gt;--tlskey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/canary/.docker/server-key.pem
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这里有一个小坑是生成证书的时候我的本地时间没有调整为标准时间，因此之后 TLS 握手时出错。&lt;/p&gt;
-
-&lt;h2 id=&quot;测试&quot;&gt;测试&lt;/h2&gt;
-
-&lt;p&gt;将  &lt;code class=&quot;highlighter-rouge&quot;&gt;cert.pem&lt;/code&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;key.pem&lt;/code&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;ca.pem&lt;/code&gt; 传输到目标机器，运行命令  &lt;code class=&quot;highlighter-rouge&quot;&gt;curl https://{你的域名 / IP }:443/info --cert ./cert.pem --key ./key.pem --cacert ./ca.pem&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://sezc6g.sn.files.1drv.com/y4muK2AUHw-sGPOIck-hxy9MEfJV6iDi5ZzhDpOq6MRo0jpA_uYr-5PWuHZepntLGS0Ro94_60ot7lZ5PMqLLEulK352GavemVCQLgoWUokLhr0QfkmNvPI68DtlWAhAzVIf9iz2kn4SOV45JnzULAy0gWXQ8uEJlwPfZrSvm8hH8LAizKf7pxLqPvS5Lwe1wpoaRik3rB6EMLqB99w6fDLjQ?width=1534&amp;amp;height=832&amp;amp;cropmode=none&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;oj-配置&quot;&gt;OJ 配置&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://sozw6g.sn.files.1drv.com/y4mSwmlVCBWE4cU8f7R3lCgVQmT6K3GdFiXP_LHTyyilo9EoNCuE2FaopSN6Yklwl0p3KQK-YjgjgTRXXg54UxAdn64PgAwIwYmGZl6TWBbZQcMwW5e_uqwG1KlGADYMyIJX5uEmqJPn9l38AP0qQHwgOlspIEsNrTimCHygACUenx6-kURcG-ellxS6SR0cJo-iDd6I_vNSAb2Cdh5pQb9zQ?width=2736&amp;amp;height=1813&amp;amp;cropmode=none&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Client Key -&amp;gt; key.pem&lt;/li&gt;
-  &lt;li&gt;Client Cert -&amp;gt; cert.pem&lt;/li&gt;
-  &lt;li&gt;Cert CA      -&amp;gt; ca.pem&lt;/li&gt;
-  &lt;li&gt;MAx job     -&amp;gt; CPU逻辑处理器数&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;结合之前&lt;a href=&quot;https://aaaab3n.moe/technology/2020/07/07/618-workstation-setup-guide&quot;&gt;一篇文章&lt;/a&gt;，我将3900X处理器分配了12个线程给OJ使用。&lt;/p&gt;
-
-&lt;h1 id=&quot;使用感受&quot;&gt;使用感受&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://sozu6g.sn.files.1drv.com/y4m1SdXpuAu0otJfNePqn920LfGswI1w1nQTAK_9E9tC_zmjjzshwIlSszWUK9qBWszVdYRU6vP22426OpNWdipN0FT_Rzu2H85qgV1c5GsuddP9YzVMYqvdk6EOB5mzeO05Al8NvtL3PGydUBW3_z5V6TbnP1XRrJWaG2utwz8_7dtCt6CtoTjFfJyV8xPs0RKsF3W9gpAmBiPeN4EVHWoUw?width=2026&amp;amp;height=1188&amp;amp;cropmode=none&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;就感觉到快，有催人AC的意思&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="Technology" /><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Life" /><category term="Life" /><summary type="html"></summary></entry></feed>

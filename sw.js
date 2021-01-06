@@ -96,6 +96,8 @@ var urlsToCache = [
   
 
   
+    '/education/2021/01/06/MATH1212.html',
+  
     '/life/2020/12/17/intel-hackthon.html',
   
     '/education/2020/12/04/modern.html',
