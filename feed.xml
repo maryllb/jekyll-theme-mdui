@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T12:16:41+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T12:55:08+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
 &lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
 &lt;/head&gt;
 
@@ -128,23 +128,25 @@
 &lt;h1 id=&quot;lecture-6&quot;&gt;Lecture 6:&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;随机变量： 把不是数学中的东西用数字表示&lt;/p&gt;
+  &lt;li&gt;随机变量： 把不是数学中的东西用数字表示
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;离散型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=4&quot;&gt;编辑&lt;/a&gt;]&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;即在一定区间内变量取值为有限个，或数值可以一一列举出来。例如某地区某年人口的出生数、死亡数，某药治疗某病病人的有效数、无效数等&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;连续型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=5&quot;&gt;编辑&lt;/a&gt;]&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;即在一定区间内变量取值有无限个，或数值无法一一列举出来。例如某地区男性健康成人的身长值、体重值，一批传染性肝炎患者的血清转氨酶测定值等。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;离散型随机变量编辑&quot;&gt;离散型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=4&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;即在一定区间内变量取值为有限个，或数值可以一一列举出来。例如某地区某年人口的出生数、死亡数，某药治疗某病病人的有效数、无效数等&lt;/p&gt;
-
-&lt;h4 id=&quot;连续型随机变量编辑&quot;&gt;连续型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=5&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
-
-&lt;p&gt;即在一定区间内变量取值有无限个，或数值无法一一列举出来。例如某地区男性健康成人的身长值、体重值，一批传染性肝炎患者的血清转氨酶测定值等。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;概率质量函数： 发生X的概率&lt;/p&gt;
+    &lt;p&gt;概率质量函数： 发生X的概率，但是是离散的&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;可能是离散的，也可能是离散的，因为y值代表着概率，所以取值在0，1之间&lt;/p&gt;
@@ -152,9 +154,7 @@
   &lt;li&gt;
     &lt;p&gt;「&lt;strong&gt;只有两种可能，试验结果相互独立且对立&lt;/strong&gt;」的随机变量通常称为伯努利随机变量&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;这样的随机变量可以用伯努利分布解&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;这样的随机变量可以用伯努利分布解&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;lecture-7-期望和方差&quot;&gt;Lecture 7: 期望和方差&lt;/h1&gt;
@@ -224,7 +224,60 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;lecture-10-cdf--pdf&quot;&gt;Lecture 10: CDF &amp;amp; PDF&lt;/h1&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+&lt;h1 id=&quot;lecture-10-cdf--pdf&quot;&gt;Lecture 10: CDF &amp;amp; PDF&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CDF：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/vWyiS5.png&quot; alt=&quot;vWyiS5&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;显然就是把 PMF 的密度累加起来&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/MphXAM.png&quot; alt=&quot;MphXAM&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/ujp33X.png&quot; alt=&quot;ujp33X&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/eOUhvQ.png&quot; alt=&quot;eOUhvQ&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PDF
+    &lt;ul&gt;
+      &lt;li&gt;累计分布函数的微分&lt;/li&gt;
+      &lt;li&gt;$\in [0,1]$&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-11随机变量期望&quot;&gt;Lecture 11:随机变量：期望&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;期望
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/uai1e8.png&quot; alt=&quot;uai1e8&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;方差
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/GISxaO.png&quot; alt=&quot;GISxaO&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Exponential Random Variable
+    &lt;ul&gt;
+      &lt;li&gt;指数分布可以用来表示独立随机事件发生的时间间隔，比如旅客进入机场的时间间隔、打进客服中心电话的时间间隔、中文维基百科新条目出现的时间间隔等等。&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/pczSji.png&quot; alt=&quot;pczSji&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;高斯随机变量
+    &lt;ul&gt;
+      &lt;li&gt;正态分布&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Q-function
+    &lt;ul&gt;
+      &lt;li&gt;Q(x) =1− Φ(x) = P[X &amp;gt; x]，where X is a Gaussian with m = 0 and σ = 1.&lt;/li&gt;
+      &lt;li&gt;symmetry&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/c3qmxj.png&quot; alt=&quot;c3qmxj&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture12-matlab&quot;&gt;Lecture12: Matlab&lt;/h1&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
