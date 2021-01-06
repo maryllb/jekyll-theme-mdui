@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T09:36:17+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T09:57:08+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
 
 &lt;h1 id=&quot;lecture-2-什么是样本&quot;&gt;Lecture 2: 什么是样本&lt;/h1&gt;
 
@@ -57,10 +57,15 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;lecture-4-条件概率&quot;&gt;Lecture 4: 条件概率&lt;/h1&gt;
+&lt;h1 id=&quot;lecture-4-条件概率贝叶斯&quot;&gt;Lecture 4: 条件概率&amp;amp;贝叶斯&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/afUGdJ.png&quot; alt=&quot;afUGdJ&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/afUGdJ.png&quot; alt=&quot;afUGdJ&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/telegram-cloud-photo-size-5-6316699949911354363-y.jpg&quot; alt=&quot;telegram-cloud-photo-size-5-6316699949911354363-y&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;1是$\frac13$ 二是 $\frac12$ ，因为年长意味着独立事件。多出来的信息改变了概率。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;以及变形&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/oSg3xx.png&quot; alt=&quot;oSg3xx&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;总概率定理：&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/yTnSsU.png&quot; alt=&quot;yTnSsU&quot; /&gt;
     &lt;ul&gt;
@@ -77,7 +82,43 @@
       &lt;li&gt;也就是说要分清是不是独立事件以确定用什么公式解题&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-5-伯努利&quot;&gt;Lecture 5: 伯努利&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;伯努利实验：抛硬币&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;因此顺序的发生一系列事件的概率就是把每一次发生的概率乘起来&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/vFwdHe.png&quot; alt=&quot;vFwdHe&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;因为不知道是第几次成功/失败的，只知道成功的次数或者最终在哪里成功，所以需要乘一个二项式系数&lt;/li&gt;
+      &lt;li&gt;成功1次、2次、3次、n次的概率和为1。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;几何分布&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;​	在&lt;a href=&quot;https://zh.wikipedia.org/wiki/概率论&quot;&gt;概率论&lt;/a&gt;和&lt;a href=&quot;https://zh.wikipedia.org/wiki/统计学&quot;&gt;统计学&lt;/a&gt;中，&lt;strong&gt;几何分布&lt;/strong&gt;（英语：Geometric distribution）指的是以下两种离散型&lt;a href=&quot;https://zh.wikipedia.org/wiki/機率分佈&quot;&gt;概率分布&lt;/a&gt;中的一种：&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;在&lt;a href=&quot;https://zh.wikipedia.org/wiki/伯努利試驗&quot;&gt;伯努利试验&lt;/a&gt;中，得到一次成功所需要的试验次数&lt;em&gt;X&lt;/em&gt;。&lt;em&gt;X&lt;/em&gt;的值域是{ 1, 2, 3, … }&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;在得到第一次成功之前所经历的失败次数&lt;em&gt;Y&lt;/em&gt; = &lt;em&gt;X&lt;/em&gt; − 1。&lt;em&gt;Y&lt;/em&gt;的值域是{ 0, 1, 2, 3, … }&lt;/li&gt;
+          &lt;li&gt;也就是按p的概率去试，每试一次成功的概率都会变（因为你之前失败过了）。就相当于你把之前的&lt;strong&gt;非气&lt;/strong&gt;都聚集起来了，也就是$(1-p)^{k-1}$。所以它的概率质量函数是 $(1-p)^{k-1}p$&lt;/li&gt;
+          &lt;li&gt;累计分布函数就是拿1减去你的非气值。$1-(1-p)^{k}$。&lt;/li&gt;
+          &lt;li&gt;每次抽到的概率是p ，所以期望是 $\frac1p$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;用途：在重复多次的&lt;a href=&quot;https://zh.wikipedia.org/wiki/伯努利試驗&quot;&gt;伯努利试验&lt;/a&gt;中，试验进行到某种结果出现第一次为止，此时的试验总次数服从几何分布，如：射击，首次击中目标时的次数。或者炉石抽卡。&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html">Lecture 1: 课程简介</summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
