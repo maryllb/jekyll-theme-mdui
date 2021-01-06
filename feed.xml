@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T11:36:38+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T11:52:15+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
 &lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
 &lt;/head&gt;
 
@@ -136,7 +136,53 @@
 
             &lt;p&gt;即在一定区间内变量取值有无限个，或数值无法一一列举出来。例如某地区男性健康成人的身长值、体重值，一批传染性肝炎患者的血清转氨酶测定值等。&lt;/p&gt;
           &lt;/li&gt;
-          &lt;li&gt;概率质量函数：&lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;概率质量函数： 发生X的概率&lt;/p&gt;
+
+            &lt;ul&gt;
+              &lt;li&gt;可能是离散的，也可能是离散的，因为y值代表着概率，所以取值在0，1之间&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;「&lt;strong&gt;只有两种可能，试验结果相互独立且对立&lt;/strong&gt;」的随机变量通常称为伯努利随机变量&lt;/p&gt;
+
+            &lt;ul&gt;
+              &lt;li&gt;这样的随机变量可以用伯努利分布解&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;h1 id=&quot;lecture-7-期望和方差&quot;&gt;Lecture 7: 期望和方差&lt;/h1&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;期望 &lt;img src=&quot;https://oss.aaaab3n.moe/uPic/vFexkw.png&quot; alt=&quot;vFexkw&quot; /&gt;
+            &lt;ul&gt;
+              &lt;li&gt;期望不是“expected value” since it doen’t belongs to possible values (可能取值) 期望应该是和概率或者概率分布相关的函数值&lt;/li&gt;
+              &lt;li&gt;有些时候期望和平均值差不多&lt;/li&gt;
+              &lt;li&gt;那么稍有常识的人就会想到是pmf的微元自积的累加
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/lscFgq.png&quot; alt=&quot;lscFgq&quot; /&gt;&lt;/li&gt;
+                  &lt;li&gt;同时，它还是线性的
+                    &lt;ul&gt;
+                      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/0Fs1kg.png&quot; alt=&quot;0Fs1kg&quot; /&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;方差：
+            &lt;ul&gt;
+              &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/SqPJlA.png&quot; alt=&quot;SqPJlA&quot; /&gt;（用线性性质可证明）&lt;/li&gt;
+              &lt;li&gt;记住公示就能解很多题了&lt;/li&gt;
+              &lt;li&gt;运算性质
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/n4FIU7.png&quot; alt=&quot;n4FIU7&quot; /&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
