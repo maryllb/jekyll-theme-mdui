@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T09:57:08+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T10:03:53+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
 
 &lt;h1 id=&quot;lecture-2-什么是样本&quot;&gt;Lecture 2: 什么是样本&lt;/h1&gt;
 
@@ -116,6 +116,24 @@
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;用途：在重复多次的&lt;a href=&quot;https://zh.wikipedia.org/wiki/伯努利試驗&quot;&gt;伯努利试验&lt;/a&gt;中，试验进行到某种结果出现第一次为止，此时的试验总次数服从几何分布，如：射击，首次击中目标时的次数。或者炉石抽卡。&lt;/p&gt;
+
+        &lt;h1 id=&quot;lecture-6&quot;&gt;Lecture 6:&lt;/h1&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;随机变量： 把不是数学中的东西用数字表示&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;h4 id=&quot;离散型随机变量编辑&quot;&gt;离散型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=4&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
+
+            &lt;p&gt;即在一定区间内变量取值为有限个，或数值可以一一列举出来。例如某地区某年人口的出生数、死亡数，某药治疗某病病人的有效数、无效数等&lt;/p&gt;
+
+            &lt;h4 id=&quot;连续型随机变量编辑&quot;&gt;连续型随机变量[&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=随机变量&amp;amp;action=edit&amp;amp;section=5&quot;&gt;编辑&lt;/a&gt;]&lt;/h4&gt;
+
+            &lt;p&gt;即在一定区间内变量取值有无限个，或数值无法一一列举出来。例如某地区男性健康成人的身长值、体重值，一批传染性肝炎患者的血清转氨酶测定值等。&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;概率质量函数：&lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
