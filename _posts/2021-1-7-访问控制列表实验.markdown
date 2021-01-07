@@ -8,7 +8,7 @@ categories: technology
 ## 实验拓扑
 ![tp.png](https://i.loli.net/2021/01/07/lbFBZovp9S5iahQ.png)
 
-注：ip地址配置未X.X.学号.X
+注：ip地址配置为X.X.学号.X
 
 ## 配置ip地址，R1和R2配置rip协议
 ![image.png](https://i.loli.net/2021/01/07/wQBmKuGUqc1g7s9.png)
