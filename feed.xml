@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-07T08:30:40+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-07T09:08:44+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
 
 &lt;h1 id=&quot;lecture-2-什么是样本&quot;&gt;Lecture 2: 什么是样本&lt;/h1&gt;
 
@@ -550,7 +550,9 @@ $ p_{X_{1} \mid X_{2} X_{3}}\left(k_{1} \mid k_{2}, k_{3}\right)=\frac{p_{X_{1} 
 &lt;h1 id=&quot;lecture-20-大数定理&quot;&gt;Lecture 20: 大数定理&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;随机变量的和
+  &lt;li&gt;
+    &lt;p&gt;随机变量的和&lt;/p&gt;
+
     &lt;ul&gt;
       &lt;li&gt;​	$ E\left[\sum_{j} X_{j}\right]=\sum_{j} E\left[X_{j}\right] $&lt;/li&gt;
       &lt;li&gt;$ \operatorname{VAR}\left(\sum_{j=1}^{n} X_{j}\right)=\sum_{j=1}^{n} \operatorname{VAR}\left(X_{j}\right)+\sum_{j=1}^{n} \sum_{k \neq j} \operatorname{COV}\left(X_{j}, X_{k}\right) $&lt;/li&gt;
@@ -558,7 +560,9 @@ $ p_{X_{1} \mid X_{2} X_{3}}\left(k_{1} \mid k_{2}, k_{3}\right)=\frac{p_{X_{1} 
       &lt;li&gt;$ \operatorname{VAR}\left(\sum_{j=1}^{n} X_{j}\right)=\sum_{j=1}^{n} \operatorname{VAR}\left(X_{j}\right) $&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;样本均值
+  &lt;li&gt;
+    &lt;p&gt;样本均值&lt;/p&gt;
+
     &lt;ul&gt;
       &lt;li&gt;Let $ X_{1}, X_{2}, \ldots ., X_{n} $ be $ n $ independent repeated measurements of $ X $ and define the sample mean as&lt;/li&gt;
       &lt;li&gt;$ M_{n}=\frac{1}{n} \sum_{j=1}^{n} X_{j} $&lt;/li&gt;
@@ -569,14 +573,146 @@ $ p_{X_{1} \mid X_{2} X_{3}}\left(k_{1} \mid k_{2}, k_{3}\right)=\frac{p_{X_{1} 
           &lt;li&gt;The sample mean is an unbiased estimator of $ m=\mathrm{E}\left[X_{i}\right] $&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;样本均值方差随n减小
+      &lt;li&gt;样本均值方差随n减小&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;常用不等式&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;马尔可夫不等式&lt;/p&gt;
+
         &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
+          &lt;li&gt;$ P[X \geq a] \leq \frac{E[X]}{a} $&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/agirYC.png&quot; alt=&quot;agirYC&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;弱边界：意思是不准&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;切比雪夫不等式&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;Let $ X $ be a random variable with mean $ m $ and variance $ \sigma^{2} . $ The Chebyshev Inequality states that for any $ a&amp;gt;0 $
+\(P[\mid X-m \geq a] \leq \frac{\sigma^{2}}{a^{2}}=\left(\frac{\sigma}{a}\right)^{2}\)&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;In other words, for any a large enough (compared the standard deviation), the probability that X is farther than a from the mean is negligible&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/XHCwgL.png&quot; alt=&quot;XHCwgL&quot; /&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html">Lecture 1: 课程简介</summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+  &lt;li&gt;
+    &lt;p&gt;弱大数定理&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Let $ X_{1}, X_{2}, \ldots $ be a sequence of i.i.d. random variables with finite mean $ m $. For any $ \varepsilon&amp;gt;0 $
+\(\lim _{n \rightarrow \infty} P\left[\left|M_{n}-m\right|&amp;lt;\varepsilon\right]=1\)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;强大数定理&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Let $ X_{1}, X_{2}, \ldots . $ be a sequence of i.i.d. random variables with finite mean $ \mu $ and finite variance, then
+\(P\left[\lim _{n \rightarrow \infty} M_{n}=\mu\right]=1\)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;弱定律说，通过选择足够的测量值n均值很有可能接近真实均值（在ε内）。&lt;/li&gt;
+  &lt;li&gt;但是，它不能确保进行额外的测量样本均值更接近于任何特定序列的真实均值测量。&lt;/li&gt;
+  &lt;li&gt;相反，强法则说，概率为1的每个序列样本均值计算将最终接近并保持在µ附近&lt;/li&gt;
+  &lt;li&gt;统计规律性和收敛性
+    &lt;ul&gt;
+      &lt;li&gt;在第一章中，我们注意到我们观察了许多统计规律
+物理现象，即多次重复获得的平均值
+实验一致地产生大约相同的值。&lt;/li&gt;
+      &lt;li&gt;基于此观察，我们将相对频率的属性用于
+为概率论定义一组公理&lt;/li&gt;
+      &lt;li&gt;现在，我们走了一个完整的圈子，表明该理论预测了观察到的统计规律性。例如，事件的相对频率应
+收敛到该事件的可能性&lt;/li&gt;
+      &lt;li&gt;理论预测和观察到的行为之间的这种一致性
+是概率论如此有用的原因之一&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-21-中心极限定理&quot;&gt;Lecture 21: 中心极限定理&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;心极限定理说明，在适当的条件下，大量相互独立&lt;a href=&quot;https://zh.wikipedia.org/wiki/随机变量&quot;&gt;随机变量&lt;/a&gt;的均值经适当标准化后&lt;a href=&quot;https://zh.wikipedia.org/wiki/依分布收敛&quot;&gt;依分布收敛&lt;/a&gt;于&lt;a href=&quot;https://zh.wikipedia.org/wiki/正态分布&quot;&gt;正态分布&lt;/a&gt;。
+    &lt;ul&gt;
+      &lt;li&gt;Central Limit Theorem: $ \lim &lt;em&gt;{n \rightarrow \infty} P\left[Z&lt;/em&gt;{n}&amp;lt;z\right]=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{z} e^{\frac{-x^{2}}{2}} d x $
+In other words, the distribution of $ Z_{n} $ approaches the distribution of a Gaussian with zero mean and unit variance&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-22-随机过程&quot;&gt;Lecture 22: 随机过程&lt;/h1&gt;
+
+&lt;p&gt;Definition: A random process or stochastic process maps a probability space $ S $ to a set of functions, $ X(t, \xi) $&lt;/p&gt;
+
+&lt;h1 id=&quot;lecture-23&quot;&gt;Lecture 23&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;均值和方差
+    &lt;ul&gt;
+      &lt;li&gt;时域&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;相关和协方差函数
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/2uMqa8.png&quot; alt=&quot;2uMqa8&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;多个随机过程&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-24-离散时间随机过程&quot;&gt;Lecture 24： 离散时间随机过程&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;随机过程和&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Definition: A sum process $ S_{n} $ is obtained by taking the sum of all past values of an i.i.d. random process $ X_{n} $, i.e.
+\(S_{n}=\sum_{i=1}^{n} X_{i}=X_{1}+X_{2}+\ldots+X_{n}\)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ISI Processes&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;​	&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/DXD4TV.png&quot; alt=&quot;DXD4TV&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/3hhxjF.png&quot; alt=&quot;3hhxjF&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;The mean and variance of ISI processes grow linearly&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/dRvn8B.png&quot; alt=&quot;dRvn8B&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;$ C_{S}(m, n)=\sigma^{2} \min (m, n) $&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-25-continuous-time-isi-random-processes&quot;&gt;Lecture 25: Continuous Time I.S.I. Random Processes&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Poisson Random Process&lt;/li&gt;
+  &lt;li&gt;Additional Random Processes (FYI)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-26-随机过程2&quot;&gt;Lecture 26： 随机过程2&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stationary Random Processes&lt;/li&gt;
+  &lt;li&gt;Wide Sense Stationary (WSS) Random Processes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-27-统计&quot;&gt;Lecture 27: 统计&lt;/h1&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;没救了，我显然的要挂科了&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;files&quot;&gt;Files&lt;/h1&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html">Lecture 1: 课程简介</summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
