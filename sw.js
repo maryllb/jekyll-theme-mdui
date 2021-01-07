@@ -114,7 +114,7 @@ var urlsToCache = [
   
     '/technology/2020/08/21/fstab.html',
   
-    '/life/2020/07/23/Run-away-from-shanghaitech-%E5%89%AF%E6%9C%AC.html',
+    '/life/2020/07/23/Run-away-from-shanghaitech.html',
   
     '/technology/2020/07/07/pigeon-oj-config.html',
   
