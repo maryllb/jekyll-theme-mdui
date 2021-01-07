@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-07T03:48:10+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-07T03:55:43+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
 &lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
 &lt;/head&gt;
 
@@ -382,14 +382,41 @@
       &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/GJDBDf.png&quot; alt=&quot;GJDBDf&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;方差之和： ProofProof
+  &lt;li&gt;
+    &lt;p&gt;方差之和： ProofProof
 \(\begin{aligned}
 \operatorname{VAR}[Z] &amp;amp;=E\left[(Z-E[Z])^{2}\right] \\
 &amp;amp;=E\left[(X+Y-E[X]-E[Y])^{2}\right] \\
 &amp;amp;=E\left[((X-E[X])+(Y-E[Y]))^{2}\right] \\
 &amp;amp;=E\left[(X-E[X])^{2}\right]+2 E[(X-E[X])(Y-E[Y])]+E\left[(Y-E[Y])^{2}\right] \\
 &amp;amp;=\operatorname{VAR}[X]+2 \operatorname{COV}(X, Y)+\operatorname{VAR}[Y]
-\end{aligned}\)&lt;/li&gt;
+\end{aligned}\)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;协方差系数&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Definition: The correlation coefficient between $ X $ and $ Y $ is
+\(\rho_{X, Y}=\frac{\operatorname{COV}[X, Y]}{\sigma_{X} \sigma_{Y}}=\rho_{Y, X}\)
+where $ \sigma_{X}^{2}=\operatorname{VAR}(X) $ and $ \sigma_{Y}^{2}=\operatorname{VAR}(Y) $&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;相关系数的大小≤1。&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;有一道例题，很显然熟悉方差公式，标准差和方差的转换公式就做出来了&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/nF7h2N.png&quot; alt=&quot;nF7h2N&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-16-条件概率和期望&quot;&gt;Lecture 16: 条件概率和期望&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The conditional pmf of $ Y $ given $ X $ is
+\(p_{Y \mid X}(k \mid j)=\frac{P[Y=k, X=j]}{P[X=j]}=\frac{p_{X, Y}(j, k)}{p_{X}(j)} \quad \text { if } p_{X}(j)&amp;gt;0\)
+and undefined otherwise&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
