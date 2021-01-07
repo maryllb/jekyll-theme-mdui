@@ -24,4 +24,4 @@ categories: technology
 ![image.png](https://i.loli.net/2021/01/07/ryszICaHlW79ScJ.png)
 
 ## 在基于标准ACL的基础上，要求PC2只能使用telnet形式访问R2 
-![1.png](https://i.loli.net/2021/01/07/VA9U2pFKaHxPyle.png)
+![2.jpg](https://i.loli.net/2021/01/07/eI1Y7J9lav6MZbi.jpg)
