@@ -10,8 +10,8 @@ categories: technology
 注：ip地址配置未X.X.学号.X
 
 ## 配置ip地址，R1和R2配置rip协议
-![tp.png](https://i.loli.net/2021/01/07/lbFBZovp9S5iahQ.png)
-</br>
+![image.png](https://i.loli.net/2021/01/07/wQBmKuGUqc1g7s9.png)
+
 ![image.png](https://i.loli.net/2021/01/07/hexf8s7Cr36bQ2c.png)
 
 ## PC1和PC2能够访问R2
