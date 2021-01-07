@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-07T04:30:26+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-07T07:20:20+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;h1 id=&quot;lecture-1-课程简介&quot;&gt;Lecture 1: 课程简介&lt;/h1&gt;
 
 &lt;h1 id=&quot;lecture-2-什么是样本&quot;&gt;Lecture 2: 什么是样本&lt;/h1&gt;
 
@@ -428,7 +428,97 @@ and as undefined otherwise.&lt;/p&gt;
       &lt;li&gt;Interpretation: probability density of $ Y $ assuming that $ X=k $.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;条件cdf和pdf满足常规的所有属性 cdf 和 pdf。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;条件cdf和pdf满足常规的所有属性 cdf 和 pdf。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;条件概率密度函数的性质们：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/XgPuEV.png&quot; alt=&quot;XgPuEV&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;条件期望&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;​	$ E[Y \mid x]=\int_{-\infty}^{\infty} y f_{Y \mid X}(y \mid x) d y  $ if $ Y $ is continuous&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$ E[Y \mid x]=\sum_{j} j \cdot p_{Y \mid X}(j \mid x) \quad $ if $ Y $ is discrete and integer valued&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;More generally, if $ g(Y) $ is a random variable, then
+\(E[g(Y) \mid x]=\int_{-\infty}^{\infty} g(y) f_{Y \mid X}(y \mid x) d y\)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;​	&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/yphSLn.png&quot; alt=&quot;yphSLn&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;通过期望消除条件概率&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;$ E[g(Y)]=E[E[g(Y) \mid X]] $&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;最小均方误差估计&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Estimating a RV X by a constant c, i.e., finding c to minimize&lt;/li&gt;
+      &lt;li&gt;$ \operatorname{MSE}(c)=E\left[(X-c)^{2}\right]=\int^{\infty}(x-c)^{2} f_{X}(x) d x $&lt;/li&gt;
+      &lt;li&gt;$ c=E[X] $&lt;/li&gt;
+      &lt;li&gt;在&lt;a href=&quot;https://zh.wikipedia.org/wiki/統計學&quot;&gt;统计学&lt;/a&gt;和&lt;a href=&quot;https://zh.wikipedia.org/wiki/信号处理&quot;&gt;信号处理&lt;/a&gt;中，&lt;strong&gt;最小均方误差&lt;/strong&gt;（英语：Minimum mean-square error，缩写&lt;strong&gt;MMSE&lt;/strong&gt;）估计是一种使&lt;a href=&quot;https://zh.wikipedia.org/wiki/均方误差&quot;&gt;均方误差&lt;/a&gt;（MSE）最小化的&lt;a href=&quot;https://zh.wikipedia.org/wiki/估计函数&quot;&gt;估计函数&lt;/a&gt;，其通常被称为最优估计&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lecture-17-两个随机变量的一个函数&quot;&gt;Lecture 17: 两个随机变量的一个函数&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/23OmRg.png&quot; alt=&quot;23OmRg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/0GUpPW.png&quot; alt=&quot;0GUpPW&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;注意离散和连续的区别&lt;/p&gt;
+
+&lt;h1 id=&quot;lecture-18-随机向量&quot;&gt;Lecture 18: 随机向量&lt;/h1&gt;
+
+&lt;p&gt;多变量微积分练习&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/XAJGKT.png&quot; alt=&quot;XAJGKT&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;多项式分布&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;$ p_{X_{1}, X_{2}, \ldots, X_{m}}\left(k_{1}, k_{2}, \ldots, k_{m}\right)=\frac{n !}{k_{1} ! k_{2} ! \ldots . k_{m} !} p_{1}^{k_{1}} p_{2}^{k_{2}} \ldots p_{m}^{k_{m}} $
+if $ k_{1}+k_{2}+\ldots+k_{m}=n $ and $ k_{i} \geq 0 $ for all $ i, $ and zero otherwise&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;边际统计&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Eliminate variables from a pdf (pmf) by integrating (summing)
+\(\begin{array}{l}
+f_{X_{1} X_{2} \ldots X_{n-1}}\left(x_{1}, x_{2}, \ldots, x_{n-1}\right)=\int_{-\infty}^{\infty} f_{X_{1} X_{2} \ldots X_{n}}\left(x_{1}, x_{2}, x_{3}, \ldots, x_{n}\right) d x_{n} \\
+p_{X_{1} X_{2} \ldots X_{n-1}}\left(k_{1}, k_{2}, \ldots, k_{n-1}\right)=\sum_{k_{n}=-\infty}^{\infty} p_{X_{1} X_{2} \ldots X_{n}}\left(k_{1}, k_{2}, k_{3}, \ldots, k_{n}\right)
+\end{array}\)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Get marginal by successive integrations:
+\(\begin{array}{l}
+f_{X_{1}}\left(x_{1}\right)=\int_{-\infty}^{\infty} \ldots \int_{-\infty}^{\infty} f_{X_{1} X_{2} \ldots X_{n}}\left(x_{1}, x_{2}, x_{3}, \ldots, x_{n}\right) d x_{2} \ldots d x_{n} \\
+p_{X_{1}}\left(k_{1}\right)=\sum_{k_{2}=-\infty}^{\infty} \ldots \sum_{k_{n}=-\infty}^{\infty} p_{X_{1} X_{2} \ldots X_{n}}\left(k_{1}, k_{2}, k_{3}, \ldots, k_{N}\right)
+\end{array}\)&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html">Lecture 1: 课程简介</summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
