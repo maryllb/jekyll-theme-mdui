@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-06T14:29:08+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-01-07T03:47:55+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">概率论与统计的速成指南</title><link href="https://aaaab3n.moe/education/2021/01/06/MATH1212.html" rel="alternate" type="text/html" title="概率论与统计的速成指南" /><published>2021-01-06T02:01:59+00:00</published><updated>2021-01-06T02:01:59+00:00</updated><id>https://aaaab3n.moe/education/2021/01/06/MATH1212</id><content type="html" xml:base="https://aaaab3n.moe/education/2021/01/06/MATH1212.html">&lt;head&gt;
 &lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/x-mathjax-config&quot;&gt; MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); &lt;/script&gt;
 &lt;/head&gt;
 
@@ -329,9 +329,68 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;lecture15-27&quot;&gt;Lecture15-27&lt;/h1&gt;
+&lt;h1 id=&quot;lecture15-独立性期望联合矩&quot;&gt;Lecture15: 独立性，期望，联合矩&lt;/h1&gt;
 
-&lt;p&gt;未完待续&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;定义：&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/7zqh7y.png&quot; alt=&quot;7zqh7y&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;所以联合分布函数就是两个独立变量的概率相乘，也就是$p(x,y) = p(x)\cdotp(y)$&lt;/li&gt;
+      &lt;li&gt;相对的，如果有贝叶斯关系，那就用贝叶斯公式&lt;/li&gt;
+      &lt;li&gt;结合先前的结果：如果存在一对&lt;strong&gt;离散&lt;/strong&gt;的RV，则它们是独立的并且只有联合pmf是边际pmf的乘积！ (if and only if)
+        &lt;ul&gt;
+          &lt;li&gt;这个结论对cdf和pmf都成立&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;期望&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;$E[Z]=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x, y) f_{X, Y}(x, y) d x d y$&lt;/li&gt;
+      &lt;li&gt;离散时$E[Z]=\sum_{j} \sum_{k} g(j, k) p_{X, Y}(j, k)$&lt;/li&gt;
+      &lt;li&gt;已知X和Y的期望就加起来 &lt;strong&gt;the mean of the sum is the sum of the means.&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Joint Moments&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Joint moment: $E\left[X^{j} Y^{k}\right]=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} x^{j} y^{k} f(x, y) d x d y \quad$ (the $j k$ th moment $)$&lt;/li&gt;
+      &lt;li&gt;Central moment: $E\left[(X-E[X])^{j}(Y-E[Y])^{k}\right]$&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/5bHWD7.png&quot; alt=&quot;5bHWD7&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;协方差&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;$\operatorname{COV}(X, Y)=E[(X-E[X])(Y-E[Y])]$&lt;/li&gt;
+      &lt;li&gt;表示了X,Y一起偏离中心值的表现&lt;/li&gt;
+      &lt;li&gt;当协方差是正的，XY一起偏离&lt;/li&gt;
+      &lt;li&gt;当协方差是负的，可能一个向正偏离一个向负&lt;/li&gt;
+      &lt;li&gt;可以理解为x,y函数的斜率一样的东西&lt;/li&gt;
+      &lt;li&gt;也是线性的&lt;/li&gt;
+      &lt;li&gt;常用公式
+        &lt;ul&gt;
+          &lt;li&gt;$\operatorname{COV}[X, Y]=E[X Y]-E[X] \cdot E[Y]$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;不相关性&lt;/li&gt;
+      &lt;li&gt;X and Y are uncorrelated if and only if  $ E[X Y]=E[X] E[Y] $&lt;/li&gt;
+      &lt;li&gt;$ X $ and $ Y $ are uncorrelated if $ \operatorname{COV}[\mathrm{X}, \mathrm{Y}]=0 $&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://oss.aaaab3n.moe/uPic/GJDBDf.png&quot; alt=&quot;GJDBDf&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;方差之和： ProofProof
+\(\begin{aligned}
+\operatorname{VAR}[Z] &amp;amp;=E\left[(Z-E[Z])^{2}\right] \\
+&amp;amp;=E\left[(X+Y-E[X]-E[Y])^{2}\right] \\
+&amp;amp;=E\left[((X-E[X])+(Y-E[Y]))^{2}\right] \\
+&amp;amp;=E\left[(X-E[X])^{2}\right]+2 E[(X-E[X])(Y-E[Y])]+E\left[(Y-E[Y])^{2}\right] \\
+&amp;amp;=\operatorname{VAR}[X]+2 \operatorname{COV}(X, Y)+\operatorname{VAR}[Y]
+\end{aligned}\)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Canarypwn</name></author><category term="Education" /><category term="Education" /><summary type="html"></summary></entry><entry><title type="html">Intel Hackathon 2020 记录</title><link href="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html" rel="alternate" type="text/html" title="Intel Hackathon 2020 记录" /><published>2020-12-17T02:01:59+00:00</published><updated>2020-12-17T02:01:59+00:00</updated><id>https://aaaab3n.moe/life/2020/12/17/intel-hackthon</id><content type="html" xml:base="https://aaaab3n.moe/life/2020/12/17/intel-hackthon.html">&lt;h1 id=&quot;d-14&quot;&gt;D-14&lt;/h1&gt;
 
 &lt;p&gt;大约在两周前收到了来自社长的&lt;a href=&quot;https://growthx.mysxl.cn/blog/2020-intel-open-innovation-hackathon&quot;&gt;推送&lt;/a&gt;，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。&lt;/p&gt;
 
