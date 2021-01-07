@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "访问控制列表实验"
+date:   2021-01-7 16:41:06 +0800
+categories: technology
+
+---
+## 实验拓扑
+![tp.png](https://i.loli.net/2021/01/07/lbFBZovp9S5iahQ.png)
+注：ip地址配置未X.X.学号.X
+
+## 配置ip地址，R1和R2配置rip协议
+![tp.png](https://i.loli.net/2021/01/07/lbFBZovp9S5iahQ.png)
+</br>
+![image.png](https://i.loli.net/2021/01/07/hexf8s7Cr36bQ2c.png)
+
+## PC1和PC2能够访问R2
+![image.png](https://i.loli.net/2021/01/07/DAstVZ5gucOUnTW.png)
+
+## 在R1上创建一个标准的ACL并且根据需求创建,将列表挂载在R1 路由器的接口上（F0/0 in方向；f0/1 out方向）
+![image.png](https://i.loli.net/2021/01/07/h7u6lTvFNSXdLKH.png)
+
+## 用PC1不能访问R2 ；PC2可以访问
+![image.png](https://i.loli.net/2021/01/07/ryszICaHlW79ScJ.png)
+
+## 在基于标准ACL的基础上，要求PC2只能使用telnet形式访问R2 
+![1.png](https://i.loli.net/2021/01/07/VA9U2pFKaHxPyle.png)
