@@ -91,10 +91,16 @@ var urlsToCache = [
     
   
     
+      '/blog/page7/',
+    
+  
+    
       '/feed.xml',
     
   
 
+  
+    '/life/2021/01/15/2020-summary.html',
   
     '/education/2021/01/06/MATH1212.html',
   
