@@ -163,12 +163,6 @@
          } ,
       
          {
-            "title": "也谈科学上网",
-            "excerpt": "前言关于科学上网，网上的教程已经数不胜数了。从之前的SS,SSR一键脚本再到如今新兴的V2ray。俺也从原本的GoAgent到赛风再到自建再到机场一步步摸爬滚打了过来。在这里谈一谈俺的看法。",
-            "url": "/technology/2019/08/04/talking-about-v2ray.html"
-         } ,
-      
-         {
             "title": "在树莓派上配置Clash-linux",
             "excerpt": "前言",
             "url": "/technology/2019/01/30/raspberrypi-clash-tutor.html"
@@ -286,12 +280,6 @@
             "title": "一次服务器迁移的尝试",
             "excerpt": "0x00 缘起",
             "url": "/technology/2020/01/14/server-move.html"
-         } ,
-      
-         {
-            "title": "也谈科学上网",
-            "excerpt": "前言关于科学上网，网上的教程已经数不胜数了。从之前的SS,SSR一键脚本再到如今新兴的V2ray。俺也从原本的GoAgent到赛风再到自建再到机场一步步摸爬滚打了过来。在这里谈一谈俺的看法。",
-            "url": "/technology/2019/08/04/talking-about-v2ray.html"
          } ,
       
          {

@@ -154,8 +154,6 @@ var urlsToCache = [
   
     '/literature/2019/10/17/one-hundred-book-2019.html',
   
-    '/technology/2019/08/04/talking-about-v2ray.html',
-  
     '/education/2019/06/02/Englishwriting-showoff-guide.html',
   
     '/literature/2019/02/07/the-wandering-earth.html',
