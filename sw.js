@@ -11,7 +11,15 @@ var urlsToCache = [
     
   
     
-      '/category/Living.html',
+      '/category/Education.html',
+    
+  
+    
+      '/category/Life.html',
+    
+  
+    
+      '/category/Literature.html',
     
   
     
