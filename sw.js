@@ -108,6 +108,8 @@ var urlsToCache = [
   
 
   
+    '/technology/2021/02/21/sd-card.html',
+  
     '/technology/2021/01/18/centos8-slurm.html',
   
     '/life/2021/01/15/2020-summary.html',

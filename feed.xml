@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-02-03T11:58:57+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">CentOS8 下 slurm 的安装配置</title><link href="https://aaaab3n.moe/technology/2021/01/18/centos8-slurm.html" rel="alternate" type="text/html" title="CentOS8 下 slurm 的安装配置" /><published>2021-01-18T02:02:59+00:00</published><updated>2021-01-18T02:02:59+00:00</updated><id>https://aaaab3n.moe/technology/2021/01/18/centos8-slurm</id><content type="html" xml:base="https://aaaab3n.moe/technology/2021/01/18/centos8-slurm.html">&lt;p&gt;&lt;strong&gt;Slurm 任务调度工具&lt;/strong&gt;（前身为&lt;strong&gt;极简Linux资源管理工具&lt;/strong&gt;，英文：&lt;strong&gt;Simple Linux Utility for Resource Management&lt;/strong&gt;，取首字母，简写为&lt;strong&gt;SLURM&lt;/strong&gt;），或 &lt;strong&gt;Slurm&lt;/strong&gt;，是一个用于 Linux 和 Unix 内核系统的&lt;a href=&quot;https://zh.wikipedia.org/wiki/自由及开放源代码软件&quot;&gt;免费、开源&lt;/a&gt;的任务调度工具，被世界范围内的&lt;a href=&quot;https://zh.wikipedia.org/wiki/超级计算机&quot;&gt;超级计算机&lt;/a&gt;和&lt;a href=&quot;https://zh.wikipedia.org/wiki/计算机集群&quot;&gt;计算机群&lt;/a&gt;广泛采用。它提供了三个关键功能。第一，为用户分配一定时间的专享或非专享的资源(计算机节点)，以供用户执行工作。第二，它提供了一个框架，用于启动、执行、监测在节点上运行着的任务(通常是并行的任务，例如 &lt;a href=&quot;https://zh.wikipedia.org/wiki/訊息傳遞介面&quot;&gt;MPI&lt;/a&gt;)，第三，为任务队列合理地分配资源。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://aaaab3n.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aaaab3n.moe/" rel="alternate" type="text/html" /><updated>2021-02-21T14:41:10+00:00</updated><id>https://aaaab3n.moe/feed.xml</id><title type="html">Canarypwn’s Natïve blog</title><subtitle>A life matrix to witness, think and love.</subtitle><author><name>Canarypwn</name></author><entry><title type="html">两款SD卡的对比测试</title><link href="https://aaaab3n.moe/technology/2021/02/21/sd-card.html" rel="alternate" type="text/html" title="两款SD卡的对比测试" /><published>2021-02-21T02:02:59+00:00</published><updated>2021-02-21T02:02:59+00:00</updated><id>https://aaaab3n.moe/technology/2021/02/21/sd-card</id><content type="html" xml:base="https://aaaab3n.moe/technology/2021/02/21/sd-card.html">&lt;p&gt;最近由于准备买 &lt;strong&gt;Sony a6100&lt;/strong&gt;，遇到了选购 sd 卡的环节。秉持着鸡蛋不能放在同一个篮子里的理念，以及考虑了UHS-I 最大速度大约在100 m/s 上下封顶，因此购买了市面上两家大厂的不同产品，分别是&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;闪迪至尊极速 SDXC UHS-I 存储卡 64G （附赠闪迪数据修复软件）&lt;/li&gt;
+  &lt;li&gt;SAMSUNG PRO PLUS 128G&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;两者购买价格接近，三星的容量是闪迪的一倍，闪迪的读取速度宣传的更快。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/telegram-cloud-document-5-6168080165319475641.jpg&quot; alt=&quot;telegram-cloud-document-5-6168080165319475641&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/telegram-cloud-document-5-6168080165319475642.jpg&quot; alt=&quot;telegram-cloud-document-5-6168080165319475642&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;评测流程及设备&quot;&gt;评测流程及设备&lt;/h2&gt;
+
+&lt;p&gt;虽然 SD 卡不会像 SSD 一样搭载缓存，但为了严谨起见，采用先测速 - 写文件 -再测速的评测方法。&lt;/p&gt;
+
+&lt;p&gt;评测软件用的是 macos 下用的比较多的 Blackmagic Disk Speed Test。用 Anker 的雷电3扩展坞进行 SD 卡的连接。测试主机是 macbook pro 15 2016。应该不会成为瓶颈。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/Screen Shot 2021-02-21 at 3.53.07 PM.png&quot; alt=&quot;ScreenShot2021-02-21at3.53.07PM&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;三星&quot;&gt;三星&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;未写入状态&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/samsung-unused.png&quot; alt=&quot;未写入&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;写入大文件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/Screen Shot 2021-02-21 at 3.51.31 PM.png&quot; alt=&quot;ScreenShot2021-02-21at3.51.31PM&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;写入文件后测速&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/SUMSANG-used.png&quot; alt=&quot;SUMSANG-used&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;闪迪&quot;&gt;闪迪&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;未写入状态&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/DiskSpeedTest.png&quot; alt=&quot;DiskSpeedTest&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;写入大文件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/Screen Shot 2021-02-21 at 4.17.20 PM.png&quot; alt=&quot;ScreenShot2021-02-21at4.17.20PM&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;写入文件后测速&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;oss.aaaab3n.moe/uPic/SANDISK_used.png&quot; alt=&quot;SANDISK_used&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;结论&quot;&gt;结论&lt;/h2&gt;
+
+&lt;p&gt;可能是扩展坞的支持问题，闪迪并未达到标称的写入速度。因此，我怀疑在一般环境下达到闪迪的高读入速度也会比较苛刻。我觉得如果没有更高的要求的话，三星也够用了。而且三星和闪迪都是存储大厂与SD卡标准的制定者（另一家是&lt;del&gt;东芝&lt;/del&gt;铠侠），因此在品控上面相差不大。至少相比在更名期的东芝和被镁光抛弃被大陆收购的雷克沙要更有保障。当然，三星更偏向SSD和手机的存储颗粒，而闪迪专注于SD卡。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><summary type="html">最近由于准备买 Sony a6100，遇到了选购 sd 卡的环节。秉持着鸡蛋不能放在同一个篮子里的理念，以及考虑了UHS-I 最大速度大约在100 m/s 上下封顶，因此购买了市面上两家大厂的不同产品，分别是</summary></entry><entry><title type="html">CentOS8 下 slurm 的安装配置</title><link href="https://aaaab3n.moe/technology/2021/01/18/centos8-slurm.html" rel="alternate" type="text/html" title="CentOS8 下 slurm 的安装配置" /><published>2021-01-18T02:02:59+00:00</published><updated>2021-01-18T02:02:59+00:00</updated><id>https://aaaab3n.moe/technology/2021/01/18/centos8-slurm</id><content type="html" xml:base="https://aaaab3n.moe/technology/2021/01/18/centos8-slurm.html">&lt;p&gt;&lt;strong&gt;Slurm 任务调度工具&lt;/strong&gt;（前身为&lt;strong&gt;极简Linux资源管理工具&lt;/strong&gt;，英文：&lt;strong&gt;Simple Linux Utility for Resource Management&lt;/strong&gt;，取首字母，简写为&lt;strong&gt;SLURM&lt;/strong&gt;），或 &lt;strong&gt;Slurm&lt;/strong&gt;，是一个用于 Linux 和 Unix 内核系统的&lt;a href=&quot;https://zh.wikipedia.org/wiki/自由及开放源代码软件&quot;&gt;免费、开源&lt;/a&gt;的任务调度工具，被世界范围内的&lt;a href=&quot;https://zh.wikipedia.org/wiki/超级计算机&quot;&gt;超级计算机&lt;/a&gt;和&lt;a href=&quot;https://zh.wikipedia.org/wiki/计算机集群&quot;&gt;计算机群&lt;/a&gt;广泛采用。它提供了三个关键功能。第一，为用户分配一定时间的专享或非专享的资源(计算机节点)，以供用户执行工作。第二，它提供了一个框架，用于启动、执行、监测在节点上运行着的任务(通常是并行的任务，例如 &lt;a href=&quot;https://zh.wikipedia.org/wiki/訊息傳遞介面&quot;&gt;MPI&lt;/a&gt;)，第三，为任务队列合理地分配资源。&lt;/p&gt;
 
 &lt;h2 id=&quot;安装步骤&quot;&gt;安装步骤&lt;/h2&gt;
 
@@ -1537,46 +1600,4 @@ jobs:
 
 &lt;p&gt;比如镜像源网站是用vue3.0和vuetify框架进行开发的，并使用nginx作为服务器。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://blog.murez.site/devops-2020geekpie/&quot;&gt;https://blog.murez.site/devops-2020geekpie/&lt;/a&gt;&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="EDU" /><summary type="html">引言</summary></entry><entry><title type="html">“万民管理万民”——国家的必然与终极</title><link href="https://aaaab3n.moe/literature/2020/08/31/Leviathan.html" rel="alternate" type="text/html" title="“万民管理万民”——国家的必然与终极" /><published>2020-08-31T02:01:59+00:00</published><updated>2020-08-31T02:01:59+00:00</updated><id>https://aaaab3n.moe/literature/2020/08/31/Leviathan</id><content type="html" xml:base="https://aaaab3n.moe/literature/2020/08/31/Leviathan.html">&lt;h1 id=&quot;万民管理万民国家的必然与终极&quot;&gt;“万民管理万民”——国家的必然与终极&lt;/h1&gt;
-
-&lt;h2 id=&quot;引言&quot;&gt;引言&lt;/h2&gt;
-
-&lt;p&gt;作者通过唯物的观点，在第二部分“论国家“，描述了自然状态中人们不幸的生活与渴望和平和安定生活的共同要求，于是出于人的理性，人们相互间同意订立契约，放弃各人的自然权利，把它托付给某一个人或一个由多人组成的集体，这个人或集体能把大家的意志化为一个意志，能把大家的人格统一为一个人格；大家则服从他的意志，服从他的判断。&lt;/p&gt;
-
-&lt;p&gt;如同”罗马人民管理罗马民众“一样，S.P.Q.R 作为一个由罗马人民赋予权利的共和国，它管理着罗马民众，发动战争，进行建设。而罗马人民和罗马民众是同一批人，他们既是 S.P.Q.R. 的建立者又是一部分维护者又是被统治者。历史上，罗马共和国与罗马帝国在这个基础上进行解构，在古代和今天，都成为了一种文化，认同和意识形态。&lt;/p&gt;
-
-&lt;p&gt;本文主要就“万民管理万民”为核心，论述霍布斯如何论述人们放弃个人的自然权利，来组成一个集体；这个集体如何通过契约与自然法的形式，使得人们服从；人们又是出于何种特性需要组成一个集体；这个集体为什么会存在，它为什么是最终形式。&lt;/p&gt;
-
-&lt;h2 id=&quot;人性与自然状态&quot;&gt;人性与自然状态&lt;/h2&gt;
-&lt;h3 id=&quot;自然状态即战争状态&quot;&gt;自然状态即战争状态&lt;/h3&gt;
-&lt;p&gt;霍布斯认为，任何人之间是大致平等的，假如所欲求的东西是固定有限的，那么任何人之间会产生一种类似零和游戏的竞争关系。在这种关系之中，最为稳定和保全的办法就是先发制人，即双方以付出生命和自由的代价，让他人被征服，被控制。而控制他人的过程，被叫做统治。往往，这种过程伴随着暴力。&lt;/p&gt;
-
-&lt;p&gt;出于欲求的天性，霍布斯认为在自然状态下这种争斗是普遍存在的。人们会为了求利而竞争，为了保全自身人们会猜疑对方，为了荣誉人们会去追名逐利从而侵犯他人。也就是说，只要人们还存在着欲望，并且有限的物质无法满足人类的欲望时，在自然状态下各方面都平衡的人们会为了各自的欲望去争斗。霍布斯这样说，“在没有一个共同权力使大家慑服的时候，人们便处在所谓的战争状态之下。”&lt;/p&gt;
-
-&lt;p&gt;在战争状态下，人们很难得到一个好的生存状态。在战争状态下，由于争斗的普遍存在以及其暴力的过程与形成控制的结果，因此在这个较长的时代中，每个人都伴随着恐惧。同时，由于”征服“这一选项的存在使得公平交易受到了妨碍，人们会受到不公正的待遇。因此，理智的存在使得人们需要寻求一种出路来寻求生存与和平。霍布斯将这种和平条件称为自然律。&lt;em&gt;自然律是理性所发现的戒条或一般法则。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;尽管霍布斯将自然律的发现归咎于理性，但非理性在其中起到的作用也无法忽略。人们生而就有的同理心和爱心使得人们寻求一种出路，也使得人们放弃了自身的权利。自然律的产生不仅仅是因为放弃短期利益而追求长期利益，“己所不欲勿施于人”这样的同理心也应当起到了一定的作用。&lt;/p&gt;
-
-&lt;h2 id=&quot;契约与自然法&quot;&gt;契约与自然法&lt;/h2&gt;
-
-&lt;h3 id=&quot;契约的建立与权利的扬弃&quot;&gt;契约的建立与权利的扬弃&lt;/h3&gt;
-
-&lt;p&gt;为了避免进入恶性的不稳定的战争状态，理性的我们选择利用一切可能的办法来保卫我们自身。这种方法就是权利的让渡与停使。当双方争夺同一样事物时，一方可以出于生命与安全的考虑而将获得该事物的权利让渡给另一方。这一方通过使用了“让渡权利”而获得了自己”使用权利“的自由与生命的保全，另一方得到了”得到事物的权利“的自由。这是一种权利的出让。而契约就是权利的互相转让。也就是说为了避免进入战争状态，契约被发明了出来。&lt;/p&gt;
-
-&lt;p&gt;人们为了保全自身，因此会广泛的和他人定立契约。通过契约，权利得到了交换。通过放弃权利从而得到生存的权利，通过放弃选择权的自由从而得到”自愿放弃“的自由。由此，契约的定立使人们摆脱了自然状态。但是契约本身不具备有效性。从最基本的来说，契约不过是言辞或者纸张。若要脱离自然状态，&lt;strong&gt;人们需要确保契约的有效性&lt;/strong&gt;。&lt;em&gt;”所订契约必履行。“&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;自然律与国家&quot;&gt;自然律与国家&lt;/h3&gt;
-
-&lt;p&gt;霍布斯的法更多的不是法律，而是自然律。为了确定契约的履行，需要一种力量来使人们不去满足自身的利益、荣誉。即，有一种组织形态使得人们将自我放在了次位。那么这种组织形态一定是超越所有人的。霍布斯认为，人们可以将自己的权力交由一个组织，由这个组织”通过多数的意见把大家的一致化为一个意志的多人组成的集体。”而这本身也是一种契约。于是国家可以由此定义，即一群人签订一个契约，放弃自身先天占有的，对事物的占有权，并将权利移交给一个“多数人意志”的集体。互相与互相定立信约，以便使它能按其认为有利于大家的和平与共同防卫的方式运用全体的力量和手段的一个人格。&lt;/p&gt;
-
-&lt;p&gt;这种信约就是自然律，这个意志就是国家。对于个人来说，个人舍弃了自己的权利来获得了非战争状态的和平，从而使自身得到了保全，这是契约。为了使契约得到保全，人们放弃了对于与事物契约的占有，将其移交给了国家意志。&lt;strong&gt;确定契约履行的方式是违约成本的增加&lt;/strong&gt;。在一个”多数人意志“的集体中，个人占有的自由与资源不值一提，国家衍生出了庞大的附属机构来确保契约的履行。&lt;strong&gt;看似人们放弃了权利和自由，但是因为国家和法的存在，人身安全得到了保全&lt;/strong&gt;，人们的权利和契约得到了履行，自然状态被遗弃了。&lt;/p&gt;
-
-&lt;h2 id=&quot;国家意志&quot;&gt;国家意志&lt;/h2&gt;
-
-&lt;p&gt;国家是一个意志的集体，是一种人格。但是在历史上，国家很容易联想到君王和帝国，霍布斯这里的国家不是一个实体，而是一种概念和意志。人们将权利托付给国家意志，而由君王和统治阶级进行意志的执行。公务员们，定立的法律，以及国家的一切，都是国家意志的产物。对于国家意志，人民由先天服从的义务，因为这是人民互相定立的契约，而没有毁约的可能。人们看似被君王统治着，实则是被自己所定立的契约所统治。&lt;strong&gt;国家意志的定立就是为了确保不陷入自然状态而督促着各种契约的执行。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;国家与终极&quot;&gt;国家与终极&lt;/h2&gt;
-
-&lt;h3 id=&quot;国家是社会组织的终极状态&quot;&gt;国家是社会组织的终极状态&lt;/h3&gt;
-
-&lt;p&gt;“万民管理万民”，即由人民的共同意志国家来通过保障契约运行的形式维护者人们不落入自然状态。因此为了脱离自然状态，理性驱使着人们建立如国家一样的组织。在历史上，不论是游牧还是帝国，都遵循着这样的发展规律。同时，国家可以维护自身。通过保障契约的运行，以及所衍生出的一系列行政体系，大部分人仅为自我考虑的原子性在国家面前做出了让步，只要国家能继续维持契约的运行，那么国家的合法身份，即多数人意志的集合也能继续维持下去。因此在当前状况下，&lt;strong&gt;凭借个人无法消解国家&lt;/strong&gt;，对国家的消解依旧需要大多数人的意志。国家的裂解方法是国家这种组织（而不是某一个具体的国家）没有办法聚拢大多数人的意志了。这种情况我认为是存在的，即“大多数人违约”，由大多数人的意志不再支持国家组织的运行，国家的作用与身份得到了消解。然而，人们无法找到一个更好的集体来使自己免于落入自然状态；同时，解散国家的过程中大多数人的意志依旧在发挥一种集体性的作用，也就是&lt;strong&gt;大多数人毁约&lt;/strong&gt;，将自己托付给国家的权利收回，从国家的本质上说，这是解散国家的唯一方式。但是在国家意志面前，大多数人统一意志的行动本身就难以存在。像建立国家那样的“集体自发”式的订立契约的基础已经不存在了，因为之前的基础是为了避免进入自然状态而为了生存的理性考量，在面对国家时，如果国家没有发挥其应有的功能，大部分的意志得不到贯彻，可以重新集合大多数人的意志，寻求建立国家的新途径，从而使国家本身的属性（行政，司法等）得到&lt;strong&gt;升级&lt;/strong&gt;，让国家的形态更加稳固。当国家能发挥其作用时，出于落入自然状态的恐惧，大多数人出于理性的考量不会集体违约。随着国家机器的运转，民众参与国家事物的部分也越来越少，议员负责监督和提议，法官负责贯彻法律，公务员帮助着国家的运转，士兵们负责国家安全，国家的概念再一次超越了，”多数人的意志“并不是可数的人，而是国家中的每一个人，是&lt;strong&gt;不可数的&lt;/strong&gt;。因此，统一每一个人的意志，再次对国家这个超越每一个人的概念进行消解是非常困难的一件事。在历史上虽然有多次尝试，但至今都没有给出一个答案，由国家维持的和平与公平作为它创始的目的得到了完整的落实，国家也超越了”多数人的意志“的概念而成为了一个自动运行自动修补的高效机器。&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Literature" /><category term="EDU" /><summary type="html">“万民管理万民”——国家的必然与终极</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://blog.murez.site/devops-2020geekpie/&quot;&gt;https://blog.murez.site/devops-2020geekpie/&lt;/a&gt;&lt;/p&gt;</content><author><name>Canarypwn</name></author><category term="Technology" /><category term="EDU" /><summary type="html">引言</summary></entry></feed>

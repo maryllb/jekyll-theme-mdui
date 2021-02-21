@@ -1,6 +1,11 @@
 [
   
     {
+      "title"    : "两款SD卡的对比测试",
+      "url"      : "/technology/2021/02/21/sd-card.html"
+    } ,
+  
+    {
       "title"    : "CentOS8 下 slurm 的安装配置",
       "url"      : "/technology/2021/01/18/centos8-slurm.html"
     } ,
