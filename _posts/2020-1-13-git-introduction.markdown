@@ -4,7 +4,7 @@ title: Git核心理念&原理介绍
 date: '2020-01-13 13:38:20 +0800'
 categories: technology
 tags: ubuntu apache mysql php phpmyadmin git
-img: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-e16e1f7673baf34cac46115cf69a5cf3_r.jpg&refer=http%3A%2F%2Fpic2.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1617875267&t=79ad6bf1aa30cb64293374be2c6ec89c
+img: https://i.loli.net/2021/03/09/bUmYxyKEiqhOVeW.png
 describe: 玩转git
 ---
 
