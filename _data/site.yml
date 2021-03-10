@@ -23,13 +23,13 @@ card:
 many_authors: false
 
 sns_share: # SNS Share Switch
-   twitter: true
+   twitter: false
    facebook: false
    googleplus: false
-   weibo: true
+   weibo: false
    linkedin: false
-   qq: true
-   telegram: true
+   qq: false
+   telegram: false
   
 comment:
   used: "" # disqus,livere,gitment,valine
