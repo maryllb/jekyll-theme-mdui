@@ -1,0 +1,81 @@
+I"u<p>Ruby Version Manager (RVM)，一个命令行工具。顾名思义，RVM可以方便的安装<code class="highlighter-rouge">gem</code>和<code class="highlighter-rouge">ruby</code>，这对想要安装 <code class="highlighter-rouge">Jekyll</code> 的萌新（我），简直不要太酸爽。</p>
+
+<h2 id="rvm-安装">RVM 安装</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg <span class="nt">--keyserver</span> hkp://keys.gnupg.net <span class="nt">--recv-keys</span> 409B6B1796C275462A1703113804BB82D39DC0E3
+<span class="se">\c</span>url <span class="nt">-sSL</span> https://get.rvm.io | bash <span class="nt">-s</span> stable
+<span class="nb">source</span> ~/.bashrc
+<span class="nb">source</span> ~/.bash_profile
+</code></pre></div></div>
+
+<p>修改 RVM 的 Ruby 安装源到 Ruby China 的 <a href="https://cache.ruby-china.org/">Ruby 镜像服务器</a>，这样能提高安装速度。</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"ruby_url=https://cache.ruby-china.org/pub/ruby"</span> <span class="o">&gt;</span> ~/.rvm/user/db
+</code></pre></div></div>
+
+<h2 id="ruby-的安装与切换">Ruby 的安装与切换</h2>
+
+<p>列出已知的 Ruby 版本</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm list known
+</code></pre></div></div>
+
+<p>我们会看到输出了：</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># MRI Rubies</span>
+<span class="o">[</span>ruby-]1.8.6[-p420]
+<span class="o">[</span>ruby-]1.8.7[-head] <span class="c"># security released on head</span>
+<span class="o">[</span>ruby-]1.9.1[-p431]
+<span class="o">[</span>ruby-]1.9.2[-p330]
+<span class="o">[</span>ruby-]1.9.3[-p551]
+<span class="o">[</span>ruby-]2.0.0[-p648]
+<span class="o">[</span>ruby-]2.1[.10]
+<span class="o">[</span>ruby-]2.2[.6]
+<span class="o">[</span>ruby-]2.3[.3]
+<span class="o">[</span>ruby-]2.4[.0]
+ruby-head
+
+<span class="c"># for forks use: rvm install ruby-head-&lt;name&gt; --url https://github.com/github/ruby.git --branch 2.2</span>
+...
+</code></pre></div></div>
+
+<p>安装一个 Ruby 版本</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm <span class="nb">install </span>2.4.0
+</code></pre></div></div>
+
+<p>这里安装了最新的 2.4.0, rvm list known 列表里面的都可以拿来安装。</p>
+
+<p>切换 Ruby 版本</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm use 2.2.0
+</code></pre></div></div>
+
+<p>如果想设置为默认版本，这样一来以后新打开的控制台默认的 Ruby 就是这个版本</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm use 2.4.0 <span class="nt">--default</span>
+</code></pre></div></div>
+
+<p>查询已经安装的ruby</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm list
+</code></pre></div></div>
+
+<p>此时，输入<code class="highlighter-rouge">ruby -v</code>就会看到类似如下输出：</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby 2.4.0p0 <span class="o">(</span>2016-12-24 revision 57164<span class="o">)</span> <span class="o">[</span>x86_64-linux]
+</code></pre></div></div>
+
+<p>至此完成 RVM 与 Ruby 的安装</p>
+
+<h2 id="注意">注意</h2>
+
+<p>请将 <code class="highlighter-rouge">终端-编辑-配置文件首选项-命令-以登录 shell 方式运行命令</code> 的复选框选中。</p>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+  <li><a href="https://ruby-china.org/wiki/rvm-guide">RVM 实用指南</a></li>
+  <li><a href="https://rvm.io/">RVM: Ruby Version Manager</a></li>
+</ul>
+:ET

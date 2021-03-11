@@ -1,0 +1,60 @@
+I"E<p>A Jekyll theme based on MDUI.</p>
+
+<p>Material Design 设计，大部分配置使用 _data 文件，无需重启 <code class="highlighter-rouge">jekyll</code> 即可完成配置。</p>
+
+<h2 id="mdui">MDUI</h2>
+
+<p>MDUI 是一套用于开发 Material Design 网页的前端框架。</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/zdhxiong/mdui">github</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.mdui.org/">MDUI</a></p>
+  </li>
+</ul>
+
+<h2 id="主题特性">主题特性</h2>
+
+<ul>
+  <li>响应式设计</li>
+  <li>集成服务
+    <ul>
+      <li>Google 分析</li>
+      <li>RSS</li>
+      <li>本地搜索</li>
+      <li>Disqus</li>
+      <li>sitemap</li>
+    </ul>
+  </li>
+  <li>多种独立页面
+    <ul>
+      <li>category</li>
+      <li>friends</li>
+      <li>search</li>
+      <li>tags</li>
+    </ul>
+  </li>
+  <li>纯 Liquid 压缩 html</li>
+  <li>不依赖非安全插件（可直接部署到Github）</li>
+  <li>PWA</li>
+  <li>多样性 SNS</li>
+  <li>在线编辑器<a href="https://blog.kejun.me/pages/editor.html">demo</a></li>
+  <li>快速插入提示，如下：</li>
+</ul>
+
+<h2 id="食用方法">食用方法</h2>
+
+<p><a href="https://github.com/KeJunMao/jekyll-theme-mdui/blob/master/README.md">jekyll-theme-mdui/README.md</a></p>
+
+<h2 id="预览">预览</h2>
+
+<p><a href="https://github.com/KeJunMao/jekyll-theme-mdui">KeJunMao/jekyll-theme-mdui</a></p>
+
+<p><a href="https://blog.kejun.me/">KeJun Blog</a></p>
+
+<h2 id="license">License</h2>
+
+<p>The theme is available as open source under the terms of the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+:ET

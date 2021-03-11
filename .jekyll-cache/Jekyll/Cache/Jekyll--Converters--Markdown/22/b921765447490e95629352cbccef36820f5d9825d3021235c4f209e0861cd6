@@ -1,0 +1,81 @@
+I"=	<p>安卓就是要折腾。</p>
+
+<h2 id="前言">前言</h2>
+
+<p>因为折腾，在 xda 上看到了一个可以拥有 Pixel 的虚拟按键补丁，眼残没看评论，于是脑残刷了。
+然后就炸了，于是我打开 <a href="https://twrp.me/">twrp</a> 双清一下打算刷 <a href="http://www.cyanogenmod.org/">CyanogenMod</a> ，但是，没刷成功，开机死活卡在 google 界面。然后尝试刷以前 <a href="http://forum.xda-developers.com/nexus-5x/development/rom-chroma-11-08-2015-lockscreen-navbar-t3244199">chroma rom</a> （一个不错的 rom 目前只有6.0.1），但是还是开不了机。
+so，线刷。</p>
+
+<h2 id="一切的前提">一切的前提</h2>
+
+<p>要有 adb 和 fastboot 以及解锁。</p>
+
+<h2 id="下载固件">下载固件</h2>
+
+<p><a href="https://developers.google.com/android/nexus/images">官方线刷固件包</a></p>
+
+<p>下好后解压再解压，得到:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>system.img
+vendor.img
+boot.img
+recovery.img
+cache.img
+</code></pre></div></div>
+
+<h2 id="刷机">刷机</h2>
+
+<p>长按电源+音量减进入 bootloader，用数据线连接电脑，输入 fastboot device 查看手机是否已经和电脑连接好。</p>
+
+<p>如果 ok ，那么继续。</p>
+
+<ol>
+  <li>
+    <p>刷入系统镜像</p>
+
+    <p><code class="highlighter-rouge">fastboot flash system system.img</code></p>
+  </li>
+  <li>
+    <p>刷入驱动</p>
+
+    <p><code class="highlighter-rouge">fastboot flash vendor vendor.img</code></p>
+  </li>
+  <li>
+    <p>刷入内核</p>
+
+    <p><code class="highlighter-rouge">fastboot flash boot boot.img</code></p>
+  </li>
+  <li>
+    <p>刷入Recovery</p>
+
+    <p><code class="highlighter-rouge">fastboot flash recovery recovery.img</code></p>
+  </li>
+  <li>
+    <p>清空cache分区</p>
+
+    <p><code class="highlighter-rouge">fastboot erase cache</code></p>
+  </li>
+  <li>
+    <p>清除缓存</p>
+
+    <p><code class="highlighter-rouge">fastboot flash cache cache.img</code></p>
+  </li>
+  <li>
+    <p>格式化全部数据</p>
+
+    <p><code class="highlighter-rouge">fastboot -w</code></p>
+  </li>
+  <li>
+    <p>重启</p>
+
+    <p><code class="highlighter-rouge">fastboot reboot</code></p>
+  </li>
+</ol>
+
+<h2 id="完成">完成</h2>
+
+<blockquote>
+  <p>至此就完成了，但是折腾需谨慎。</p>
+</blockquote>
+
+:ET

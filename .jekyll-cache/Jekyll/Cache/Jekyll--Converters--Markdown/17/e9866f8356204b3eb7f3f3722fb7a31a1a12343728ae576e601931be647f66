@@ -1,0 +1,33 @@
+I"�<p>静态博客在线攥写文章不是梦。</p>
+
+<p>*</p>
+
+<h2 id="功能">功能</h2>
+
+<ol>
+  <li>自动生成yml头</li>
+  <li>markdown自动保存</li>
+  <li>头图可直接预览</li>
+  <li>随意添加或选择任意分类</li>
+  <li>随意添加Tags</li>
+  <li>更好的日期选择器</li>
+  <li>随时编辑包括手机</li>
+</ol>
+
+<h2 id="使用">使用</h2>
+
+<ol>
+  <li>打开 <code class="highlighter-rouge">https://yourblogurl/pages/editor.html</code>。</li>
+  <li>按照提示填写对应信息。</li>
+  <li>点击 <code class="highlighter-rouge">CREATE FILE</code> 按钮。</li>
+  <li>点击 <code class="highlighter-rouge">Download</code> 按钮。</li>
+  <li>将下载的文件移动到 <code class="highlighter-rouge">_posts</code> 文件夹。</li>
+  <li><code class="highlighter-rouge">git push</code> 。</li>
+</ol>
+
+<h2 id="预览">预览</h2>
+
+<p><a href="https://blog.kejun.me/pages/editor.html">demo</a></p>
+
+<p><img src="https://ooo.0o0.ooo/2017/05/30/592d4280948fb.jpg" alt="" /></p>
+:ET

@@ -1,0 +1,116 @@
+I"5<h2 id="apache">Apache</h2>
+
+<h3 id="安装">安装</h3>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update
+apt-get <span class="nb">install </span>apache2
+</code></pre></div></div>
+
+<p>装好后，配置文件应该位于 <code class="highlighter-rouge">/etc/apache2</code> 中。默认的网站目录为 <code class="highlighter-rouge">/var/www/</code> 。</p>
+
+<p>启动 Apache 的方法：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service apache2 start
+</code></pre></div></div>
+
+<p>重启 Apache 的方法：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service apache2 restart
+</code></pre></div></div>
+
+<p>停止 Apache 的方法：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service apache2 stop
+</code></pre></div></div>
+
+<h3 id="其他">其他</h3>
+
+<p>Apache 的错误日志文件默认为 <code class="highlighter-rouge">/var/log/apache2/error.log</code> 。</p>
+
+<p>如果你没有指定 <code class="highlighter-rouge">SeverName</code> ，可能会出现如下警告：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apache2: Could not determine the server''s fully qualified domain name, using 127.0.0.1 for ServerName
+</code></pre></div></div>
+
+<p>解决方法为：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/apache2/apache2.conf
+</code></pre></div></div>
+
+<p>添加如下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ServerName localhost
+</code></pre></div></div>
+
+<h2 id="mysql">MySQL</h2>
+
+<h3 id="安装-1">安装</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install mysql-server
+</code></pre></div></div>
+
+<p>安装过程需要设定root账户和密码。</p>
+
+<h2 id="php">PHP</h2>
+
+<h3 id="安装-2">安装</h3>
+
+<p>安装 PHP 使 PHP 代码可以在 Apache 服务器下运行，并连接我们的 MySQL 数据库：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install php libapache2-mod-php php-mcrypt php-mysql
+</code></pre></div></div>
+
+<p>至此 PHP 已经部署完成。</p>
+
+<h3 id="安装-php-模块">安装 PHP 模块</h3>
+
+<p>你可以使用 <code class="highlighter-rouge">apt-cache search php- | less</code> 命令查看所有可用模块，按上下箭头滚动，按 <code class="highlighter-rouge">q</code> 退出。</p>
+
+<h3 id="其他-1">其他</h3>
+
+<p>为了让 Apache 优先索引 PHP 文件：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/apache2/mods-enabled/dir.conf
+</code></pre></div></div>
+
+<p>然后将 PHP 索引文件移动到第一个位置，如下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;IfModule mod_dir.c&gt;
+
+DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+
+&lt;/IfModule&gt;
+</code></pre></div></div>
+
+<p>一些模块：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install php-mysql php-curl php-gd php-intl php-pear php-imagick php-imap php-mcrypt php-memcache php-ming php-ps php-pspell php-recode php-snmp php-sqlite php-tidy php-xmlrpc php-xsl
+</code></pre></div></div>
+
+<h2 id="phpmyadmin">phpMyAdmin</h2>
+
+<h3 id="安装-3">安装</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install phpmyadmin
+</code></pre></div></div>
+
+<p>安装过程中会选择服务器以及配置。</p>
+
+<h3 id="使用-phpmyadmin">使用 phpMyAdmin</h3>
+
+<p>安装后，还不能立即使用  <code class="highlighter-rouge">phpMyAdmin</code> ，因为它不在网站目录下。为了正常使用，只需把 phpMyAdmin 的配置文件包含到 Apache 的配置中。编辑 <code class="highlighter-rouge">apache2.conf</code>：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/apache2/apache2.conf
+</code></pre></div></div>
+
+<p>在文件中添加如下行：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Include /etc/phpmyadmin/apache.conf
+</code></pre></div></div>
+
+<p>重启服务器：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service apache2 restart
+</code></pre></div></div>
+
+<p>至此，你就可以通过<code class="highlighter-rouge">yourip/phpmyadmin</code>来访问 phpMyAdmin 了。</p>
+:ET

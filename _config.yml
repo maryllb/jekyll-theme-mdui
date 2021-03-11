@@ -22,4 +22,6 @@ exclude:
   - README.md
   - vendor
   - docs
-# theme: jekyll-theme-cayman
+
+theme: jekyll-theme-cayman
+
