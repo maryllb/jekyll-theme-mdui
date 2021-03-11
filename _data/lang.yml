@@ -1,5 +1,5 @@
 zh-CN:
-   # meng:
+   meng:
       head_card: 
           rss: " 订阅 "
           sitemap: " 站点地图 "
@@ -42,7 +42,7 @@ zh-CN:
       404x: "404 未找到 "
       403x: "403 资源不可用 "
 en-US:
-   # meng:
+   meng:
       head_card: 
           rss: "RSS"
           sitemap: "Sitemap"
