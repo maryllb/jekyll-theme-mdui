@@ -22,4 +22,4 @@ exclude:
   - README.md
   - vendor
   - docs
-theme: jekyll-theme-tactile
+theme: jekyll-theme-cayman
