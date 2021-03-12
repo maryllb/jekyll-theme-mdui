@@ -1,8 +1,8 @@
 zh-CN:
    meng:
       head_card: 
-          rss: "订阅"
-          sitemap: "站点地图"
+         rss: "订阅"
+         sitemap: "站点地图"
    editor: 
       content: "内容"
       frontmatter:
@@ -44,8 +44,8 @@ zh-CN:
 en-US:
    meng:
       head_card: 
-          rss: "RSS"
-          sitemap: "Sitemap"
+         rss: "RSS"
+         sitemap: "Sitemap"
    editor: 
       content: "Content"
       frontmatter:
