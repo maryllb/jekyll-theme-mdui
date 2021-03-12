@@ -23,4 +23,4 @@ exclude:
   - vendor
   - docs
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-mdui
