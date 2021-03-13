@@ -1,0 +1,413 @@
+
+
+[
+  
+    {
+      "id"    : "adb",
+      "post": [
+          
+         {
+            "title": "使用 abd + fastboot 救我的 Nexus5x",
+            "excerpt": "安卓就是要折腾。",
+            "url": "/living/2016/10/27/use-adb-and-fastboot-to-save-my-nexus5x.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "android",
+      "post": [
+          
+         {
+            "title": "使用 abd + fastboot 救我的 Nexus5x",
+            "excerpt": "安卓就是要折腾。",
+            "url": "/living/2016/10/27/use-adb-and-fastboot-to-save-my-nexus5x.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "apache",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } ,
+      
+         {
+            "title": "Git核心理念&amp;原理介绍",
+            "excerpt": "Git的核心",
+            "url": "/technology/2020/01/13/git-introduction.html"
+         } ,
+      
+         {
+            "title": "Ubuntu安装Apache，MySQL，PHP以及phpMyAdmin",
+            "excerpt": "Apache",
+            "url": "/technology/2016/04/14/ubuntu-installs-apache-masql-php-and-phpmyadmin.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "discord",
+      "post": [
+          
+         {
+            "title": "再见 YY，你好 Discord",
+            "excerpt": "首先，点击这里下载 Discord 。",
+            "url": "/living/2018/02/13/goodbey-yy-fuck-yy.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "dvwa",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "editor",
+      "post": [
+          
+         {
+            "title": "No img test.",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/07/25/no-img-test.html"
+         } ,
+      
+         {
+            "title": "Jekyll Theme MDUI Editor",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/05/30/Jekyll-Theme-MDUI-Editor.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "fastboot",
+      "post": [
+          
+         {
+            "title": "使用 abd + fastboot 救我的 Nexus5x",
+            "excerpt": "安卓就是要折腾。",
+            "url": "/living/2016/10/27/use-adb-and-fastboot-to-save-my-nexus5x.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "game",
+      "post": [
+          
+         {
+            "title": "再见 YY，你好 Discord",
+            "excerpt": "首先，点击这里下载 Discord 。",
+            "url": "/living/2018/02/13/goodbey-yy-fuck-yy.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "gem",
+      "post": [
+          
+         {
+            "title": "如何安装 Jekyll ？",
+            "excerpt": "Jekyll 一个可以将纯文本转换成静态网站的工具。本站正是使用jekyll生成并托管在coding page上的。",
+            "url": "/technology/2017/05/27/how-to-install-jekyll.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "git",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } ,
+      
+         {
+            "title": "Git核心理念&amp;原理介绍",
+            "excerpt": "Git的核心",
+            "url": "/technology/2020/01/13/git-introduction.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "hack",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "jekyll",
+      "post": [
+          
+         {
+            "title": "No img test.",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/07/25/no-img-test.html"
+         } ,
+      
+         {
+            "title": "Jekyll Theme MDUI Editor",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/05/30/Jekyll-Theme-MDUI-Editor.html"
+         } ,
+      
+         {
+            "title": "Jekyll Theme MDUI",
+            "excerpt": "A Jekyll theme based on MDUI.",
+            "url": "/living/2017/05/29/jekyll-theme-mdui.html"
+         } ,
+      
+         {
+            "title": "Liquid 模板语言",
+            "excerpt": "统计捐赠",
+            "url": "/living/2017/05/27/liquid-template-language.html"
+         } ,
+      
+         {
+            "title": "如何安装 Jekyll ？",
+            "excerpt": "Jekyll 一个可以将纯文本转换成静态网站的工具。本站正是使用jekyll生成并托管在coding page上的。",
+            "url": "/technology/2017/05/27/how-to-install-jekyll.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "liquid",
+      "post": [
+          
+         {
+            "title": "Jekyll Theme MDUI",
+            "excerpt": "A Jekyll theme based on MDUI.",
+            "url": "/living/2017/05/29/jekyll-theme-mdui.html"
+         } ,
+      
+         {
+            "title": "Liquid 模板语言",
+            "excerpt": "统计捐赠",
+            "url": "/living/2017/05/27/liquid-template-language.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "mdui",
+      "post": [
+          
+         {
+            "title": "No img test.",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/07/25/no-img-test.html"
+         } ,
+      
+         {
+            "title": "Jekyll Theme MDUI Editor",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/05/30/Jekyll-Theme-MDUI-Editor.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "mysql",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } ,
+      
+         {
+            "title": "Git核心理念&amp;原理介绍",
+            "excerpt": "Git的核心",
+            "url": "/technology/2020/01/13/git-introduction.html"
+         } ,
+      
+         {
+            "title": "Ubuntu安装Apache，MySQL，PHP以及phpMyAdmin",
+            "excerpt": "Apache",
+            "url": "/technology/2016/04/14/ubuntu-installs-apache-masql-php-and-phpmyadmin.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "php",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } ,
+      
+         {
+            "title": "Git核心理念&amp;原理介绍",
+            "excerpt": "Git的核心",
+            "url": "/technology/2020/01/13/git-introduction.html"
+         } ,
+      
+         {
+            "title": "Ubuntu安装Apache，MySQL，PHP以及phpMyAdmin",
+            "excerpt": "Apache",
+            "url": "/technology/2016/04/14/ubuntu-installs-apache-masql-php-and-phpmyadmin.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "phpmyadmin",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } ,
+      
+         {
+            "title": "Git核心理念&amp;原理介绍",
+            "excerpt": "Git的核心",
+            "url": "/technology/2020/01/13/git-introduction.html"
+         } ,
+      
+         {
+            "title": "Ubuntu安装Apache，MySQL，PHP以及phpMyAdmin",
+            "excerpt": "Apache",
+            "url": "/technology/2016/04/14/ubuntu-installs-apache-masql-php-and-phpmyadmin.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "ruby",
+      "post": [
+          
+         {
+            "title": "如何安装 Jekyll ？",
+            "excerpt": "Jekyll 一个可以将纯文本转换成静态网站的工具。本站正是使用jekyll生成并托管在coding page上的。",
+            "url": "/technology/2017/05/27/how-to-install-jekyll.html"
+         } ,
+      
+         {
+            "title": "如何安装 RVM 和 Ruby？",
+            "excerpt": "Ruby Version Manager (RVM)，一个命令行工具。顾名思义，RVM可以方便的安装gem和ruby，这对想要安装 Jekyll 的萌新（我），简直不要太酸爽。",
+            "url": "/technology/2017/05/27/how-to-install-rvm.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "rvm",
+      "post": [
+          
+         {
+            "title": "如何安装 RVM 和 Ruby？",
+            "excerpt": "Ruby Version Manager (RVM)，一个命令行工具。顾名思义，RVM可以方便的安装gem和ruby，这对想要安装 Jekyll 的萌新（我），简直不要太酸爽。",
+            "url": "/technology/2017/05/27/how-to-install-rvm.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "theme",
+      "post": [
+          
+         {
+            "title": "No img test.",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/07/25/no-img-test.html"
+         } ,
+      
+         {
+            "title": "Jekyll Theme MDUI Editor",
+            "excerpt": "静态博客在线攥写文章不是梦。",
+            "url": "/living/2017/05/30/Jekyll-Theme-MDUI-Editor.html"
+         } ,
+      
+         {
+            "title": "Jekyll Theme MDUI",
+            "excerpt": "A Jekyll theme based on MDUI.",
+            "url": "/living/2017/05/29/jekyll-theme-mdui.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "ubuntu",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } ,
+      
+         {
+            "title": "Git核心理念&amp;原理介绍",
+            "excerpt": "Git的核心",
+            "url": "/technology/2020/01/13/git-introduction.html"
+         } ,
+      
+         {
+            "title": "如何安装 Jekyll ？",
+            "excerpt": "Jekyll 一个可以将纯文本转换成静态网站的工具。本站正是使用jekyll生成并托管在coding page上的。",
+            "url": "/technology/2017/05/27/how-to-install-jekyll.html"
+         } ,
+      
+         {
+            "title": "Ubuntu安装Apache，MySQL，PHP以及phpMyAdmin",
+            "excerpt": "Apache",
+            "url": "/technology/2016/04/14/ubuntu-installs-apache-masql-php-and-phpmyadmin.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "web",
+      "post": [
+          
+         {
+            "title": "DVWA安装成功了",
+            "excerpt": "在本次安装DVWA靶机的过程中，没有出现任何问题。",
+            "url": "/technology/2021/03/08/dvwa-success.html"
+         } 
+      ]
+    } ,
+  
+    {
+      "id"    : "yy",
+      "post": [
+          
+         {
+            "title": "再见 YY，你好 Discord",
+            "excerpt": "首先，点击这里下载 Discord 。",
+            "url": "/living/2018/02/13/goodbey-yy-fuck-yy.html"
+         } 
+      ]
+    } 
+  
+]
