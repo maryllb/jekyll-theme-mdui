@@ -32,10 +32,10 @@ sns_share: # SNS Share Switch
    telegram: true
 
 comment:
-  used: "" # disqus,livere,gitment,valine
+  used: "disqus" # disqus,livere,gitment,valine
   # disqus config
-  disqus_shortname: "" # Your disqus 
-  disqus_button: true # disqus load button
+  disqus_shortname: "maryllb" # Your disqus
+  disqus_button: false # disqus load button
   disqus_proxy: false # # disqus proxy(Do not use)
   disqus_proxy_url: "" # (Do not use)
   disqus_api_key: "" # (Do not use)
@@ -62,14 +62,14 @@ prism:
 
 mathjax: true
 
-google_analytics: ""  # google analytics code
+google_analytics: "G-73VZSQL8QT"  # google analytics code
 
 baidu_site_verification: ""  # baidu site verification code
 google_site_verification: ""  # google search console verification code
 
 baidu_auto_push: false  # if you used baidu auto push to commit links
 
-lang: "en-US"  # lang
+lang: ""  # lang
 
 deploy: "" # if you used coding pages
 
