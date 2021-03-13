@@ -180,15 +180,3 @@ body,header{
 }
 {% endif %}
 {% endfor %}
-
-
-/*del±êÇ©ºÚÄ»*/
-del{
-    text-decoration:none!important;
-    background-color: #252525;
-    color: #252525;
-    text-shadow: none;
-}
-del:hover {
-    color:#fff;
-}
