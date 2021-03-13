@@ -1,0 +1,40 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      # Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install screenfetch -y
+          sudo gem install bundler:1.17.2
+          screenfetch
+           
+      - name: Build jekyll
+        run: |
+          cd ${{ github.workspace }}
+          bundle install --path vendor/bundle
+          bundle exec jekyll build
+      
+      - name: Invoke Deployment
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: _site
+        uses: JamesIves/github-pages-deploy-action@3.2.1
