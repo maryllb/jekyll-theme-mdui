@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-12T23:33:12+08:00</updated><id>/feed.xml</id><title type="html">Maryllb Blog</title><subtitle>A Jekyll theme based on MDUI</subtitle><author><name>mignon maryllb</name></author><entry><title type="html">DVWA安装成功了</title><link href="/technology/2021/03/08/dvwa-success.html" rel="alternate" type="text/html" title="DVWA安装成功了" /><published>2021-03-08T18:38:20+08:00</published><updated>2021-03-08T18:38:20+08:00</updated><id>/technology/2021/03/08/dvwa-success</id><content type="html" xml:base="/technology/2021/03/08/dvwa-success.html">&lt;p&gt;在本次安装DVWA靶机的过程中，没有出现任何问题。&lt;/p&gt;</content><author><name>KeJun</name></author><category term="ubuntu" /><category term="apache" /><category term="mysql" /><category term="php" /><category term="phpmyadmin" /><category term="git" /><category term="hack" /><category term="web" /><category term="dvwa" /><summary type="html">在本次安装DVWA靶机的过程中，没有出现任何问题。</summary></entry><entry><title type="html">Git核心理念&amp;amp;原理介绍</title><link href="/technology/2020/01/13/git-introduction.html" rel="alternate" type="text/html" title="Git核心理念&amp;原理介绍" /><published>2020-01-13T13:38:20+08:00</published><updated>2020-01-13T13:38:20+08:00</updated><id>/technology/2020/01/13/git-introduction</id><content type="html" xml:base="/technology/2020/01/13/git-introduction.html">&lt;h2 id=&quot;git的核心&quot;&gt;Git的核心&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文件(Immuntable)&lt;/li&gt;
+  &lt;li&gt;快照(Immuntable)&lt;/li&gt;
+  &lt;li&gt;分支&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;文件immuntable&quot;&gt;文件(Immuntable)&lt;/h3&gt;
+
+&lt;p&gt;在git中文件是不可修改的。即，只能新建文件进入内容，不允许修改其内容。一旦允许修改，文件可能就会丢失。如果文件想修改，可能会分叉。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/01/14/qRNl8dJOvLWbDiw.jpg&quot; alt=&quot;git-1-1.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;快照immuntable&quot;&gt;快照(Immuntable)&lt;/h3&gt;
+
+&lt;p&gt;在git文件夹（即快照）也是不可修改的。
+  如果一个A文件夹中有a.txt、b.txt、c.txt，一旦你删除c.txt文件，它会新建一个快照中包含a.txt、b.txt。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/03/19/ivB9FYNKkw1VjZh.jpg&quot; alt=&quot;git-1-2.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;文件与快照的关系&quot;&gt;文件与快照的关系&lt;/h3&gt;
+
+&lt;p&gt;A.txt内容为123，修改一次后还是A.txt内容为456。&lt;/p&gt;
+
+&lt;p&gt;快照里不存文件，只存文件的引用。假设快照里有A.txt引用是看指向哪个版本的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/03/19/Xi9BrRl1kqt8NZU.jpg&quot; alt=&quot;git-1-3.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;分支&quot;&gt;分支&lt;/h3&gt;
+
+&lt;p&gt;分支只要做历史版本控制。分支里没有文件，分支存的是快照的引用，但分支是可变的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/03/19/HcXoCahvUReELgB.jpg&quot; alt=&quot;git-1-4.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;git的特点&quot;&gt;Git的特点&lt;/h2&gt;
+
+&lt;p&gt;① 提交后东西不会丢，带给大家安心的感觉&lt;/p&gt;
+
+&lt;p&gt;② 分支的成本低（支持多任务）&lt;/p&gt;
+
+&lt;p&gt;③ 分布式&lt;/p&gt;
+
+&lt;p&gt;git做了社交，是行业的标准。&lt;/p&gt;</content><author><name>KeJun</name></author><category term="ubuntu" /><category term="apache" /><category term="mysql" /><category term="php" /><category term="phpmyadmin" /><category term="git" /><summary type="html">Git的核心</summary></entry><entry><title type="html">再见 YY，你好 Discord</title><link href="/living/2018/02/13/goodbey-yy-fuck-yy.html" rel="alternate" type="text/html" title="再见 YY，你好 Discord" /><published>2018-02-13T13:26:16+08:00</published><updated>2018-02-13T13:26:16+08:00</updated><id>/living/2018/02/13/goodbey-yy-fuck-yy</id><content type="html" xml:base="/living/2018/02/13/goodbey-yy-fuck-yy.html">&lt;p&gt;首先，&lt;a href=&quot;https://discordapp.com/&quot;&gt;点击这里&lt;/a&gt;下载 Discord 。&lt;/p&gt;
+
+&lt;p&gt;吃鸡盛行，不得不使用靠谱的连麦软件，但是为什么还是 YY ？&lt;/p&gt;
+
+&lt;h2 id=&quot;yy-优点&quot;&gt;YY 优点&lt;/h2&gt;
+
+&lt;p&gt;我想了一个晚上，没想到任何优势，要硬说优点，可能只有：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;用户习惯&lt;/li&gt;
+  &lt;li&gt;本地化&lt;/li&gt;
+  &lt;li&gt;服务器在国内&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;对比&quot;&gt;对比&lt;/h2&gt;
+
+&lt;p&gt;为什么不直接说 YY 的缺点？这样可能缺少说服力。&lt;/p&gt;
+
+&lt;h3 id=&quot;正面功能&quot;&gt;正面功能：&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;功能&lt;/th&gt;
+      &lt;th&gt;YY 语音&lt;/th&gt;
+      &lt;th&gt;Discord&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;免费使用&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;IP&amp;amp;DDoS保护&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;浏览器支持&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;移动应用&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;好友功能&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;游戏内覆盖&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;低延迟&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;最小的CPU使用率&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;自定义热键&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;智能推送通知&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;权限&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;多个频道&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;markdown文本聊天&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;个别音量控制&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bot&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;自制插件&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;自制主题&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;自定义CSS&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;国际化&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;开发指南&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;负面功能&quot;&gt;负面功能&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;功能&lt;/th&gt;
+      &lt;th&gt;YY 语音&lt;/th&gt;
+      &lt;th&gt;Discord&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;广告&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;捆绑安装&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;弹窗&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;实名&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;会员&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;账号等级&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;新闻&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;低俗直播&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;√&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;Discord 专注于游戏语音，从&lt;a href=&quot;https://discordapp.com/&quot;&gt;官网&lt;/a&gt;下载页，我们就可以看到非常的简洁。&lt;/p&gt;
+
+&lt;p&gt;而 YY7 下载页，介绍了一堆鸡肋功能，最后一个极速体验简直笑死人，YY 待机情况cpu使用率和内存占用不忍直视。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;广告&lt;/strong&gt;，我最想吐槽，记得有一次，YY 伪装成 Steam 图标闪烁，点开发现尽然是 YY ，真是服气。&lt;/p&gt;
+
+&lt;p&gt;用 Google 搜 &lt;code class=&quot;highlighter-rouge&quot;&gt;YY 流氓&lt;/code&gt; 关键字可以看到超多的吐槽，有甚者说 360 都治不住。&lt;/p&gt;
+
+&lt;p&gt;当然，discord 也并不是没有短板，很直观的一点就是注册验证邮箱时要 番羽 土蔷 。最近的服务器在香港，大陆没有。&lt;/p&gt;
+
+&lt;p&gt;以上对比如有错误，希望能留言指出。&lt;/p&gt;
+
+&lt;h2 id=&quot;其他&quot;&gt;其他&lt;/h2&gt;
+
+&lt;p&gt;这里以后想到了就来补充。&lt;/p&gt;</content><author><name>KeJun</name></author><category term="discord" /><category term="game" /><category term="yy" /><summary type="html">首先，点击这里下载 Discord 。</summary></entry><entry><title type="html">No img test.</title><link href="/living/2017/07/25/no-img-test.html" rel="alternate" type="text/html" title="No img test." /><published>2017-07-25T00:00:00+08:00</published><updated>2017-07-25T00:00:00+08:00</updated><id>/living/2017/07/25/no-img-test</id><content type="html" xml:base="/living/2017/07/25/no-img-test.html">&lt;p&gt;静态博客在线攥写文章不是梦。&lt;/p&gt;
+
+&lt;p&gt;*&lt;/p&gt;
+
+&lt;h2 id=&quot;功能&quot;&gt;功能&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;自动生成yml头&lt;/li&gt;
+  &lt;li&gt;markdown自动保存&lt;/li&gt;
+  &lt;li&gt;头图可直接预览&lt;/li&gt;
+  &lt;li&gt;随意添加或选择任意分类&lt;/li&gt;
+  &lt;li&gt;随意添加Tags&lt;/li&gt;
+  &lt;li&gt;更好的日期选择器&lt;/li&gt;
+  &lt;li&gt;随时编辑包括手机&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;使用&quot;&gt;使用&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;https://yourblogurl/pages/editor.html&lt;/code&gt;。&lt;/li&gt;
+  &lt;li&gt;按照提示填写对应信息。&lt;/li&gt;
+  &lt;li&gt;点击 &lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE FILE&lt;/code&gt; 按钮。&lt;/li&gt;
+  &lt;li&gt;点击 &lt;code class=&quot;highlighter-rouge&quot;&gt;Download&lt;/code&gt; 按钮。&lt;/li&gt;
+  &lt;li&gt;将下载的文件移动到 &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; 文件夹。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;预览&quot;&gt;预览&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.kejun.me/pages/editor.html&quot;&gt;demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ooo.0o0.ooo/2017/05/30/592d4280948fb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>KeJun</name></author><category term="mdui" /><category term="jekyll" /><category term="theme" /><category term="editor" /><summary type="html">静态博客在线攥写文章不是梦。</summary></entry><entry><title type="html">Jekyll Theme MDUI Editor</title><link href="/living/2017/05/30/Jekyll-Theme-MDUI-Editor.html" rel="alternate" type="text/html" title="Jekyll Theme MDUI Editor" /><published>2017-05-30T00:00:00+08:00</published><updated>2017-05-30T00:00:00+08:00</updated><id>/living/2017/05/30/Jekyll-Theme-MDUI-Editor</id><content type="html" xml:base="/living/2017/05/30/Jekyll-Theme-MDUI-Editor.html">&lt;p&gt;静态博客在线攥写文章不是梦。&lt;/p&gt;
+
+&lt;p&gt;*&lt;/p&gt;
+
+&lt;h2 id=&quot;功能&quot;&gt;功能&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;自动生成yml头&lt;/li&gt;
+  &lt;li&gt;markdown自动保存&lt;/li&gt;
+  &lt;li&gt;头图可直接预览&lt;/li&gt;
+  &lt;li&gt;随意添加或选择任意分类&lt;/li&gt;
+  &lt;li&gt;随意添加Tags&lt;/li&gt;
+  &lt;li&gt;更好的日期选择器&lt;/li&gt;
+  &lt;li&gt;随时编辑包括手机&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;使用&quot;&gt;使用&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;https://yourblogurl/pages/editor.html&lt;/code&gt;。&lt;/li&gt;
+  &lt;li&gt;按照提示填写对应信息。&lt;/li&gt;
+  &lt;li&gt;点击 &lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE FILE&lt;/code&gt; 按钮。&lt;/li&gt;
+  &lt;li&gt;点击 &lt;code class=&quot;highlighter-rouge&quot;&gt;Download&lt;/code&gt; 按钮。&lt;/li&gt;
+  &lt;li&gt;将下载的文件移动到 &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; 文件夹。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;预览&quot;&gt;预览&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.kejun.me/pages/editor.html&quot;&gt;demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ooo.0o0.ooo/2017/05/30/592d4280948fb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>KeJun</name></author><category term="mdui" /><category term="jekyll" /><category term="theme" /><category term="editor" /><summary type="html">静态博客在线攥写文章不是梦。</summary></entry><entry><title type="html">Jekyll Theme MDUI</title><link href="/living/2017/05/29/jekyll-theme-mdui.html" rel="alternate" type="text/html" title="Jekyll Theme MDUI" /><published>2017-05-29T12:22:06+08:00</published><updated>2017-05-29T12:22:06+08:00</updated><id>/living/2017/05/29/jekyll-theme-mdui</id><content type="html" xml:base="/living/2017/05/29/jekyll-theme-mdui.html">&lt;p&gt;A Jekyll theme based on MDUI.&lt;/p&gt;
+
+&lt;p&gt;Material Design 设计，大部分配置使用 _data 文件，无需重启 &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; 即可完成配置。&lt;/p&gt;
+
+&lt;h2 id=&quot;mdui&quot;&gt;MDUI&lt;/h2&gt;
+
+&lt;p&gt;MDUI 是一套用于开发 Material Design 网页的前端框架。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/zdhxiong/mdui&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.mdui.org/&quot;&gt;MDUI&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;主题特性&quot;&gt;主题特性&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;响应式设计&lt;/li&gt;
+  &lt;li&gt;集成服务
+    &lt;ul&gt;
+      &lt;li&gt;Google 分析&lt;/li&gt;
+      &lt;li&gt;RSS&lt;/li&gt;
+      &lt;li&gt;本地搜索&lt;/li&gt;
+      &lt;li&gt;Disqus&lt;/li&gt;
+      &lt;li&gt;sitemap&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;多种独立页面
+    &lt;ul&gt;
+      &lt;li&gt;category&lt;/li&gt;
+      &lt;li&gt;friends&lt;/li&gt;
+      &lt;li&gt;search&lt;/li&gt;
+      &lt;li&gt;tags&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;纯 Liquid 压缩 html&lt;/li&gt;
+  &lt;li&gt;不依赖非安全插件（可直接部署到Github）&lt;/li&gt;
+  &lt;li&gt;PWA&lt;/li&gt;
+  &lt;li&gt;多样性 SNS&lt;/li&gt;
+  &lt;li&gt;在线编辑器&lt;a href=&quot;https://blog.kejun.me/pages/editor.html&quot;&gt;demo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;快速插入提示，如下：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;食用方法&quot;&gt;食用方法&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/KeJunMao/jekyll-theme-mdui/blob/master/README.md&quot;&gt;jekyll-theme-mdui/README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;预览&quot;&gt;预览&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/KeJunMao/jekyll-theme-mdui&quot;&gt;KeJunMao/jekyll-theme-mdui&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.kejun.me/&quot;&gt;KeJun Blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;The theme is available as open source under the terms of the &lt;a href=&quot;https://opensource.org/licenses/MIT&quot;&gt;MIT License&lt;/a&gt;.&lt;/p&gt;</content><author><name>KeJun</name></author><category term="jekyll" /><category term="theme" /><category term="liquid" /><summary type="html">A Jekyll theme based on MDUI.</summary></entry><entry><title type="html">Liquid 模板语言</title><link href="/living/2017/05/27/liquid-template-language.html" rel="alternate" type="text/html" title="Liquid 模板语言" /><published>2017-05-27T16:18:06+08:00</published><updated>2017-05-27T16:18:06+08:00</updated><id>/living/2017/05/27/liquid-template-language</id><content type="html" xml:base="/living/2017/05/27/liquid-template-language.html">&lt;h2 id=&quot;统计捐赠&quot;&gt;统计捐赠&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;目录下创建一个名为&lt;code class=&quot;highlighter-rouge&quot;&gt;donate.yml&lt;/code&gt;的文件。&lt;/li&gt;
+  &lt;li&gt;按如下格式填写：
+    &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;张三&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;money&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;在页面中输入
+    &lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site.data.donate&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;allmoney&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;allmoney&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;plus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;money&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+ &amp;lt;p &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;：&amp;lt;b&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;money&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;元&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+ &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;总金额： &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;allmoney&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;元&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;标签云&quot;&gt;标签云&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;效果就是本博客的tag，此外还需要配合js。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这个讲真，真的好累…&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site.tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sortedtags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sortedtags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;125&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;(1..index)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;plus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;(1..index)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;minus&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+      &amp;lt;a id=&quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;  style=&quot;font-size:&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;px;color:rgb(&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;,&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;,&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;)&quot;&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/a&amp;gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;有用的站点&quot;&gt;有用的站点&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://alfred-sun.github.io/blog/2015/01/10/jekyll-liquid-syntax-documentation/&quot;&gt;Jekyll/Liquid API 语法文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liquidmarkup.org/&quot;&gt;Liquid&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;Jekyll DOCS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>KeJun</name></author><category term="liquid" /><category term="jekyll" /><summary type="html">统计捐赠</summary></entry><entry><title type="html">如何安装 Jekyll ？</title><link href="/technology/2017/05/27/how-to-install-jekyll.html" rel="alternate" type="text/html" title="如何安装 Jekyll ？" /><published>2017-05-27T14:57:06+08:00</published><updated>2017-05-27T14:57:06+08:00</updated><id>/technology/2017/05/27/how-to-install-jekyll</id><content type="html" xml:base="/technology/2017/05/27/how-to-install-jekyll.html">&lt;p&gt;Jekyll 一个可以将纯文本转换成静态网站的工具。本站正是使用&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;生成并托管在&lt;code class=&quot;highlighter-rouge&quot;&gt;coding page&lt;/code&gt;上的。&lt;/p&gt;
+
+&lt;p&gt;安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; 及其简单。&lt;/p&gt;
+
+&lt;h2 id=&quot;检查环境&quot;&gt;检查环境&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;GNU/Linux, Unix, 或 macOS 。&lt;/li&gt;
+  &lt;li&gt;Ruby 2.0 以上（含2.0）。&lt;/li&gt;
+  &lt;li&gt;RubyGems&lt;/li&gt;
+  &lt;li&gt;GCC 和 Make（通过&lt;code class=&quot;highlighter-rouge&quot;&gt;gcc -v&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;make -v&lt;/code&gt; 检查是否已安装）。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;安装-jekyll&quot;&gt;安装 jekyll&lt;/h2&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll bundler
+
+&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
+
+&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
+
+&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
+~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+
+&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+\[\sum_{i=1}^n x_ie_i\]
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;Installation&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/quickstart/&quot;&gt;Quick-start guide&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>KeJun</name></author><category term="jekyll" /><category term="ruby" /><category term="gem" /><category term="ubuntu" /><summary type="html">Jekyll 一个可以将纯文本转换成静态网站的工具。本站正是使用jekyll生成并托管在coding page上的。</summary></entry><entry><title type="html">如何安装 RVM 和 Ruby？</title><link href="/technology/2017/05/27/how-to-install-rvm.html" rel="alternate" type="text/html" title="如何安装 RVM 和 Ruby？" /><published>2017-05-27T14:19:06+08:00</published><updated>2017-05-27T14:19:06+08:00</updated><id>/technology/2017/05/27/how-to-install-rvm</id><content type="html" xml:base="/technology/2017/05/27/how-to-install-rvm.html">&lt;p&gt;Ruby Version Manager (RVM)，一个命令行工具。顾名思义，RVM可以方便的安装&lt;code class=&quot;highlighter-rouge&quot;&gt;gem&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;，这对想要安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt; 的萌新（我），简直不要太酸爽。&lt;/p&gt;
+
+&lt;h2 id=&quot;rvm-安装&quot;&gt;RVM 安装&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg &lt;span class=&quot;nt&quot;&gt;--keyserver&lt;/span&gt; hkp://keys.gnupg.net &lt;span class=&quot;nt&quot;&gt;--recv-keys&lt;/span&gt; 409B6B1796C275462A1703113804BB82D39DC0E3
+&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;url &lt;span class=&quot;nt&quot;&gt;-sSL&lt;/span&gt; https://get.rvm.io | bash &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; stable
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bashrc
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;修改 RVM 的 Ruby 安装源到 Ruby China 的 &lt;a href=&quot;https://cache.ruby-china.org/&quot;&gt;Ruby 镜像服务器&lt;/a&gt;，这样能提高安装速度。&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ruby_url=https://cache.ruby-china.org/pub/ruby&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; ~/.rvm/user/db
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;ruby-的安装与切换&quot;&gt;Ruby 的安装与切换&lt;/h2&gt;
+
+&lt;p&gt;列出已知的 Ruby 版本&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm list known
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;我们会看到输出了：&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# MRI Rubies&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]1.8.6[-p420]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]1.8.7[-head] &lt;span class=&quot;c&quot;&gt;# security released on head&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]1.9.1[-p431]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]1.9.2[-p330]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]1.9.3[-p551]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]2.0.0[-p648]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]2.1[.10]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]2.2[.6]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]2.3[.3]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ruby-]2.4[.0]
+ruby-head
+
+&lt;span class=&quot;c&quot;&gt;# for forks use: rvm install ruby-head-&amp;lt;name&amp;gt; --url https://github.com/github/ruby.git --branch 2.2&lt;/span&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;安装一个 Ruby 版本&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;2.4.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这里安装了最新的 2.4.0, rvm list known 列表里面的都可以拿来安装。&lt;/p&gt;
+
+&lt;p&gt;切换 Ruby 版本&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm use 2.2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果想设置为默认版本，这样一来以后新打开的控制台默认的 Ruby 就是这个版本&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm use 2.4.0 &lt;span class=&quot;nt&quot;&gt;--default&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;查询已经安装的ruby&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;此时，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby -v&lt;/code&gt;就会看到类似如下输出：&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby 2.4.0p0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2016-12-24 revision 57164&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;x86_64-linux]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;至此完成 RVM 与 Ruby 的安装&lt;/p&gt;
+
+&lt;h2 id=&quot;注意&quot;&gt;注意&lt;/h2&gt;
+
+&lt;p&gt;请将 &lt;code class=&quot;highlighter-rouge&quot;&gt;终端-编辑-配置文件首选项-命令-以登录 shell 方式运行命令&lt;/code&gt; 的复选框选中。&lt;/p&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ruby-china.org/wiki/rvm-guide&quot;&gt;RVM 实用指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rvm.io/&quot;&gt;RVM: Ruby Version Manager&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>KeJun</name></author><category term="ruby" /><category term="rvm" /><summary type="html">Ruby Version Manager (RVM)，一个命令行工具。顾名思义，RVM可以方便的安装gem和ruby，这对想要安装 Jekyll 的萌新（我），简直不要太酸爽。</summary></entry><entry><title type="html">使用 abd + fastboot 救我的 Nexus5x</title><link href="/living/2016/10/27/use-adb-and-fastboot-to-save-my-nexus5x.html" rel="alternate" type="text/html" title="使用 abd + fastboot 救我的 Nexus5x" /><published>2016-10-27T16:23:06+08:00</published><updated>2016-10-27T16:23:06+08:00</updated><id>/living/2016/10/27/use-adb-and-fastboot-to-save-my-nexus5x</id><content type="html" xml:base="/living/2016/10/27/use-adb-and-fastboot-to-save-my-nexus5x.html">&lt;p&gt;安卓就是要折腾。&lt;/p&gt;
+
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;因为折腾，在 xda 上看到了一个可以拥有 Pixel 的虚拟按键补丁，眼残没看评论，于是脑残刷了。
+然后就炸了，于是我打开 &lt;a href=&quot;https://twrp.me/&quot;&gt;twrp&lt;/a&gt; 双清一下打算刷 &lt;a href=&quot;http://www.cyanogenmod.org/&quot;&gt;CyanogenMod&lt;/a&gt; ，但是，没刷成功，开机死活卡在 google 界面。然后尝试刷以前 &lt;a href=&quot;http://forum.xda-developers.com/nexus-5x/development/rom-chroma-11-08-2015-lockscreen-navbar-t3244199&quot;&gt;chroma rom&lt;/a&gt; （一个不错的 rom 目前只有6.0.1），但是还是开不了机。
+so，线刷。&lt;/p&gt;
+
+&lt;h2 id=&quot;一切的前提&quot;&gt;一切的前提&lt;/h2&gt;
+
+&lt;p&gt;要有 adb 和 fastboot 以及解锁。&lt;/p&gt;
+
+&lt;h2 id=&quot;下载固件&quot;&gt;下载固件&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images&quot;&gt;官方线刷固件包&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下好后解压再解压，得到:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;system.img
+vendor.img
+boot.img
+recovery.img
+cache.img
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;刷机&quot;&gt;刷机&lt;/h2&gt;
+
+&lt;p&gt;长按电源+音量减进入 bootloader，用数据线连接电脑，输入 fastboot device 查看手机是否已经和电脑连接好。&lt;/p&gt;
+
+&lt;p&gt;如果 ok ，那么继续。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;刷入系统镜像&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot flash system system.img&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;刷入驱动&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot flash vendor vendor.img&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;刷入内核&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot flash boot boot.img&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;刷入Recovery&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot flash recovery recovery.img&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;清空cache分区&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot erase cache&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;清除缓存&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot flash cache cache.img&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;格式化全部数据&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot -w&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;重启&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fastboot reboot&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;完成&quot;&gt;完成&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;至此就完成了，但是折腾需谨慎。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>KeJun</name></author><category term="android" /><category term="adb" /><category term="fastboot" /><summary type="html">安卓就是要折腾。</summary></entry></feed>
