@@ -1,16 +1,16 @@
 ---
-layout: compress
+layout: null
 ---
-var cacheName = 'madhur-cache-v1';
-var filesToCache = [
-    {% for page in site.pages %}
-        {% if page.url contains 'projects' or page.url contains '404'   %}
-            
-        {% else %}
-            '{{ page.url }}',
-        {% endif %}
-        
-    {% endfor %}
+var CACHE = 'cache-and-update';
+
+var urlsToCache = [
+  {% for page in site.pages %}
+    {% if page.url contains 'projects' or page.url contains '404' %}
+       
+    {% else %}
+      '{{ page.url }}',
+    {% endif %}
+  {% endfor %}
 
   {% for post in site.posts %}
     '{{ post.url }}',
@@ -21,27 +21,47 @@ var filesToCache = [
   {% endfor %}
 ];
 
-
-self.addEventListener('install', function(event) {
-    event.waitUntil(
-        caches.open(cacheName).then(function(cache) {
-            return cache.addAll(filesToCache);
-        })
-    );
+self.addEventListener('install', function(evt) {
+  evt.waitUntil(caches.open(CACHE).then(function(cache) {
+    cache.addAll(urlsToCache);
+  }));
 });
 
-self.addEventListener('fetch', function(event) {
-    event.respondWith(
-        caches.match(event.request)
-            .then(function(response) {
-                if (response) {
-                    console.log('[*] Serving cached: ' + event.request.url);
-                    return response;
-                }
-
-                console.log('[*] Fetching: ' + event.request.url);
-                return fetch(event.request);
-            }
-        )
-    );
+self.addEventListener('fetch', function(evt) {
+  evt.respondWith(fromCache(evt.request));
+  evt.waitUntil(update(evt.request));
 });
+
+function fromCache(request) {
+  return caches.open(CACHE).then(function(cache) {
+    return cache.match(request).then(function(response) {
+      if (response != undefined) {
+        return response;
+      } else {
+        return fetchFromInternet(request);
+      }
+    });
+  }).catch(function() {
+    return caches.match('/offline.html');
+  });
+}
+
+function update(request) {
+  return caches.open(CACHE).then(function(cache) {
+    return fetchFromInternet(request);
+  });
+}
+
+function fetchFromInternet(request) {
+  var fetchRequset = request.clone();
+  return fetch(fetchRequset).then(function(response) {
+    if (!response || response.status !== 200 || response.type !== 'basic') {
+            return response;
+    }
+    var responseToCache = response.clone();
+    caches.open(CACHE).then(function(cache) {
+      cache.put(request, responseToCache);
+    });
+    return response;
+  });
+}
