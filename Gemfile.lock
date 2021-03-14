@@ -6,7 +6,7 @@ PATH
       jekyll-paginate (~> 1.1)
 
 GEM
-  remote: https://gems.ruby-china.com/, https://rubygems.org
+  remote: https://rubygems.org
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
@@ -79,7 +79,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-paginate
   jekyll-sitemap
-  jekyll-theme-mdui!
+  jekyll-theme-mdui
   rake (~> 12.0)
 
 BUNDLED WITH
