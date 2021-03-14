@@ -58,6 +58,7 @@ prism:
   themes: prism-okaidia
   components:
     - bash
+    - vim
   plugins:
 
 mathjax: true
