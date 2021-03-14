@@ -13,7 +13,7 @@ describe: 还原了服务器，于是重装，顺路记录下来，路过的朋�
 
 ### 安装
 
-```shell
+```bash
 apt-get update
 apt-get install apache2
 ```
@@ -22,19 +22,19 @@ apt-get install apache2
 
 启动 Apache 的方法：
 
-```shell
+```bash
 service apache2 start
 ```
 
 重启 Apache 的方法：
 
-```shell
+```bash
 service apache2 restart
 ```
 
 停止 Apache 的方法：
 
-```shell
+```bash
 service apache2 stop
 ```
 
@@ -96,7 +96,7 @@ vim /etc/apache2/mods-enabled/dir.conf
 
 然后将 PHP 索引文件移动到第一个位置，如下：
 
-```bash
+```vim
 <IfModule mod_dir.c>
 
 DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
@@ -130,7 +130,7 @@ vim /etc/apache2/apache2.conf
 
 在文件中添加如下行：
 
-```bash
+```vim
 Include /etc/phpmyadmin/apache.conf
 ```
 
