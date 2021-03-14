@@ -32,9 +32,9 @@ sns_share: # SNS Share Switch
    telegram: true
 
 comment:
-  used: "disqus" # disqus,livere,gitment,valine
+  used: "" # disqus,livere,gitment,valine
   # disqus config
-  disqus_shortname: "nyovelt" # Your disqus
+  disqus_shortname: "" # Your disqus
   disqus_button: false # disqus load button
   disqus_proxy: false # # disqus proxy(Do not use)
   disqus_proxy_url: "" # (Do not use)
@@ -48,8 +48,6 @@ comment:
   client_id: ""
   client_secret: ""
   #valine config
-  valine_notify: false #mail notifier
-  valine_verify: false #validation code
   valine_app_id: ''
   valine_app_key: ''
   valine_placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!"
@@ -62,7 +60,7 @@ prism:
 
 mathjax: true
 
-google_analytics: "G-73VZSQL8QT"  # google analytics code
+google_analytics: ""  # google analytics code
 
 baidu_site_verification: ""  # baidu site verification code
 google_site_verification: ""  # google search console verification code
