@@ -12,6 +12,7 @@ describe: 还原了服务器，于是重装，顺路记录下来，路过的朋�
 ## Apache
 
 ### 安装
+
 ```shell
 apt-get update
 apt-get install apache2
@@ -21,15 +22,21 @@ apt-get install apache2
 
 启动 Apache 的方法：
 
-    service apache2 start
+```shell
+service apache2 start
+```
 
 重启 Apache 的方法：
 
-    service apache2 restart
+```shell
+service apache2 restart
+```
 
 停止 Apache 的方法：
 
-    service apache2 stop
+```shell
+service apache2 stop
+```
 
 ### 其他
 
@@ -37,21 +44,29 @@ Apache 的错误日志文件默认为 `/var/log/apache2/error.log` 。
 
 如果你没有指定 `SeverName` ，可能会出现如下警告：
 
-    apache2: Could not determine the server''s fully qualified domain name, using 127.0.0.1 for ServerName
+```bash
+apache2: Could not determine the server''s fully qualified domain name, using 127.0.0.1 for ServerName
+```
 
 解决方法为：
 
-    vim /etc/apache2/apache2.conf
+```bash
+vim /etc/apache2/apache2.conf
+```
 
 添加如下：
 
-    ServerName localhost
+```bash
+ServerName localhost
+```
 
 ## MySQL
 
 ### 安装
 
-    apt-get install mysql-server
+```bash
+apt-get install mysql-server
+```
 
 安装过程需要设定root账户和密码。
 
@@ -61,7 +76,9 @@ Apache 的错误日志文件默认为 `/var/log/apache2/error.log` 。
 
 安装 PHP 使 PHP 代码可以在 Apache 服务器下运行，并连接我们的 MySQL 数据库：
 
-    apt-get install php libapache2-mod-php php-mcrypt php-mysql
+```bash
+apt-get install php libapache2-mod-php php-mcrypt php-mysql
+```
 
 至此 PHP 已经部署完成。
 
@@ -73,25 +90,33 @@ Apache 的错误日志文件默认为 `/var/log/apache2/error.log` 。
 
 为了让 Apache 优先索引 PHP 文件：
 
-    vim /etc/apache2/mods-enabled/dir.conf
+```bash
+vim /etc/apache2/mods-enabled/dir.conf
+```
 
 然后将 PHP 索引文件移动到第一个位置，如下：
 
-    <IfModule mod_dir.c>
+```bash
+<IfModule mod_dir.c>
 
-    DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 
-    </IfModule>
+</IfModule>
+```
 
 一些模块：
 
-    apt-get install php-mysql php-curl php-gd php-intl php-pear php-imagick php-imap php-mcrypt php-memcache php-ming php-ps php-pspell php-recode php-snmp php-sqlite php-tidy php-xmlrpc php-xsl
+```bash
+apt-get install php-mysql php-curl php-gd php-intl php-pear php-imagick php-imap php-mcrypt php-memcache php-ming php-ps php-pspell php-recode php-snmp php-sqlite php-tidy php-xmlrpc php-xsl
+```
 
 ## phpMyAdmin
 
 ### 安装
 
-    apt-get install phpmyadmin
+```bash
+apt-get install phpmyadmin
+```
 
 安装过程中会选择服务器以及配置。
 
@@ -99,14 +124,20 @@ Apache 的错误日志文件默认为 `/var/log/apache2/error.log` 。
 
 安装后，还不能立即使用  `phpMyAdmin` ，因为它不在网站目录下。为了正常使用，只需把 phpMyAdmin 的配置文件包含到 Apache 的配置中。编辑 `apache2.conf`：
 
-    vim /etc/apache2/apache2.conf
+```bash
+vim /etc/apache2/apache2.conf
+```
 
 在文件中添加如下行：
 
-    Include /etc/phpmyadmin/apache.conf
+```bash
+Include /etc/phpmyadmin/apache.conf
+```
 
 重启服务器：
 
-    service apache2 restart
+```bash
+service apache2 restart
+```
 
 至此，你就可以通过`yourip/phpmyadmin`来访问 phpMyAdmin 了。

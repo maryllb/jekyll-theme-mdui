@@ -12,7 +12,7 @@ theme: jekyll-theme-mdui
 
 markdown: kramdown
 
-highlighter:    rouge
+# highlighter:    rouge
 # kramdown:
 #   input:                     GFM
 #   auto_ids:                  true
