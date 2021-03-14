@@ -79,7 +79,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-paginate
   jekyll-sitemap
-  jekyll-theme-mdui
+  jekyll-theme-mdui!
   rake (~> 12.0)
 
 BUNDLED WITH
