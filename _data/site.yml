@@ -57,6 +57,7 @@ prism:
   components:
     - bash
     - vim
+    - php
   plugins:
 
 mathjax: true
