@@ -10,7 +10,7 @@ paginate_path: "/blog/page:num/"
 # Build settings
 theme: jekyll-theme-mdui
 
-markdown: kramdown
+# markdown: kramdown
 
 # highlighter:    rouge
 # kramdown:
