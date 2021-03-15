@@ -13,8 +13,9 @@ remote_theme: KeJunMao/jekyll-theme-mdui
 markdown: kramdown
 
 highlighter:    rouge
-# kramdown:
-#   input:                     GFM
+kramdown:
+  input:                     GFM
+  hard_wrap:                 false
 #   auto_ids:                  true
 #   footnote_nr:               1
 #   entity_output:             as_char
