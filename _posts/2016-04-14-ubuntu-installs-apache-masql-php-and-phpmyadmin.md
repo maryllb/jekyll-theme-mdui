@@ -122,7 +122,7 @@ apt-get install phpmyadmin
 
 ### 使用 phpMyAdmin
 
-安装后，还不能立即使用  ``` <head>
+安装后，还不能立即使用  ```html  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"/>
