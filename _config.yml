@@ -13,7 +13,6 @@ remote_theme: KeJunMao/jekyll-theme-mdui
 markdown: kramdown
 
 highlighter:    rouge
-
 kramdown:
   input:                     GFM
   hard_wrap:                 false
@@ -45,8 +44,5 @@ exclude:
   - README.md
   - vendor
   - docs
-
-source "https://gems.ruby-china.com"
-
-gem "jekyll"
-gem "kramdown", github "gettalong/kramdown"
+  
+source
