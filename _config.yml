@@ -46,7 +46,7 @@ exclude:
   - vendor
   - docs
 
-source "https://rubygems.org"
+source "https://gems.ruby-china.com"
 
 gem "jekyll"
 gem "kramdown", github "gettalong/kramdown"
