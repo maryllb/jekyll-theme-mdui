@@ -122,21 +122,7 @@ apt-get install phpmyadmin
 
 ### 使用 phpMyAdmin
 
-安装后，还不能立即使用  ```html  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"/>
-</head>
-<body>
-
-<div class="mdui-container">
-  <div class="mdui-typo">
-    <code>&lt;phpMyAdmin&gt;</code>
-  </div>
-</div> ```
-
-因为它不在网站目录下。为了正常使用，只需把 phpMyAdmin 的配置文件包含到 Apache 的配置中。编辑 `apache2.conf`：
-<!-- `phpMyAdmin` ，因为它不在网站目录下。为了正常使用，只需把 phpMyAdmin 的配置文件包含到 Apache 的配置中。编辑 `apache2.conf`： -->
+安装后，还不能立即使用  `phpMyAdmin` ，因为它不在网站目录下。为了正常使用，只需把 phpMyAdmin 的配置文件包含到 Apache 的配置中。编辑 `apache2.conf`：
 
 ```bash
 vim /etc/apache2/apache2.conf
