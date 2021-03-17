@@ -60,6 +60,7 @@ prism:
     - bash
     - vim
     - php
+    - css
   plugins:
 
 mathjax: true
