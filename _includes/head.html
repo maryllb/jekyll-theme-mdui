@@ -1,22 +1,23 @@
 <head>
     <meta charset="utf-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{site.author}}">
     <meta name="theme-color" content="{{ site.data.site.uiux.android_chrome_color }}">
+    <meta name="google-site-verification" content="jbZpJZ0K3tZTpaXWKu7pJNQbMtZlLOPh18TlG0VeHCU" />
+    <meta name="baidu-site-verification" content="sCPH88B7fx" />
     {% if page.layout =="post" %}
     <meta name="keywords" content="{% for pagetag in page.tags %}{{pagetag}} {% endfor %}">
     {% else %}
     <meta name="keywords" content="{{ site.data.site.head.keywords }}">
     {% endif %}
-    {% if site.data.site.google_site_verification != "" %}
-    <meta name="google-site-verification" content="{{ site.data.site.google_site_verification }}">
-    {% endif %}
-    {% if site.data.site.uiux.meng == true%}
     {% if site.data.meng.animation.switch == true %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     {% endif %}
-    {% endif %}
+
+    {% seo %}
+    {% include component/nprogress.html %}
     <link rel="shortcut icon" href="{{ site.data.site.head.favicon }}">
     <link rel="icon" sizes="192x192" href="{{ site.data.site.head.high_res_favicon }}">
     <link rel="apple-touch-icon" href="{{ site.data.site.head.apple_touch_icon }}">

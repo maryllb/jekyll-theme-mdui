@@ -12,7 +12,7 @@
     margin-bottom: 45px;
   }
 .k-post-media {
-    display:block
+    display:block;
     cursor: pointer;
     max-height: 245px;
     min-height: 245px;
@@ -61,7 +61,7 @@
         </div>
       </div>
       {% endif %}
-	  {% if post.describe != null %}
+    {% if post.describe != null %}
       <div class="mdui-card-content mdui-text-color-black-secondary mdui-typo">
         {{ post.describe}} <a href="{{post.url | prepend: site.baseurl}}">{{lang.post.continue}}</a>
       </div>
@@ -69,7 +69,7 @@
       <div class="mdui-card-content mdui-text-color-black-secondary mdui-typo">
         {{ post.excerpt | strip_html}} <a href="{{post.url | prepend: site.baseurl}}">{{lang.post.continue}}</a>
       </div>
-	  {% endif %}
+    {% endif %}
       <div class="mdui-divider"></div>
       <div class="mdui-card-header">
         <div class="mdui-card-menu mdui-typo">

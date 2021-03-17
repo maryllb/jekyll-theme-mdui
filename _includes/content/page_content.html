@@ -1,7 +1,7 @@
 <style>
 
 .k-post-media {
-    display:block
+    display:block;
     cursor: pointer;
     max-height: 245px;
     min-height: 245px;
@@ -45,12 +45,7 @@
                 <div class="mdui-card-media k-post-media" style="background-image: url({{page.img}});">
                     <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
                         <div class="mdui-card-primary">
-                            <h1 class="mdui-card-primary-title"><a class="mdui-text-color-white-text">{{page.title}}</a></h1>
-                            {% if page.describe != null %}
-                            <div class="mdui-card-primary-subtitle">
-                                {{page.describe}}
-                            </div>
-                            {% endif %}
+                            <div class="mdui-card-primary-title"><a class="mdui-text-color-white-text">{{page.title}}</a></div>
                         </div>
                     </div>
                 </div>
