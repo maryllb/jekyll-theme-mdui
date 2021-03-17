@@ -10,7 +10,6 @@ themetextcolor: "#000"
 describe: 为什么要使用流氓 YY ？
 ---
 
-*
 {:marker}
 
 首先，[点击这里](https://discordapp.com/)下载 Discord 。
