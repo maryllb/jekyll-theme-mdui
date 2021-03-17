@@ -5,3 +5,5 @@ rvm: 2.6
 
 install: gem install bundler && bundle install
 script: bundle exec jekyll build && gem build jekyll-theme-mdui.gemspec
+
+  # github_token: 5d4c2bd09c1707549b3adde7e01cb7b899884058 # 
