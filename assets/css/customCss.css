@@ -138,11 +138,11 @@ code[class*=language-], pre[class*=language-]{ /* ´úÂëÎÄ×Ö*/
 }
 
 .mdui-typo table td, .mdui-typo table th {
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 12px 28px;
-  text-align: left;
-  vertical-align: middle;
-  border-top: 1px solid rgba(0,0,0,.12);
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 28px;
+    text-align: left;
+    vertical-align: middle;
+    border-top: 1px solid rgba(0,0,0,.12);
 }
