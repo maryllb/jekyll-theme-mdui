@@ -5,6 +5,8 @@ date: 2018-02-13 13:26:16 +0800
 categories: Living
 tags: discord game yy
 img: https://i.loli.net/2018/02/13/5a8299ad7dff9.png
+themecolor: "#fff"
+themetextcolor: "#000"
 describe: 为什么要使用流氓 YY ？
 ---
 

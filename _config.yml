@@ -39,6 +39,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
   - package.json
@@ -51,4 +52,3 @@ exclude:
   - README.md
   - vendor
   - docs
-  

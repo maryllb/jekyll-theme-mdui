@@ -15,14 +15,14 @@ console: # Meng console info
   theme_info: true # output theme info
   text: "Copyright © 2017 Jekyll-Theme-MDUI" # text
   color: "#fff" # text color
-  background: "#448aff" # background color
+  background: "rgb(248, 208, 142)" # background color
 
 header: # Meng header color + theme-color
   switch: true
 
 background: # Meng background
   switch: true
-  background_img: "https://i.loli.net/2019/08/16/T1tNn4x2Oa6I5YF.png"
+  # background_img: "https://ooo.0o0.ooo/2017/06/14/5940a9b8e4c21.jpg"
   transparent_header: true
   transparent_footer: false
   text_color: '#000'
@@ -43,31 +43,21 @@ live2d: # live2d ,see https://github.com/EYHN/hexo-helper-live2d
   leftOrRight: "right" # left or right
   offset: 10 # offset
 
-#!!!!do not use!!!!
 animation: # animate.css, see https://github.com/daneden/animate.css
-  switch: false # switch on and you can see the animation,!!!!do not use!!!!
-#!!!!do not use!!!!
+  switch: true # switch on and you can see the animation
 
-music_player:
-  player: "" #cplayer or aplayer
-  button_color: ""
-  music:
-    title: ''
-    author: ''
-    url: ''
-    pic: ''
-  # switch: false
-  # player: "aplayer" #cplayer or aplayer
-  # button_color: "#1abc9c"
-  # music:
-  #   - title: 'Faded'
-  #     author: 'Alan Walker'
-  #     url: 'http://www.170mv.com/kw/other.web.rh01.sycdn.kuwo.cn/resource/n2/14/71/3899067167.mp3'
-  #     pic: 'http://p4.music.126.net/8dzD62VK8jLDbhEqkmpIAg==/18277181788626198.jpg?param=130y130'
-  #   - title: 'Unity'
-  #     author: 'TheFatRat'
-  #     url: 'http://www.170mv.com/kw/other.web.ri01.sycdn.kuwo.cn/resource/n2/44/7/1205252665.mp3'
-  #     pic: 'http://img4.kuwo.cn/star/starheads/240/72/35/3484765923.jpg'
+# music_player:
+#   player: "aplayer" #cplayer or aplayer
+#   button_color: "#1abc9c"
+#   music:
+#     - title: 'Faded'
+#       author: 'Alan Walker'
+#       url: 'http://www.170mv.com/kw/other.web.rh01.sycdn.kuwo.cn/resource/n2/14/71/3899067167.mp3'
+#       pic: 'http://p4.music.126.net/8dzD62VK8jLDbhEqkmpIAg==/18277181788626198.jpg?param=130y130'
+#     - title: 'Unity'
+#       author: 'TheFatRat'
+#       url: 'http://www.170mv.com/kw/other.web.ri01.sycdn.kuwo.cn/resource/n2/44/7/1205252665.mp3'
+#       pic: 'http://img4.kuwo.cn/star/starheads/240/72/35/3484765923.jpg'
 
 head_card:
   switch: true

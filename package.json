@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-theme-mdui",
+  "name": "maryllb-blog",
   "version": "0.5.2",
-  "description": "A Jekyll theme based on MDUI",
+  "description": "Blog based on Jekyll-Theme-MDUI",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,12 +15,12 @@
     "theme",
     "MDUI"
   ],
-  "author": "KeJun",
+  "author": "Maryllb",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/KeJunMao/jekyll-theme-mdui/issues"
   },
-  "homepage": "https://github.com/KeJunMao/jekyll-theme-mdui#readme",
+  "homepage": "https://github.com/maryllb/maryllb.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
