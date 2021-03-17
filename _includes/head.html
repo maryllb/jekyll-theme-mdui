@@ -63,8 +63,8 @@ jQuery(document).ready(function($) {
             document.title = data.match(/<title>(.*?)<\/title>/)[1];
             defaultTitle = document.title;
             NProgress.done();
-            $('#k-menus').html($(data).find('#k-menus').children());
-            $('#k-mobile-menus').html($(data).find('#k-mobile-menus').children());
+            $('#k-menus').html($(data).find('#k-menus').children()); 
+            $('#k-mobile-menus').html($(data).find('#k-mobile-menus').children()); 
             $(".content").css('top','50px');
             $(".content").css('position','relative');
             $(".mdui-container").fadeIn();
