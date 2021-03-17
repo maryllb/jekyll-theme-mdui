@@ -32,7 +32,8 @@ process.nextTick, Promises（这里指浏览器实现的原生 Promise）, Objec
 ## 事件循环过程📖
 ---
 
-<img src="/assets/images/posts/event loop/eventLoop.png">
+![eventLoop.png](https://i.loli.net/2021/03/18/wOls1DJLEB5pijg.png)
+
 整个过程大致上如图所示，对于一次宏任务的执行，如果遇到了微任务，那么添加到微任务队列中。当前宏任务执行完毕后（其实是同步代码执行完毕后），检查微任务队列，按先进先出的顺序执行微任务，直到微任务队列为空，这一次宏任务真正执行完毕，开始下一个宏任务。
 
 ## 举个例子🌰
