@@ -6,4 +6,10 @@ rvm: 2.6
 install: gem install bundler && bundle install
 script: bundle exec jekyll build && gem build jekyll-theme-mdui.gemspec
 
-  # github_token: 5d4c2bd09c1707549b3adde7e01cb7b899884058 # 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 5d4c2bd09c1707549b3adde7e01cb7b899884058 # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
