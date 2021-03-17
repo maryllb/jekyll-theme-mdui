@@ -1,6 +1,138 @@
+/* 对滚动条的定制化*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #918280;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgb(248, 208, 142);
+}
+/* 背景色以及主要字体的定制化*/
+body{
+  /* background-color: #fffaf0; */
+  font-family: 'Montserrat', "PingFang SC", "Microsoft YaHei", sans-serif;;
+  -webkit-font-smoothing: antialiased;
+}
+/* */
+/* #nprogress .bar{
+  background: rgb(248, 208, 142);
+} */
+/* 左上title的定制化*/
+@font-face{ 
+  font-family: 'Parley Blod';
+  src: url('/assets/fonts/parley\ bold.ttf'); 
+}
+.mdui-typo-title{
+  font-family: 'Parley Blod';
+  font-size: 50px;
+}
+header{
+  color: #a0522d !important;
+}
+/* 对各标题h1 h2 h3……的定制化*/
+.mdui-typo h3{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+/* 高亮的一些字*/
+.mdui-typo a{
+  color: #FF9300;
+}
 .mdui-typo code{
-  background-color: #f7f7f9;
-  color: #c7254e;
-  padding: 2px 6px;
-  border-radius: 2px;
+  background-color: #fffaf0;
+  color: #a0522d;
+}
+.mdui-typo blockquote{
+  border-radius: 4px;
+  margin: 1em 0 !important;
+  padding: 1em !important;
+  background-color: #ede6e1;
+}
+.mdui-typo blockquote p:nth-last-child(1){
+  -webkit-margin-after: 0 !important;
+}
+.mdui-radio input[type=radio]:checked+.mdui-radio-icon{
+  border-color: #FF9300;
+}
+.mdui-radio-icon:before, .mdui-typo a:before{
+  background-color: #FF9300;
+}
+.mdui-textfield-focus .mdui-textfield-input, 
+.mdui-textfield-invalid-html5 .mdui-textfield-input{
+  border-bottom: 1px solid #FF9300;
+  box-shadow: 0 1px 0 0 #FF9300;  
+}
+
+#toc ul .toc-active{
+  border-left: 3px solid #FF9300 !important;
+  background-color: rgb(255,222,173) !important;
+}
+#toc ul .toc-h2 a:hover{
+  background-color: rgb(255,222,173);
+}
+#toc a{
+  color: #a0522d !important;
+}
+/* menu-item 的 active状态*/
+.mdui-btn:hover, .mdui-list-item-active{
+  background-color: rgb(255,222,173);
+}
+
+.mdui-text-color-blue{
+  color: #FF9300 !important;
+}
+
+/* 阅读本文 信息改变*/
+@font-face{ 
+  font-family: 'Jackson';
+  src: url('/assets/fonts/汉仪易烊千玺体.ttf'); 
+}
+.k-readtime, .k-lastupdate{
+  font-family: 'Jackson';
+  font-size: 16px;
+  color: #a0522d !important;
+}
+
+/* 代码框 颜色定制化*/
+[class*=language-] .token.string, .style .token.string, .token.entity, .token.operator, .token.url, .token.variable{ /* 里面的string*/
+  color: #918280 !important;
+}
+pre.highlight[class*=language-]{ /* 代码文字*/
+  background-color: #fffaf0;
+  color: #918280;
+}
+code[class*=language-], pre[class*=language-]{ /* 代码文字*/
+  text-shadow: none !important;
+}
+.token.punctuation{ /* 括号的颜色*/
+  color: #918280 !important;
+}
+.token.constant, .token.deleted, .token.property, .token.symbol, .token.tag{
+  color: #f3715c !important;
+}
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string{
+  color: #a0522d !important;
+}
+.token.atrule, .token.attr-value, .token.function{
+  color: #fdb933 !important;
+}
+/* 正文颜色*/
+.mdui-card{
+  color: #483C32;
+}
+
+/* 正文间距*/
+.mdui-typo>ul>li{
+  margin: 2em 0;
+}
+.mdui-typo>ul>li img{
+  margin: 1em 0;
+}
+.mdui-typo>ul>li>ul>li{
+  margin: 1em 0;
+}
+.mdui-typo hr{
+  height: 0;
 }
