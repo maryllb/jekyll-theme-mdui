@@ -10,6 +10,9 @@ themetextcolor: "#000"
 describe: 为什么要使用流氓 YY ？
 ---
 
+*
+{:marker}
+
 首先，[点击这里](https://discordapp.com/)下载 Discord 。
 
 吃鸡盛行，不得不使用靠谱的连麦软件，但是为什么还是 YY ？
