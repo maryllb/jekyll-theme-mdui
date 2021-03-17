@@ -2,6 +2,7 @@
 .bundle
 .sass-cache
 _site
+Gemfile.lock
 node_modules
 .jekyll-metadata
 assets/live2d

@@ -1,6 +1,4 @@
-# source "https://rubygems.org"
-source 'https://gems.ruby-china.com'
-# gem 'github-pages', group: jekyll_plugins
+source "https://rubygems.org"
 gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'

@@ -27,8 +27,5 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8"
-  },
-  "dependencies": {
-    "mdui": "^1.0.2"
   }
 }
