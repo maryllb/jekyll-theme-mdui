@@ -1,6 +1,6 @@
 title: "Maryllb Blog"
-description: "A Jekyll theme based on MDUI"
-url: 
+description: "Maryllb Blog"
+url: https://maryllb.github.io/ 
 baseurl: ""
 author: "mignon maryllb"
 paginate: 5
