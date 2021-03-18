@@ -1,10 +1,6 @@
 {% if site.data.site.custom_css!=""  %}
 {% assign css = site.data.site.custom_css %}
-<link rel="stylesheet" href="../../assets/css/customCss.css">
-<link rel="stylesheet" href="../../assets/css/global.css">
-<link rel="stylesheet" href="../../assets/css/prism-okaidia.css">
-<link rel="stylesheet" href="../../assets/css/prism-okaidia.min.css">
-<!-- <link rel="stylesheet" href="{{ "/assets/css/" | prepend: site.baseurl |append: css }}"> -->
+<link rel="stylesheet" href="{{ "/assets/css/" | prepend: site.baseurl |append: css }}">
 {% endif %}
 {% if site.data.site.custom_js!=""  %}
 {% assign js = site.data.site.custom_js %}
