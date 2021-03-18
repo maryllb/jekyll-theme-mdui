@@ -41,8 +41,8 @@ header{
   color: #FF9300;
 }
 .mdui-typo code{
-  background-color: #fffaf0;
-  color: #a0522d;
+  background-color: #fffaf0 !important;
+  color: #a0522d !important;
 }
 
 .mdui-typo blockquote{
