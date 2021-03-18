@@ -11,10 +11,10 @@ paginate_path: "/blog/page:num/"
 remote_theme: KeJunMao/jekyll-theme-mdui
 
 
-markdown: kramdown
-kramdown:
-    input: GFM
-highlighter: rouge
+# markdown: kramdown
+# kramdown:
+#     input: GFM
+# highlighter: rouge
 
 # markdown: kramdown
 
