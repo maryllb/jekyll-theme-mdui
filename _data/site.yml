@@ -34,7 +34,7 @@ sns_share: # SNS Share Switch
 comment:
   used: "valine" # disqus,livere,gitment,valine
   # disqus config
-  disqus_shortname: "maryllb" # Your disqus 
+  disqus_shortname: "Maryllb" # Your disqus 
   disqus_button: true # disqus load button
   disqus_proxy: false # # disqus proxy(Do not use)
   disqus_proxy_url: "" # (Do not use)
