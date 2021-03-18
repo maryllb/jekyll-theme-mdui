@@ -86,7 +86,7 @@ header{
 }
 
 /* 阅读本文 信息改变*/
-@font-face{ 
+/* @font-face{ 
   font-family: 'Jackson';
   src: url('/assets/fonts/汉仪易烊千玺体.ttf'); 
 }
@@ -94,7 +94,7 @@ header{
   font-family: 'Jackson';
   font-size: 16px;
   color: #a0522d !important;
-}
+} */
 
 /* 代码框 颜色定制化*/
 [class*=language-] .token.string, .style .token.string, .token.entity, .token.operator, .token.url, .token.variable{ /* 里面的string*/
