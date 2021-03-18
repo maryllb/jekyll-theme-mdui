@@ -61,9 +61,8 @@
         </div>
       </div>
       {% endif %}
-
+      {% if post.describe != null %}
       <div class="mdui-card-content mdui-text-color-black-secondary mdui-typo">
-	        {% if post.describe != null %}
         {{ post.describe}} <a href="{{post.url | prepend: site.baseurl}}">{{lang.post.continue}}</a>
       </div>
       {% else %}
