@@ -11,5 +11,6 @@ Prism.languages.javascript=Prism.languages.extend("clike",{keyword:/\b(as|async|
 </script>
 
 {%for l in site.data.site.prism.components%}
+<script src="//cdn.bootcss.com/prism/1.6.0/components/prism-{{ l }}.js"></script>
 <script src="//cdn.bootcss.com/prism/1.6.0/components/prism-{{ l }}.min.js"></script>
 {% endfor %}
