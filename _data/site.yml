@@ -61,6 +61,7 @@ prism:
     - vim
     - php
     - css
+    - js
   plugins:
 
 mathjax: true
