@@ -6,7 +6,7 @@
 
  code[class*="language-"],
  pre[class*="language-"] {
-     color: #a0522d;
+     color: #f8f8f2;
      background: none;
      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -56,9 +56,7 @@
  }
  
  .token.punctuation {
-     /* color: #f8f8f2; */
-     background-color: #fffaf0;
-     color: #a0522d;
+     color: #f8f8f2;
  }
  
  .namespace {
@@ -93,9 +91,7 @@
  .language-css .token.string,
  .style .token.string,
  .token.variable {
-     /* color: #f8f8f2; */
-     background-color: #fffaf0;
-     color: #a0522d;
+     color: #f8f8f2;
  }
  
  .token.atrule,
@@ -124,4 +120,8 @@
  .token.entity {
      cursor: help;
  }
- 
+ figure[class="highlight"] > pre > code[class*="language-"]{
+    text-align:left;
+    background-color: #fffaf0;
+    color: #a0522d;
+  }
