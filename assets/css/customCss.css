@@ -22,7 +22,7 @@ body{
 /* 左上title的定制化*/
 @font-face{ 
   font-family: 'Parley Blod';
-  src: url('/assets/fonts/parley\ bold.ttf'); 
+  src: url('/assets/fonts/parleybold.ttf'); 
 }
 .mdui-typo-title{
   font-family: 'Parley Blod';
