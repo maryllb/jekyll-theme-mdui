@@ -57,8 +57,8 @@
         </div>
       </div>
       {% endif %}
-      {% if post.describe != null %}
       <div class="mdui-card-content mdui-text-color-black-secondary mdui-typo">
+	        {% if post.describe != null %}
         {{post.describe}} <a href="{{post.url | prepend: site.baseurl}}">{{lang.post.continue}}</a>
       </div>
       {% else %}
@@ -69,9 +69,7 @@
       <div class="mdui-divider"></div>
       <div class="mdui-card-header">
         <div class="mdui-card-menu mdui-typo">
-          {% for category in post.categories %}
           <a class="k-post-categories" href="{{ "/category" | prepend: site.baseurl }}/{{post.categories}}.html">{{post.categories}}</a>
-          {% endfor %}
         </div>
         {% if site.data.site.many_authors == true %}
         {% if post.author != null %}
