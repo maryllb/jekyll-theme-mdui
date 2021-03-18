@@ -6,7 +6,7 @@
 
  code[class*="language-"],
  pre[class*="language-"] {
-     color: #f8f8f2;
+     color: #a0522d;
      background: none;
      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -56,7 +56,9 @@
  }
  
  .token.punctuation {
-     color: #f8f8f2;
+     /* color: #f8f8f2; */
+     background-color: #fffaf0;
+     color: #a0522d;
  }
  
  .namespace {
@@ -91,7 +93,9 @@
  .language-css .token.string,
  .style .token.string,
  .token.variable {
-     color: #f8f8f2;
+     /* color: #f8f8f2; */
+     background-color: #fffaf0;
+     color: #a0522d;
  }
  
  .token.atrule,
