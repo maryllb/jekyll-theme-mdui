@@ -44,12 +44,13 @@ describe: Command Injection in DVWA
 | `&&`            | 如果前面的语句为假则直接出错，也不执行后面的，前面的语句只能为真                                      |
 
 ## DVWA之low级别
-|命令连接符 | 成功截图                                   |
-| --------------- | -------------------------------------- |
-| `&`             | ![](../assets/images/posts/dvwa/cmd/low-1.png)            |
-| `|`             | ![](../assets/images/posts/dvwa/cmd/low-2.png)            |
-| `||`             | ![](../assets/images/posts/dvwa/cmd/low-3.png)            |
-| `;`             | ![](../assets/images/posts/dvwa/cmd/low-4.png)            |
+
+### 注入成功截图
+
+<img src="/assets/images/posts/dvwa/cmd/low-1.png">
+<img src="/assets/images/posts/dvwa/cmd/low-2.png">
+<img src="/assets/images/posts/dvwa/cmd/low-3.png">
+<img src="/assets/images/posts/dvwa/cmd/low-4.png">
 
 ### 源代码分析
 
@@ -81,11 +82,11 @@ low级别的代码使用 `shell_exec` 将用户输入执行 `ping` 命令，基�
 
 ## DVWA之medium级别
 
-|命令连接符 | 成功截图                                   |
-| --------------- | -------------------------------------- |
-| `|`             | ![](../assets/images/posts/dvwa/cmd/medium-1.png)            |
-| `||`             | ![](../assets/images/posts/dvwa/cmd/medium-2.png)>            |
-| `&`             | ![](../assets/images/posts/dvwa/cmd/medium-3.png)            |
+### 注入成功截图
+
+<img src="/assets/images/posts/dvwa/cmd/medium-1.png">
+<img src="/assets/images/posts/dvwa/cmd/medium-2.png">
+<img src="/assets/images/posts/dvwa/cmd/medium-3.png">
 
 ### 源代码分析
 
@@ -128,9 +129,9 @@ medium级别使用黑名单机制，替换掉如 `&&` 和 `;`这样的命令符�
 
 ## DVWA之high级别
 
-|命令连接符 | 成功截图                                   |
-| --------------- | -------------------------------------- |
-| `|`             | ![](../assets/images/posts/dvwa/cmd/high.png)            |
+### 注入成功截图
+
+<img src="/assets/images/posts/dvwa/cmd/high.png">
 
 ### 源代码分析
 
