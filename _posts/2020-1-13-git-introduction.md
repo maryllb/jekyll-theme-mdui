@@ -5,6 +5,8 @@ date: '2020-01-13 13:38:20 +0800'
 categories: technology
 tags: ubuntu apache mysql php phpmyadmin git
 img: https://i.loli.net/2021/03/09/bUmYxyKEiqhOVeW.png
+themecolor: "#fff"
+themetextcolor: "#000"
 describe: 玩转git
 ---
 

@@ -5,6 +5,8 @@ date:   2017-05-27 14:57:06 +0800
 categories: technology
 tags: jekyll ruby gem ubuntu
 img: https://ooo.0o0.ooo/2017/05/27/5929234e802ca.jpg
+themecolor: "#fff"
+themetextcolor: "#000"
 ---
 
 Jekyll 一个可以将纯文本转换成静态网站的工具。本站正是使用`jekyll`生成并托管在`coding page`上的。

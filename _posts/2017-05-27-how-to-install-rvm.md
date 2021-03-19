@@ -5,6 +5,8 @@ date:   2017-05-27 14:19:06 +0800
 categories: technology
 tags: ruby rvm
 img: https://ooo.0o0.ooo/2017/05/27/59292241a506c.jpg
+themecolor: "#fff"
+themetextcolor: "#000"
 ---
 
 Ruby Version Manager (RVM)，一个命令行工具。顾名思义，RVM可以方便的安装`gem`和`ruby`，这对想要安装 `Jekyll` 的萌新（我），简直不要太酸爽。
