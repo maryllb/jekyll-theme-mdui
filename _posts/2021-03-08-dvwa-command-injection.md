@@ -48,8 +48,11 @@ describe: Command Injection in DVWA
 ### 注入成功截图
 
 <img src="/assets/images/posts/dvwa/cmd/low-1.png">
+
 <img src="/assets/images/posts/dvwa/cmd/low-2.png">
+
 <img src="/assets/images/posts/dvwa/cmd/low-3.png">
+
 <img src="/assets/images/posts/dvwa/cmd/low-4.png">
 
 ### 源代码分析
@@ -85,7 +88,9 @@ low级别的代码使用 `shell_exec` 将用户输入执行 `ping` 命令，基�
 ### 注入成功截图
 
 <img src="/assets/images/posts/dvwa/cmd/medium-1.png">
+
 <img src="/assets/images/posts/dvwa/cmd/medium-2.png">
+
 <img src="/assets/images/posts/dvwa/cmd/medium-3.png">
 
 ### 源代码分析
