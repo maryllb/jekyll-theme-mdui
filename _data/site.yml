@@ -62,6 +62,7 @@ prism:
     - php
     - css
     - js
+    - sql
   plugins:
 
 mathjax: true
