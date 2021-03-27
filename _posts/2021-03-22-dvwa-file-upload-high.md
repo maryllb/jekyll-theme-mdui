@@ -32,7 +32,7 @@ describe: File Upload in DVWA
 
 ## 文件上传漏洞的原理
 
-![](../assets/images/posts/dvwa/fileupload/fu.png)
+<img src="/assets/images/posts/dvwa/fileupload/fu.png">
 
 ## high级别文件上传
 
@@ -44,7 +44,7 @@ describe: File Upload in DVWA
 <?php @eval($_POST['attack']); ?>
 ```
 
-![](../assets/images/posts/dvwa/fileupload/tro.png)   
+<img src="/assets/images/posts/dvwa/fileupload/tro.png">   
    
 密码为attack
 
@@ -52,7 +52,7 @@ describe: File Upload in DVWA
 
 本文使用以下图片进行上传操作：
 
-![m.jpg](../assets/images/posts/dvwa/fileupload/m.jpg)
+<img src="/assets/images/posts/dvwa/fileupload/m.jpg">
 
 ### 3. 生成图片木马
 如果是`Windows`系统，则在`cmd`中执行以下形式的命令：
@@ -65,11 +65,11 @@ copy 原图片名/b+一句话木马文件名/a 生成图片木马名
 
 以上一条命令是把一句话木马以二进制的方式追加到原图片后面生成新的图片木马，原图片内容不会发生改变。
 
-![](../assets/images/posts/dvwa/fileupload/f.png)
+<img src="/assets/images/posts/dvwa/fileupload/f.png">
 
 把图片用十六进制文本编辑器（如010editor）打开就会发现，图片的末尾就是一句话木马的内容。
 
-![](../assets/images/posts/dvwa/fileupload/bin.png)
+<img src="/assets/images/posts/dvwa/fileupload/bin.png">
 
 如果是`Linux`系统，则执行以下形式的命令：
 ```bash
@@ -79,17 +79,17 @@ cat 一句话木马文件名 >> 图片名
 
 ### 4. 上传木马图片
 
-![](../assets/images/posts/dvwa/fileupload/dvwa.png)
+<img src="/assets/images/posts/dvwa/fileupload/dvwa.png">
 
 ### 5. 连接中国菜刀工具
 
 打开`中国菜刀`后，右键点击添加，如下图所示的格式来填写地址以及配置信息
 
-![](../assets/images/posts/dvwa/fileupload/cd.png)
+<img src="/assets/images/posts/dvwa/fileupload/cd.png">
 
 添加成功后，双击就可以用`中国菜刀`就可以获取和控制整个网站目录。
 
-![](../assets/images/posts/dvwa/fileupload/fin.png)
+<img src="/assets/images/posts/dvwa/fileupload/fin.png">
 
 ### 源码分析
 
